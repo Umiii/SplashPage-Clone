@@ -6,3 +6,16 @@ All Styles that apply to Mobile Devices go here
 All Styles that would be shared by Mobile and Other Devices go here
 
 */
+
+
+/*************************
+*******Typography******
+**************************/
+
+body {
+	font-family:'Medula One', cursive;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Abel', sans-serif;
+}
