@@ -19,3 +19,18 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Abel', sans-serif;
 }
+
+/*************************
+***** Structural Styles ***
+**************************/
+
+ul li {
+  list-style: none;
+}
+
+a {
+  -webkit-transition: 300ms;
+  -moz-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms;
+}
