@@ -13,11 +13,13 @@ All Styles that would be shared by Mobile and Other Devices go here
 **************************/
 
 body {
-	font-family:'Medula One', cursive;
+    font-family: 'Abel', sans-serif;
+
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Abel', sans-serif;
+  font-family:'Medula One', cursive;
+  text-transform: uppercase;
 }
 
 /*************************
@@ -33,4 +35,42 @@ a {
   -moz-transition: 300ms;
   -o-transition: 300ms;
   transition: 300ms;
+}
+
+/*************************
+***** Invision Section ***
+**************************/
+
+.invision {
+  margin-top:2rem;
+}
+
+.invision-box h3 {
+  line-height:2.2rem;
+}
+
+.invision-box h3 > a {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 0.1rem;
+  color:#000;
+
+}
+
+.invision-box h3 > a:hover {
+  text-decoration: none;
+  color:#000;
+  border-bottom-color:#b8b8b8;
+}
+
+.source-link {
+  color: #cdcdcd;
+}
+
+.screenshot-twitter {
+  border-radius: 10px;
+  border:1px solid rgba(4,153,245,0.6);
+}
+
+.screenshot-box {
+  padding-top:1.8rem;
 }
