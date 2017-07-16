@@ -14,12 +14,17 @@ All Styles that would be shared by Mobile and Other Devices go here
 
 body {
     font-family: 'Abel', sans-serif;
+    font-size:18px;
 
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family:'Medula One', cursive;
   text-transform: uppercase;
+}
+
+blockquote {
+  quotes: "\201C""\201D""\2018""\2019";
 }
 
 /*************************
@@ -77,4 +82,51 @@ a {
 
 .screenshot-box {
   padding-top:3.2rem;
+}
+
+/*************************
+** Testimonials Section ***
+**************************/
+
+#testimonials {
+  margin-top:2.5rem;
+}
+
+.quote-box, .testimonial-box {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.testimonial-box blockquote {
+  width:70%;
+}
+
+.testimonial-box blockquote:before {
+  content:open-quote;
+  position:absolute;
+  top:0;
+  left:10%;
+  color:#000;
+  font-size:4rem;
+}
+
+.quote-box blockquote > span, .testimonial-box blockquote > span {
+  display: block;
+  margin-top:0.5rem;
+}
+
+
+
+.testimonial-box blockquote:after {
+  content: close-quote;
+  position:absolute;
+  top:0;
+  right:12%;
+  color:#000;
+  font-size: 4rem;
+}
+
+.quote-box blockquote {
+  width:70%;
 }
