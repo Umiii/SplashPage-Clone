@@ -34,3 +34,81 @@ a {
   -o-transition: 300ms;
   transition: 300ms;
 }
+
+/************************************
+********CuriousCC Mess-about*********
+*************************************/
+*{
+	box-sizing: border-box;
+	font-family: sans-serif, "HKGroteskRegular";
+
+}
+div{
+	display: block;
+}
+#ibm{
+	padding-top: 120px;
+	padding-bottom: 120px;
+	background: linear-gradient(to bottom, #fff, #f4f6f8);
+}
+
+.content{
+	width: 750px;
+	margin:auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.row{
+	margin: 0px;
+	padding: 0px;
+}
+.col-sm-6{
+	width: 50%;
+	float: left;
+	position: relative;
+}
+.col-sm-6.text{
+	padding-left: 35px;
+	padding-right: 35px;
+	padding-top: 0px;
+	font-size: 15px;
+}
+img#ibm-logo{
+	display: block;
+	margin-bottom: 20px;
+	vertical-align: middle;
+}
+a#title-link{
+	font-weight: bold;
+	font-size: 24px;
+	color: black;
+	border-bottom: 1px solid #e5e5e5;
+}
+blockquote{
+	padding-top: 10px;
+	font-size: 18px;
+	color: #666666;
+}
+#source{
+	font-size: 14px;
+	color: #999999;
+	padding-top: 10px;
+	line-height: 1.2;
+	
+}
+.col-sm-6.ibm-img{
+	position: relative;
+	padding-left: 15px;
+	padding-right: 15px;
+	float: right;
+	width: 50%;	
+}
+.cover-img{
+	background-image: url(../images/ibm_article_cover.v1.jpg);
+	background-size: 540px 240px;
+	background-position: center;
+	border-radius: 8px;
+	height: 240px;
+	width: 100%;
+}
