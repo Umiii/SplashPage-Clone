@@ -1,7 +1,7 @@
 /* Stylesheet for Splash Page Clone
 created by Chingu Cohorts - Open-Team-3
 Contributors - @curiouscc - @shyakaster - @Umii - @wozzeck
-
+tak
 All Styles that apply to Mobile Devices go here
 All Styles that would be shared by Mobile and Other Devices go here
 
@@ -88,27 +88,33 @@ a {
 ** Testimonials Section ***
 **************************/
 
-#testimonials {
-  margin-top:2.5rem;
-}
 
 .quote-box, .testimonial-box {
   display:flex;
   flex-direction: column;
   align-items: center;
+  padding-top:2rem;
 }
 
 .testimonial-box blockquote {
   width:70%;
+  font-weight:bold;
 }
 
 .testimonial-box blockquote:before {
   content:open-quote;
   position:absolute;
-  top:0;
-  left:10%;
-  color:#000;
+  top:35%;
+  left:8%;
+  color:#4cacb5;
   font-size:4rem;
+}
+
+.quote-box {
+  background:-webkit-linear-gradient(-45deg, rgba(86,184,181,1) 0%,
+  rgba(84,181,179,1) 27%, rgba(81,178,181,1) 40%, rgba(76,171,182,1) 51%,
+  rgba(69,163,182,1) 74%, rgba(66,160,183,1) 100%);
+  color:white;
 }
 
 .quote-box blockquote > span, .testimonial-box blockquote > span {
@@ -121,12 +127,13 @@ a {
 .testimonial-box blockquote:after {
   content: close-quote;
   position:absolute;
-  top:0;
-  right:12%;
-  color:#000;
+  top:35%;
+  right:10%;
+  color:#4cacb5;
   font-size: 4rem;
 }
 
 .quote-box blockquote {
   width:70%;
+  font-weight:bold;
 }
