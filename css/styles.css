@@ -137,3 +137,75 @@ a {
   width:70%;
   font-weight:bold;
 }
+/*-----------------------------------------  */
+/*People first section  */
+/*------------------------------------------  */
+/* #people-first h1 h2  p{
+  color: white;
+} */
+#people-first{
+  background-color: #855BDA;
+}
+#people-first .section-header{
+  padding-top: 20px;
+  font-size: 36px;
+  letter-spacing: 2;
+  line-height: 1.4;
+  color: white; 
+}
+#people-first .section-subheader{
+  font-size: 24px;
+  text-align: center;
+  font-size: 24px;
+  line-height: 1.4;
+  /* letter-spacing: 1.4; */
+  color: white; 
+}
+.spacex5{
+  height: 10px;
+  width: 100%;
+}
+.explanation{
+  text-align: center;
+  font-size: 24px;
+  color: white; 
+}
+ .people-first-main-text, .join-text {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  /* padding-top:2rem; */
+} 
+
+
+.people-first-main-text blockquote{
+  line-height: 1.2;
+  text-align: justify;
+  color: white;
+  font-size: 20px; 
+  font-weight: bolder;
+}
+.people-first-main-text blockquote:before {
+  content:open-quote;
+  position:absolute;
+  top:8%;
+  left:-4%;
+  color:white;
+  font-size:4rem;
+}
+
+.people-first-main-text blockquote:after {
+  content: close-quote;
+  position:absolute;
+  top:8%;
+  right:-4%;
+  color:white;
+  font-size: 4rem;
+}
+
+
+blockquote > span{
+  display: block;
+  margin-top:0.5rem;
+}
+
