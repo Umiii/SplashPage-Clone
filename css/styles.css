@@ -402,9 +402,6 @@ p.sun > i:last-of-type
   width:70%;
   font-weight:bold;
 }
-
-
-
 /*-----------------------------------------  */
 /*People first section  */
 /*------------------------------------------  */
@@ -670,5 +667,43 @@ p.sun > i:last-of-type
 {
   max-width:53%;
   text-transform: uppercase;
+=======
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  /* padding-top:2rem; */
+} 
+
+
+.people-first-main-text blockquote{
+  line-height: 1.2;
+  text-align: justify;
+  color: white;
+  font-size: 20px; 
+  font-weight: bolder;
+}
+.people-first-main-text blockquote:before {
+  content:open-quote;
+  position:absolute;
+  top:8%;
+  left:-4%;
+  color:white;
+  font-size:4rem;
+}
+
+.people-first-main-text blockquote:after {
+  content: close-quote;
+  position:absolute;
+  top:8%;
+  right:-4%;
+  color:white;
+  font-size: 4rem;
+}
+
+
+blockquote > span{
+  display: block;
+  margin-top:0.5rem;
+>>>>>>> 1cbce87... Worked on people first section
 }
 
