@@ -52,8 +52,7 @@ section.curious-cc{
 	background: linear-gradient(to bottom, #fff, #f4f6f8);
 }
 .container{
-	width: 750px;
-	margin:auto;
+	margin: auto;
 	padding-left: 15px;
 	padding-right: 15px;
 }
@@ -61,6 +60,7 @@ section.curious-cc{
 	margin: 0px;
 	padding: 0px;
 }
+/*
 .col-sm-6{
 	width: 50%;
 	position: relative;
@@ -77,10 +77,12 @@ section.curious-cc{
 .col-sm-6.text.amp{
 	float: right;
 }
+
 img.logo{
 	margin-bottom: 20px;
 	vertical-align: middle;
 }
+*/
 a.title-link{
 	font-weight: bold;
 	font-size: 24px;
@@ -99,6 +101,7 @@ blockquote{
 	line-height: 1.2;
 	
 }
+/*
 .col-sm-6.img{
 	padding-left: 15px;
 	padding-right: 15px;
@@ -116,12 +119,15 @@ blockquote{
 	height: 240px;
 	width: 100%;
 }
+
 .cover-img.ibm{
 	background-image: url(../images/ibm_article_cover.v1.jpg);
+
 }
 .cover-img.amp{
 	background-image: url(../images/cultureamp_article_cover.v0.jpg);
 }
+*/
 
 
 
