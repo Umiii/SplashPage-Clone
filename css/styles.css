@@ -1,7 +1,6 @@
 /* Stylesheet for Splash Page Clone
 created by Chingu Cohorts - Open-Team-3
 Contributors - @curiouscc - @shyakaster - @Umii - @wozzeck
-tak
 All Styles that apply to Mobile Devices go here
 All Styles that would be shared by Mobile and Other Devices go here
 
@@ -81,11 +80,12 @@ blockquote{
 	font-size: 18px;
 	color: #666666;
 }
-.source{
-	font-size: 14px;
-	color: #999999;
-	padding-top: 10px;
-	line-height: 1.2;
+.source {
+  font-size: 14px;
+  color: #999999;
+  padding-top: 10px;
+  line-height: 1.2;
+}
 
 /*************************
 ***** Invision Section ***
@@ -182,6 +182,7 @@ blockquote{
   width:70%;
   font-weight:bold;
 }
+
 /*-----------------------------------------  */
 /*People first section  */
 /*------------------------------------------  */
@@ -194,14 +195,13 @@ blockquote{
 #people-first .section-header{
   padding-top: 20px;
   font-size: 36px;
-  letter-spacing: 2;
+  letter-spacing: 2px;
   line-height: 1.4;
   color: white; 
 }
 #people-first .section-subheader{
   font-size: 24px;
   text-align: center;
-  font-size: 24px;
   line-height: 1.4;
   /* letter-spacing: 1.4; */
   color: white; 
@@ -251,6 +251,58 @@ blockquote{
 blockquote > span{
   display: block;
   margin-top:0.5rem;
+}
+
+
+/*************************
+*****  Plans Section *****
+**************************/
+
+.plans {
+  background-color:#eeeeee;
+}
+
+.plans-box {
+  padding:4rem 1rem;
+}
+
+.plans-box > h1 {
+  margin-bottom: 2.5rem;
+}
+
+.card-heading
+{
+  display:flex;
+  justify-content: space-between;
+  font-size:1.3rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid #eee;
+}
+
+.card-heading p {
+  margin-bottom:0;
+}
+
+.card-body {
+  display:flex;
+  margin-top:0.6rem;
+  flex-direction: column;
+}
+
+.card-body > p {
+  margin-bottom:0.4rem;
+}
+
+.card-body > a {
+  display:flex;
+  justify-content: flex-start;
+  margin-top:0.7rem;
+  max-width:45%;
+}
+
+.btn-slack > span
+{
+  
 }
 
 
