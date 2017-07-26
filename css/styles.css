@@ -1,7 +1,6 @@
 /* Stylesheet for Splash Page Clone
 created by Chingu Cohorts - Open-Team-3
 Contributors - @curiouscc - @shyakaster - @Umii - @wozzeck
-tak
 All Styles that apply to Mobile Devices go here
 All Styles that would be shared by Mobile and Other Devices go here
 
@@ -137,3 +136,55 @@ a {
   width:70%;
   font-weight:bold;
 }
+
+/*************************
+*****  Plans Section *****
+**************************/
+
+.plans {
+  background-color:#eeeeee;
+}
+
+.plans-box {
+  padding:4rem 1rem;
+}
+
+.plans-box > h1 {
+  margin-bottom: 2.5rem;
+}
+
+.card-heading
+{
+  display:flex;
+  justify-content: space-between;
+  font-size:1.3rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid #eee;
+}
+
+.card-heading p {
+  margin-bottom:0;
+}
+
+.card-body {
+  display:flex;
+  margin-top:0.6rem;
+  flex-direction: column;
+}
+
+.card-body > p {
+  margin-bottom:0.4rem;
+}
+
+.card-body > a {
+  display:flex;
+  justify-content: flex-start;
+  margin-top:0.7rem;
+  max-width:45%;
+}
+
+.btn-slack > span
+{
+  
+}
+
