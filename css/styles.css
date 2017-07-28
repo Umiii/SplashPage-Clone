@@ -42,6 +42,51 @@ a {
   transition: 300ms;
 }
 
+
+/************************************
+********CuriousCC Mess-about*********
+*************************************/
+
+/**{
+	box-sizing: border-box;
+	font-family: sans-serif, "HKGroteskRegular";
+}*/
+
+div{
+	display: block;
+}
+section.curious-cc{
+	padding-top: 120px;
+	padding-bottom: 120px;
+	background: linear-gradient(to bottom, #fff, #f4f6f8);
+}
+.container{
+	margin: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.row{
+	margin: 0px;
+	padding: 0px;
+}
+
+a.title-link{
+	font-weight: bold;
+	font-size: 24px;
+	color: black;
+	border-bottom: 1px solid #e5e5e5;
+}
+blockquote{
+	padding-top: 10px;
+	font-size: 18px;
+	color: #666666;
+}
+.source{
+	font-size: 14px;
+	color: #999999;
+	padding-top: 10px;
+	line-height: 1.2;
+
 /*************************
 ***** Invision Section ***
 **************************/
@@ -203,9 +248,9 @@ a {
   font-size: 4rem;
 }
 
-
 blockquote > span{
   display: block;
   margin-top:0.5rem;
 }
+
 
