@@ -1,7 +1,7 @@
 /* Stylesheet for Splash Page Clone
 created by Chingu Cohorts - Open-Team-3
 Contributors - @curiouscc - @shyakaster - @Umii - @wozzeck
-
+tak
 All Styles that apply to Mobile Devices go here
 All Styles that would be shared by Mobile and Other Devices go here
 
@@ -13,11 +13,18 @@ All Styles that would be shared by Mobile and Other Devices go here
 **************************/
 
 body {
-	font-family:'Medula One', cursive;
+    font-family: 'Abel', sans-serif;
+    font-size:18px;
+
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Abel', sans-serif;
+  font-family:'Medula One', cursive;
+  text-transform: uppercase;
+}
+
+blockquote {
+  quotes: "\201C""\201D""\2018""\2019";
 }
 
 /*************************
@@ -35,14 +42,16 @@ a {
   transition: 300ms;
 }
 
+
 /************************************
 ********CuriousCC Mess-about*********
 *************************************/
 
-*{
+/**{
 	box-sizing: border-box;
 	font-family: sans-serif, "HKGroteskRegular";
-}
+}*/
+
 div{
 	display: block;
 }
@@ -77,11 +86,171 @@ blockquote{
 	color: #999999;
 	padding-top: 10px;
 	line-height: 1.2;
+
+/*************************
+***** Invision Section ***
+**************************/
+
+.invision {
+  margin-top:2rem;
+  background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,
+  rgba(248,249,250,1) 55%, rgba(247,249,250,1) 71%,
+  rgba(247,249,250,1) 78%, rgba(245,247,249,1) 81%,
+  rgba(244,246,248,1) 100%);
+}
+
+.invision-box h3 {
+  line-height:2.2rem;
+}
+
+.invision-box h3 > a {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 0.1rem;
+  color:#000;
+
+}
+
+.invision-box h3 > a:hover {
+  text-decoration: none;
+  color:#000;
+  border-bottom-color:#b8b8b8;
+}
+
+.source-link {
+  color: #cdcdcd;
+}
+
+.screenshot-twitter {
+  border-radius: 10px;
+  border:1px solid rgba(4,153,245,0.6);
+}
+
+.screenshot-box {
+  padding-top:3.2rem;
+}
+
+/*************************
+** Testimonials Section ***
+**************************/
+
+
+.quote-box, .testimonial-box {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top:2rem;
+}
+
+.testimonial-box blockquote {
+  width:70%;
+  font-weight:bold;
+}
+
+.testimonial-box blockquote:before {
+  content:open-quote;
+  position:absolute;
+  top:35%;
+  left:8%;
+  color:#4cacb5;
+  font-size:4rem;
+}
+
+.quote-box {
+  background:-webkit-linear-gradient(-45deg, rgba(86,184,181,1) 0%,
+  rgba(84,181,179,1) 27%, rgba(81,178,181,1) 40%, rgba(76,171,182,1) 51%,
+  rgba(69,163,182,1) 74%, rgba(66,160,183,1) 100%);
+  color:white;
+}
+
+.quote-box blockquote > span, .testimonial-box blockquote > span {
+  display: block;
+  margin-top:0.5rem;
 }
 
 
 
+.testimonial-box blockquote:after {
+  content: close-quote;
+  position:absolute;
+  top:35%;
+  right:10%;
+  color:#4cacb5;
+  font-size: 4rem;
+}
+
+.quote-box blockquote {
+  width:70%;
+  font-weight:bold;
+}
+/*-----------------------------------------  */
+/*People first section  */
+/*------------------------------------------  */
+/* #people-first h1 h2  p{
+  color: white;
+} */
+#people-first{
+  background-color: #855BDA;
+}
+#people-first .section-header{
+  padding-top: 20px;
+  font-size: 36px;
+  letter-spacing: 2;
+  line-height: 1.4;
+  color: white; 
+}
+#people-first .section-subheader{
+  font-size: 24px;
+  text-align: center;
+  font-size: 24px;
+  line-height: 1.4;
+  /* letter-spacing: 1.4; */
+  color: white; 
+}
+.spacex5{
+  height: 10px;
+  width: 100%;
+}
+.explanation{
+  text-align: center;
+  font-size: 24px;
+  color: white; 
+}
+ .people-first-main-text, .join-text {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  /* padding-top:2rem; */
+} 
 
 
+.people-first-main-text blockquote{
+  line-height: 1.2;
+  text-align: justify;
+  color: white;
+  font-size: 20px; 
+  font-weight: bolder;
+}
+.people-first-main-text blockquote:before {
+  content:open-quote;
+  position:absolute;
+  top:8%;
+  left:-4%;
+  color:white;
+  font-size:4rem;
+}
+
+.people-first-main-text blockquote:after {
+  content: close-quote;
+  position:absolute;
+  top:8%;
+  right:-4%;
+  color:white;
+  font-size: 4rem;
+}
+
+blockquote > span{
+  display: block;
+  margin-top:0.5rem;
+}
 
 
