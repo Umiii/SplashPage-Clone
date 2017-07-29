@@ -41,52 +41,6 @@ a {
   transition: 300ms;
 }
 
-
-/************************************
-********CuriousCC Mess-about*********
-*************************************/
-
-/**{
-	box-sizing: border-box;
-	font-family: sans-serif, "HKGroteskRegular";
-}*/
-
-div{
-	display: block;
-}
-section.curious-cc{
-	padding-top: 120px;
-	padding-bottom: 120px;
-	background: linear-gradient(to bottom, #fff, #f4f6f8);
-}
-.container{
-	margin: auto;
-	padding-left: 15px;
-	padding-right: 15px;
-}
-.row{
-	margin: 0px;
-	padding: 0px;
-}
-
-a.title-link{
-	font-weight: bold;
-	font-size: 24px;
-	color: black;
-	border-bottom: 1px solid #e5e5e5;
-}
-blockquote{
-	padding-top: 10px;
-	font-size: 18px;
-	color: #666666;
-}
-.source {
-  font-size: 14px;
-  color: #999999;
-  padding-top: 10px;
-  line-height: 1.2;
-}
-
 /*************************
 ***** Invision Section ***
 **************************/
@@ -183,6 +137,7 @@ blockquote{
   font-weight:bold;
 }
 
+
 /*-----------------------------------------  */
 /*People first section  */
 /*------------------------------------------  */
@@ -254,6 +209,7 @@ blockquote > span{
 }
 
 
+
 /*************************
 *****  Plans Section *****
 **************************/
@@ -268,6 +224,11 @@ blockquote > span{
 
 .plans-box > h1 {
   margin-bottom: 2.5rem;
+}
+
+.plans-box .col-sm-4
+{
+  margin-bottom:2rem;
 }
 
 .card-heading
@@ -293,16 +254,79 @@ blockquote > span{
   margin-bottom:0.4rem;
 }
 
-.card-body > a {
+.card-body > a
+{
+
+  margin-top:0.7rem;
   display:flex;
   justify-content: flex-start;
-  margin-top:0.7rem;
-  max-width:45%;
 }
 
-.btn-slack > span
+.btn-slack {
+  max-width:46%;
+  color:black;
+  font-weight: bold;
+  -webkit-box-shadow: 2px 2px 5px 0 rgba(202,202,202,1);
+  -moz-box-shadow: 2px 2px 5px 0 rgba(202,202,202,1);
+  box-shadow: 1px 1px 5px 0 rgba(202,202,202,1);
+}
+
+.btn-slack:hover
 {
-  
+
+  background: none;
+  color:black;
+  -webkit-box-shadow: 2px 2px 5px 0 rgba(179,179,179,1);
+  -moz-box-shadow: 2px 2px 5px 0 rgba(179,179,179,1);
+  box-shadow: 1px 1px 5px 0 rgba(179,179,179,1);
 }
 
+.card-body > a > span {
+  background: url("../images/slack-1.svg") no-repeat;
+  background-size: contain;
+  width: 30px;
+  height: 20px;
+  display: inline-block;
+
+}
+
+.plans-middle-box > .card
+{
+  background: linear-gradient(135deg, rgba(87,185,180,1) 0%,
+  rgba(79,175,182,1) 46%, rgba(78,172,181,1) 55%,
+  rgba(73,167,182,1) 78%, rgba(69,162,183,1) 81%,
+  rgba(66,160,183,1) 100%);
+  color:white;
+}
+
+
+
+
+.btn-plans
+{
+  max-width: 41%;
+  text-transform: uppercase;
+}
+
+.btn-plans:hover
+{
+  background: none;
+}
+
+.connect-list > p:last-of-type
+{
+  margin-bottom:2rem;
+}
+
+.onboard-box > .card
+{
+  background: -webkit-linear-gradient(-45deg, rgba(135,91,217,1) 0%, rgba(151,88,210,1) 46%, rgba(162,87,205,1) 55%, rgba(171,85,200,1) 78%, rgba(175,84,198,1) 81%, rgba(181,84,196,1) 100%);
+  color:white;
+}
+
+.btn-onboard
+{
+  max-width:53%;
+  text-transform: uppercase;
+}
 
