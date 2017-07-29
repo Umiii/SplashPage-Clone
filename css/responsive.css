@@ -9,7 +9,14 @@
 
 @media only screen and  (min-width: 768px) {
 
+   .btn-plans {
+      max-width: 36%;
+   }
 
+   .btn-onboard
+   {
+      max-width:48%;
+   }
 
 }
 
