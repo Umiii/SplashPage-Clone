@@ -41,6 +41,110 @@ a {
   transition: 300ms;
 }
 
+
+/*************************
+***** Top Section    *****
+**************************/
+
+.top
+{
+  background: -webkit-linear-gradient(-45deg, rgba(88,184,181,1) 0%,
+  rgba(99,164,189,1) 37%, rgba(105,149,194,1) 48%, rgba(112,136,200,1) 62%,
+  rgba(115,129,203,1) 68%, rgba(125,106,212,1) 100%);
+  color:white;
+  padding-top:1.3rem;
+}
+
+.logo
+{
+  letter-spacing: 1px;
+    margin-top:0.2rem;
+    text-transform: lowercase;
+}
+
+.header
+{
+  display:flex;
+}
+
+.main-nav
+{
+  display:flex;
+  margin-left:auto;
+
+}
+
+.main-nav li
+{
+  font-size:1rem;
+  margin-right:0.8rem;
+  align-self: center;
+  text-align: center;
+}
+
+.main-nav li:last-of-type
+{
+    margin-left:1rem;
+}
+
+.header-content
+{
+    margin-top:3.5rem;
+}
+
+.header-content > p
+{
+    font-size:1.6rem;
+    max-width:55%;
+}
+
+.header-content > p:first-of-type
+{
+    font-size:2.5rem;
+}
+
+.header-content .btn-lg
+{
+    padding:0.8rem 0 0.5rem 0;
+    font-size:1.4rem;
+}
+
+.btn-nav
+{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    background-color: white;
+}
+
+.btn-content
+{
+    max-width:18%;
+    margin:2.5rem 0;
+    border-radius:12px;
+    font-weight: normal;
+}
+
+.btn-nav > span
+{
+    padding-top:0.3rem;
+}
+
+/*************************
+* Hanging Content Section *
+**************************/
+
+.hanging-content
+{
+    background-color:white;
+    width:75%;
+    height:200px;
+    border-radius:8px;
+
+}
+
+
+
 /*************************
 ***** Invision Section ***
 **************************/
@@ -196,7 +300,7 @@ a {
 
 .card-heading
 {
->>>>>>> origin/development
+
   display:flex;
   justify-content: space-between;
   font-size:1.3rem;
@@ -245,6 +349,8 @@ a {
   box-shadow: 1px 1px 5px 0 rgba(179,179,179,1);
 }
 
+
+
 .card-body > a > span {
   background: url("../images/slack-1.svg") no-repeat;
   background-size: contain;
@@ -252,6 +358,13 @@ a {
   height: 20px;
   display: inline-block;
 
+}
+
+.header-content .btn-content > span
+{
+    width: 32px;
+    height: 32px;
+    margin-right:0.6rem;
 }
 
 .plans-middle-box > .card
@@ -349,13 +462,12 @@ a {
   box-shadow: 1px 1px 5px 0 rgba(179,179,179,1);
 }
 
-.card-body > a > span {
+.btn-nav > span, .card-body > a > span {
   background: url("../images/slack-1.svg") no-repeat;
   background-size: contain;
   width: 30px;
   height: 20px;
   display: inline-block;
-
 }
 
 .plans-middle-box > .card
