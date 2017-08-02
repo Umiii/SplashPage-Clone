@@ -1,7 +1,6 @@
 /* Stylesheet for Splash Page Clone
 created by Chingu Cohorts - Open-Team-3
 Contributors - @curiouscc - @shyakaster - @Umii - @wozzeck
-tak
 All Styles that apply to Mobile Devices go here
 All Styles that would be shared by Mobile and Other Devices go here
 
@@ -13,13 +12,13 @@ All Styles that would be shared by Mobile and Other Devices go here
 **************************/
 
 body {
-    font-family: 'Abel', sans-serif;
+    font-family: 'Abel', serif;
     font-size:18px;
 
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family:'Medula One', cursive;
+  font-family:'Medula One', serif;
   text-transform: uppercase;
 }
 
@@ -41,6 +40,110 @@ a {
   -o-transition: 300ms;
   transition: 300ms;
 }
+
+
+/*************************
+***** Top Section    *****
+**************************/
+
+.top
+{
+  background: -webkit-linear-gradient(-45deg, rgba(88,184,181,1) 0%,
+  rgba(99,164,189,1) 37%, rgba(105,149,194,1) 48%, rgba(112,136,200,1) 62%,
+  rgba(115,129,203,1) 68%, rgba(125,106,212,1) 100%);
+  color:white;
+  padding-top:1.3rem;
+}
+
+.logo
+{
+  letter-spacing: 1px;
+    margin-top:0.2rem;
+    text-transform: lowercase;
+}
+
+.header
+{
+  display:flex;
+}
+
+.main-nav
+{
+  display:flex;
+  margin-left:auto;
+
+}
+
+.main-nav li
+{
+  font-size:1rem;
+  margin-right:0.8rem;
+  align-self: center;
+  text-align: center;
+}
+
+.main-nav li:last-of-type
+{
+    margin-left:1rem;
+}
+
+.header-content
+{
+    margin-top:3.5rem;
+}
+
+.header-content > p
+{
+    font-size:1.6rem;
+    max-width:55%;
+}
+
+.header-content > p:first-of-type
+{
+    font-size:2.5rem;
+}
+
+.header-content .btn-lg
+{
+    padding:0.8rem 0 0.5rem 0;
+    font-size:1.4rem;
+}
+
+.btn-nav
+{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    background-color: white;
+}
+
+.btn-content
+{
+    max-width:18%;
+    margin:2.5rem 0;
+    border-radius:12px;
+    font-weight: normal;
+}
+
+.btn-nav > span
+{
+    padding-top:0.3rem;
+}
+
+/*************************
+* Hanging Content Section *
+**************************/
+
+.hanging-content
+{
+    background-color:white;
+    width:75%;
+    height:200px;
+    border-radius:8px;
+
+}
+
+
 
 /*************************
 ***** Invision Section ***
@@ -137,6 +240,9 @@ a {
   width:70%;
   font-weight:bold;
 }
+
+
+
 /*-----------------------------------------  */
 /*People first section  */
 /*------------------------------------------  */
@@ -144,23 +250,27 @@ a {
   color: white;
 } */
 #people-first{
-  background-color: #855BDA;
+  background: linear-gradient(to bottom right, #855BDA, #B654C4);
+  background-color: rgba(0, 0, 0, 0);
+  background-image: linear-gradient(to right bottom, rgb(133, 91, 218), rgb(182, 84, 196));
+  background-repeat: repeat;
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-origin: padding-box;
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-size: auto auto;
 }
-#people-first .section-header{
-  padding-top: 20px;
-  font-size: 36px;
-  letter-spacing: 2;
-  line-height: 1.4;
-  color: white; 
-}
-#people-first .section-subheader{
-  font-size: 24px;
+#people-first .content{
+  color: white;
   text-align: center;
-  font-size: 24px;
-  line-height: 1.4;
-  /* letter-spacing: 1.4; */
-  color: white; 
+  padding: 4rem;
 }
+#people-first h1,h2{
+  text-transform: capitalize;
+}
+
+
 .spacex5{
   height: 10px;
   width: 100%;
@@ -171,41 +281,269 @@ a {
   color: white; 
 }
  .people-first-main-text, .join-text {
+ }
+/*************************
+*****  Plans Section *****
+**************************/
+
+.plans {
+  background-color:#eeeeee;
+}
+
+.plans-box {
+  padding:4rem 1rem;
+}
+
+.plans-box > h1 {
+  margin-bottom: 2.5rem;
+}
+
+.plans-box .col-sm-4
+{
+  margin-bottom:2rem;
+}
+
+.card-heading
+{
+
   display:flex;
+  justify-content: space-between;
+  font-size:1.3rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid #eee;
+}
+
+.card-heading p {
+  margin-bottom:0;
+}
+
+.card-body {
+  display:flex;
+  margin-top:0.6rem;
   flex-direction: column;
-  align-items: center;
-  /* padding-top:2rem; */
-} 
-
-
-.people-first-main-text blockquote{
-  line-height: 1.2;
-  text-align: justify;
-  color: white;
-  font-size: 20px; 
-  font-weight: bolder;
 }
-.people-first-main-text blockquote:before {
-  content:open-quote;
-  position:absolute;
-  top:8%;
-  left:-4%;
+
+.card-body > p {
+  margin-bottom:0.4rem;
+}
+
+.card-body > a
+{
+
+  margin-top:0.7rem;
+  display:flex;
+  justify-content: flex-start;
+}
+
+.btn-slack {
+  max-width:46%;
+  color:black;
+  font-weight: bold;
+  -webkit-box-shadow: 2px 2px 5px 0 rgba(202,202,202,1);
+  -moz-box-shadow: 2px 2px 5px 0 rgba(202,202,202,1);
+  box-shadow: 1px 1px 5px 0 rgba(202,202,202,1);
+}
+
+.btn-slack:hover
+{
+
+  background: none;
+  color:black;
+  -webkit-box-shadow: 2px 2px 5px 0 rgba(179,179,179,1);
+  -moz-box-shadow: 2px 2px 5px 0 rgba(179,179,179,1);
+  box-shadow: 1px 1px 5px 0 rgba(179,179,179,1);
+}
+
+
+
+.card-body > a > span {
+  background: url("../images/slack-1.svg") no-repeat;
+  background-size: contain;
+  width: 30px;
+  height: 20px;
+  display: inline-block;
+
+}
+
+.header-content .btn-content > span
+{
+    width: 32px;
+    height: 32px;
+    margin-right:0.6rem;
+}
+
+.plans-middle-box > .card
+{
+  background: linear-gradient(135deg, rgba(87,185,180,1) 0%,
+  rgba(79,175,182,1) 46%, rgba(78,172,181,1) 55%,
+  rgba(73,167,182,1) 78%, rgba(69,162,183,1) 81%,
+  rgba(66,160,183,1) 100%);
   color:white;
-  font-size:4rem;
 }
 
-.people-first-main-text blockquote:after {
-  content: close-quote;
-  position:absolute;
-  top:8%;
-  right:-4%;
+
+
+.btn-plans
+{
+  max-width: 41%;
+  text-transform: uppercase;
+}
+
+.btn-plans:hover
+{
+  background: none;
+}
+
+
+
+/*************************
+*****  Plans Section *****
+**************************/
+
+.plans {
+  background-color:#eeeeee;
+}
+
+.plans-box {
+  padding:4rem 1rem;
+}
+
+.plans-box > h1 {
+  margin-bottom: 2.5rem;
+}
+
+.plans-box .col-sm-4
+{
+  margin-bottom:2rem;
+}
+
+.card-heading
+{
+  display:flex;
+  justify-content: space-between;
+  font-size:1.3rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid #eee;
+}
+
+.card-heading p {
+  margin-bottom:0;
+}
+
+.card-body {
+  display:flex;
+  margin-top:0.6rem;
+  flex-direction: column;
+}
+
+.card-body > p {
+  margin-bottom:0.4rem;
+}
+
+.card-body > a
+{
+
+  margin-top:0.7rem;
+  display:flex;
+  justify-content: flex-start;
+}
+
+.btn-slack {
+  max-width:46%;
+  color:black;
+  font-weight: bold;
+  -webkit-box-shadow: 2px 2px 5px 0 rgba(202,202,202,1);
+  -moz-box-shadow: 2px 2px 5px 0 rgba(202,202,202,1);
+  box-shadow: 1px 1px 5px 0 rgba(202,202,202,1);
+}
+
+.btn-slack:hover
+{
+
+  background: none;
+  color:black;
+  -webkit-box-shadow: 2px 2px 5px 0 rgba(179,179,179,1);
+  -moz-box-shadow: 2px 2px 5px 0 rgba(179,179,179,1);
+  box-shadow: 1px 1px 5px 0 rgba(179,179,179,1);
+}
+
+.btn-nav > span, .card-body > a > span {
+  background: url("../images/slack-1.svg") no-repeat;
+  background-size: contain;
+  width: 30px;
+  height: 20px;
+  display: inline-block;
+}
+
+.plans-middle-box > .card
+{
+  background: linear-gradient(135deg, rgba(87,185,180,1) 0%,
+  rgba(79,175,182,1) 46%, rgba(78,172,181,1) 55%,
+  rgba(73,167,182,1) 78%, rgba(69,162,183,1) 81%,
+  rgba(66,160,183,1) 100%);
   color:white;
-  font-size: 4rem;
 }
 
 
-blockquote > span{
-  display: block;
-  margin-top:0.5rem;
+
+
+.btn-plans
+{
+  max-width: 41%;
+  text-transform: uppercase;
 }
 
+.btn-plans:hover
+{
+  background: none;
+}
+
+.connect-list > p:last-of-type
+{
+  margin-bottom:2rem;
+}
+
+.onboard-box > .card
+{
+  background: -webkit-linear-gradient(-45deg, rgba(135,91,217,1) 0%, rgba(151,88,210,1) 46%, rgba(162,87,205,1) 55%, rgba(171,85,200,1) 78%, rgba(175,84,198,1) 81%, rgba(181,84,196,1) 100%);
+  color:white;
+}
+
+.btn-onboard
+{
+  max-width:53%;
+  text-transform: uppercase;
+}
+#twitter-cards{
+  padding: 4rem;
+}
+#twitter-cards img{
+  max-width: 100%;
+}
+.card p {
+  font-size: .9rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.card-block > h4{
+  font-weight: bold;
+  font-size: 1rem;
+  text-transform: lowercase;
+}
+.card-block > p{
+  font-size: .7rem;
+
+}
+.card-block a{
+  padding-left: 2rem;
+}
+.avatar{
+  margin: .8rem;
+  width: 36px;
+  height: 36px;
+}
+.handle{
+  position: relative;
+  top: -24px;
+  left: 50px;
+}
