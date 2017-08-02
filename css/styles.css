@@ -411,6 +411,7 @@ p.sun > i:last-of-type
 #people-first{
   background-color: #855BDA;
 }
+
 #people-first .section-header{
   padding-top: 20px;
   font-size: 36px;
@@ -425,6 +426,19 @@ p.sun > i:last-of-type
   /* letter-spacing: 1.4; */
   color: white; 
 }
+
+/* form{
+  position: absolute;
+  top: 44px;
+  left: 380px;
+} */
+#people-first h1,h2{
+  text-transform: capitalize;
+}
+blockquote{
+  text-align: left;
+}
+
 .spacex5{
   height: 10px;
   width: 100%;
@@ -704,6 +718,5 @@ p.sun > i:last-of-type
 blockquote > span{
   display: block;
   margin-top:0.5rem;
->>>>>>> 1cbce87... Worked on people first section
 }
 
