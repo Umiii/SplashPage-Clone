@@ -266,10 +266,17 @@ a {
   text-align: center;
   padding: 4rem;
 }
+/* form{
+  position: absolute;
+  top: 44px;
+  left: 380px;
+} */
 #people-first h1,h2{
   text-transform: capitalize;
 }
-
+blockquote{
+  text-align: left;
+}
 
 .spacex5{
   height: 10px;
