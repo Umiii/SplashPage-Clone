@@ -12,13 +12,13 @@ All Styles that would be shared by Mobile and Other Devices go here
 **************************/
 
 body {
-    font-family: 'Abel', sans-serif;
+    font-family: 'Abel', serif;
     font-size:18px;
 
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family:'Medula One', cursive;
+  font-family:'Medula One', serif;
   text-transform: uppercase;
 }
 
@@ -409,7 +409,21 @@ p.sun > i:last-of-type
   color: white;
 } */
 #people-first{
-  background-color: #855BDA;
+  background: linear-gradient(to bottom right, #855BDA, #B654C4);
+  background-color: rgba(0, 0, 0, 0);
+  background-image: linear-gradient(to right bottom, rgb(133, 91, 218), rgb(182, 84, 196));
+  background-repeat: repeat;
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-origin: padding-box;
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-size: auto auto;
+}
+#people-first .content{
+  color: white;
+  text-align: center;
+  padding: 4rem;
 }
 
 #people-first .section-header{
@@ -417,15 +431,20 @@ p.sun > i:last-of-type
   font-size: 36px;
   letter-spacing: 2px;
   line-height: 1.4;
-  color: white; 
+  color: white;
+/* form{
+  position: absolute;
+  top: 44px;
+  left: 380px;
+ */
 }
-#people-first .section-subheader{
-  font-size: 24px;
-  text-align: center;
-  line-height: 1.4;
-  /* letter-spacing: 1.4; */
-  color: white; 
+#people-first h1,h2{
+  text-transform: capitalize;
 }
+blockquote{
+  text-align: left;
+}
+
 
 /* form{
   position: absolute;
@@ -719,4 +738,36 @@ blockquote > span{
   display: block;
   margin-top:0.5rem;
 }
+#twitter-cards{
+  padding: 4rem;
+}
+#twitter-cards img{
+  max-width: 100%;
+}
+.card p {
+  font-size: .9rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.card-block > h4{
+  font-weight: bold;
+  font-size: 1rem;
+  text-transform: lowercase;
+}
+.card-block > p{
+  font-size: .7rem;
 
+}
+.card-block a{
+  padding-left: 2rem;
+}
+.avatar{
+  margin: .8rem;
+  width: 36px;
+  height: 36px;
+}
+.handle{
+  position: relative;
+  top: -24px;
+  left: 50px;
+}
