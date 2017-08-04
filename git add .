@@ -1,0 +1,427 @@
+[1mdiff --cc css/styles.css[m
+[1mindex bd6d42a,5e81e4e..0000000[m
+[1m--- a/css/styles.css[m
+[1m+++ b/css/styles.css[m
+[36m@@@ -137,6 -240,9 +240,12 @@@[m [ma [m
+    width:70%;[m
+    font-weight:bold;[m
+  }[m
+[32m++<<<<<<< HEAD[m
+[32m++=======[m
+[32m+ [m
+[32m+ [m
+[32m+ [m
+[32m++>>>>>>> e202a9c2e546fb587ddfc16974075430713dd0c0[m
+  /*-----------------------------------------  */[m
+  /*People first section  */[m
+  /*------------------------------------------  */[m
+[36m@@@ -149,14 -255,13 +258,21 @@@[m
+  #people-first .section-header{[m
+    padding-top: 20px;[m
+    font-size: 36px;[m
+[32m++<<<<<<< HEAD[m
+[32m +  letter-spacing: 2;[m
+[32m++=======[m
+[32m+   letter-spacing: 2px;[m
+[32m++>>>>>>> e202a9c2e546fb587ddfc16974075430713dd0c0[m
+    line-height: 1.4;[m
+    color: white; [m
+  }[m
+  #people-first .section-subheader{[m
+    font-size: 24px;[m
+    text-align: center;[m
+[32m++<<<<<<< HEAD[m
+[32m +  font-size: 24px;[m
+[32m++=======[m
+[32m++>>>>>>> e202a9c2e546fb587ddfc16974075430713dd0c0[m
+    line-height: 1.4;[m
+    /* letter-spacing: 1.4; */[m
+    color: white; [m
+[36m@@@ -171,41 -276,237 +287,276 @@@[m
+    color: white; [m
+  }[m
+   .people-first-main-text, .join-text {[m
+[32m++<<<<<<< HEAD[m
+[32m +  display:flex;[m
+[32m +  flex-direction: column;[m
+[32m +  align-items: center;[m
+[32m +  /* padding-top:2rem; */[m
+[32m +} [m
+[32m +[m
+[32m +[m
+[32m +.people-first-main-text blockquote{[m
+[32m +  line-height: 1.2;[m
+[32m +  text-align: justify;[m
+[32m +  color: white;[m
+[32m +  font-size: 20px; [m
+[32m +  font-weight: bolder;[m
+[32m +}[m
+[32m +.people-first-main-text blockquote:before {[m
+[32m +  content:open-quote;[m
+[32m +  position:absolute;[m
+[32m +  top:8%;[m
+[32m +  left:-4%;[m
+[32m +  color:white;[m
+[32m +  font-size:4rem;[m
+[32m +}[m
+[32m +[m
+[32m +.people-first-main-text blockquote:after {[m
+[32m +  content: close-quote;[m
+[32m +  position:absolute;[m
+[32m +  top:8%;[m
+[32m +  right:-4%;[m
+[32m +  color:white;[m
+[32m +  font-size: 4rem;[m
+[32m +}[m
+[32m +[m
+[32m +[m
+[32m +blockquote > span{[m
+[32m +  display: block;[m
+[32m +  margin-top:0.5rem;[m
+[32m++=======[m
+[32m+  }[m
+[32m+ /*************************[m
+[32m+ *****  Plans Section *****[m
+[32m+ **************************/[m
+[32m+ [m
+[32m+ .plans {[m
+[32m+   background-color:#eeeeee;[m
+[32m+ }[m
+[32m+ [m
+[32m+ .plans-box {[m
+[32m+   padding:4rem 1rem;[m
+[32m+ }[m
+[32m+ [m
+[32m+ .plans-box > h1 {[m
+[32m+   margin-bottom: 2.5rem;[m
+[32m+ }[m
+[32m+ [m
+[32m+ .plans-box .col-sm-4[m
+[32m+ {[m
+[32m+   margin-bottom:2rem;[m
+[32m+ }[m
+[32m+ [m
+[32m+ .card-heading[m
+[32m+ {[m
+[32m+ [m
+[32m+   display:flex;[m
+[32m+   justify-content: space-between;[m
+[32m+   font-size:1.3rem;[m
+[32m+   padding-bottom: 0.6rem;[m
+[32m+   border-bottom: 1px solid #eee;[m
+[32m+ }[m
+[32m+ [m
+[32m+ .card-heading p {[m
+[32m+   margin-bottom:0;[m
+[32m+ }[m
+[32m+ [m
+[32m+ .card-body {[m
+[32m+   display:flex;[m
+[32m+   margin-top:0.6rem;[m
+[32m+   flex-direction: column;[m
+[32m+ }[m
+[32m+ [m
+[32m+ .card-body > p {[m
+[32m+   margin-bottom:0.4rem;[m
+[32m+ }[m
+[32m+ [m
+[32m+ .card-body > a[m
+[32m+ {[m
+[32m+ [m
+[32m+   margin-top:0.7rem;[m
+[32m+   display:flex;[m
+[32m+   justify-content: flex-start;[m
+[32m+ }[m
+[32m+ [m
+[32m+ .btn-slack {[m
+[32m+   max-width:46%;[m
+[32m+   color:black;[m
+[32m+   font-weight: bold;[m
+[32m+   -webkit-box-shadow: 2px 2px 5px 0 rgba(202,202,202,1);[m
+[32m+   -moz-box-shadow: 2px 2px 5px 0 rgba(202,202,202,1);[m
+[32m+   box-shadow: 1px 1px 5px 0 rgba(202,202,202,1);[m
+[32m+ }[m
+[32m+ [m
+[32m+ .btn-slack:hover[m
+[32m+ {[m
+[32m+ [m
+[32m+   background: none;[m
+[32m+   color:black;[m
+[32m+   -webkit-box-shadow: 2px 2px 5px 0 rgba(179,179,179,1);[m
+[32m+   -moz-box-shadow: 2px 2px 5px 0 rgba(179,179,179,1);[m
+[32m+   box-shadow: 1px 1px 5px 0 rgba(179,179,179,1);[m
+[32m+ }[m
+[32m+ [m
+[32m+ [m
+[32m+ [m
+[32m+ .card-body > a > span {[m
+[32m+   background: url("../images/slack-1.svg") no-repeat;[m
+[32m+   background-size: contain;[m
+[32m+   width: 30px;[m
+[32m+   height: 20px;[m
+[32m+   display: inline-block;[m
+[32m+ [m
+[32m+ }[m
+[32m+ [m
+[32m+ .header-content .btn-content > span[m
+[32m+ {[m
+[32m+     width: 32px;[m
+[32m+     height: 32px;[m
+[32m+     margin-right:0.6rem;[m
+[32m+ }[m
+[32m+ [m
+[32m+ .plans-middle-box > .card[m
+[32m+ {[m
+[32m+   background: linear-gradient(135deg, rgba(87,185,180,1) 0%,[m
+[32m+   rgba(79,175,182,1) 46%, rgba(78,172,181,1) 55%,[m
+[32m+   rgba(73,167,182,1) 78%, rgba(69,162,183,1) 81%,[m
+[32m+   rgba(66,160,183,1) 100%);[m
+[32m+   color:white;[m
+[32m+ }[m
+[32m+ [m
+[32m+ [m
+[32m+ [m
+[32m+ .btn-plans[m
+[32m+ {[m
+[32m+   max-width: 41%;[m
+[32m+   text-transform: uppercase;[m
+[32m+ }[m
+[32m+ [m
+[32m+ .btn-plans:hover[m
+[32m+ {[m
+[32m+   background: none;[m
+[32m+ }[m
+[32m+ [m
+[32m+ [m
+[32m+ [m
+[32m+ /*************************[m
+[32m+ *****  Plans Section *****[m
+[32m+ **************************/[m
+[32m+ [m
+[32m+ .plans {[m
+[32m+   background-color:#eeeeee;[m
+[32m+ }[m
+[32m+ [m
+[32m+ .plans-box {[m
+[32m+   padding:4rem 1rem;[m
+[32m+ }[m
+[32m+ [m
+[32m+ .plans-box > h1 {[m
+[32m+   margin-bottom: 2.5rem;[m
+[32m+ }[m
+[32m+ [m
+[32m+ .plans-box .col-sm-4[m
+[32m+ {[m
+[32m+   margin-bottom:2rem;[m
+[32m+ }[m
+[32m+ [m
+[32m+ .card-heading[m
+[32m+ {[m
+[32m+   display:flex;[m
+[32m+   justify-content: space-between;[m
+[32m+   font-size:1.3rem;[m
+[32m+   padding-bottom: 0.6rem;[m
+[32m+   border-bottom: 1px solid #eee;[m
+[32m+ }[m
+[32m+ [m
+[32m+ .card-heading p {[m
+[32m+   margin-bottom:0;[m
+[32m+ }[m
+[32m+ [m
+[32m+ .card-body {[m
+[32m+   display:flex;[m
+[32m+   margin-top:0.6rem;[m
+[32m+   flex-direction: column;[m
+[32m+ }[m
+[32m+ [m
+[32m+ .card-body > p {[m
+[32m+   margin-bottom:0.4rem;[m
+[32m+ }[m
+[32m+ [m
+[32m+ .card-body > a[m
+[32m+ {[m
+[32m+ [m
+[32m+   margin-top:0.7rem;[m
+[32m+   display:flex;[m
+[32m+   justify-content: flex-start;[m
+[32m+ }[m
+[32m+ [m
+[32m+ .btn-slack {[m
+[32m+   max-width:46%;[m
+[32m+   color:black;[m
+[32m+   font-weight: bold;[m
+[32m+   -webkit-box-shadow: 2px 2px 5px 0 rgba(202,202,202,1);[m
+[32m+   -moz-box-shadow: 2px 2px 5px 0 rgba(202,202,202,1);[m
+[32m+   box-shadow: 1px 1px 5px 0 rgba(202,202,202,1);[m
+[32m+ }[m
+[32m+ [m
+[32m+ .btn-slack:hover[m
+[32m+ {[m
+[32m+ [m
+[32m+   background: none;[m
+[32m+   color:black;[m
+[32m+   -webkit-box-shadow: 2px 2px 5px 0 rgba(179,179,179,1);[m
+[32m+   -moz-box-shadow: 2px 2px 5px 0 rgba(179,179,179,1);[m
+[32m+   box-shadow: 1px 1px 5px 0 rgba(179,179,179,1);[m
+[32m+ }[m
+[32m+ [m
+[32m+ .btn-nav > span, .card-body > a > span {[m
+[32m+   background: url("../images/slack-1.svg") no-repeat;[m
+[32m+   background-size: contain;[m
+[32m+   width: 30px;[m
+[32m+   height: 20px;[m
+[32m+   display: inline-block;[m
+[32m+ }[m
+[32m+ [m
+[32m+ .plans-middle-box > .card[m
+[32m+ {[m
+[32m+   background: linear-gradient(135deg, rgba(87,185,180,1) 0%,[m
+[32m+   rgba(79,175,182,1) 46%, rgba(78,172,181,1) 55%,[m
+[32m+   rgba(73,167,182,1) 78%, rgba(69,162,183,1) 81%,[m
+[32m+   rgba(66,160,183,1) 100%);[m
+[32m+   color:white;[m
+[32m+ }[m
+[32m+ [m
+[32m+ [m
+[32m+ [m
+[32m+ [m
+[32m+ .btn-plans[m
+[32m+ {[m
+[32m+   max-width: 41%;[m
+[32m+   text-transform: uppercase;[m
+[32m+ }[m
+[32m+ [m
+[32m+ .btn-plans:hover[m
+[32m+ {[m
+[32m+   background: none;[m
+[32m+ }[m
+[32m+ [m
+[32m+ .connect-list > p:last-of-type[m
+[32m+ {[m
+[32m+   margin-bottom:2rem;[m
+[32m+ }[m
+[32m+ [m
+[32m+ .onboard-box > .card[m
+[32m+ {[m
+[32m+   background: -webkit-linear-gradient(-45deg, rgba(135,91,217,1) 0%, rgba(151,88,210,1) 46%, rgba(162,87,205,1) 55%, rgba(171,85,200,1) 78%, rgba(175,84,198,1) 81%, rgba(181,84,196,1) 100%);[m
+[32m+   color:white;[m
+[32m+ }[m
+[32m+ [m
+[32m+ .btn-onboard[m
+[32m+ {[m
+[32m+   max-width:53%;[m
+[32m+   text-transform: uppercase;[m
+[32m++>>>>>>> e202a9c2e546fb587ddfc16974075430713dd0c0[m
+  }[m
+  [m
+[1mdiff --cc index.html[m
+[1mindex 82e9b53,09f0a16..0000000[m
+[1m--- a/index.html[m
+[1m+++ b/index.html[m
+[36m@@@ -88,37 -115,72 +115,106 @@@[m
+      </section>[m
+  [m
+      <section id="people-first">[m
+[32m++<<<<<<< HEAD[m
+[32m +        <div class="container-fluid">[m
+[32m +            <div class="row">[m
+[32m +                <div class="col-sm-12">[m
+[32m +                    <h1 class=" section-header text-center">People-first new-hire [m
+[32m +                        onboardng.</h1>[m
+[32m +                    <h2 class="section-subheader">(Coming soon.)</h2>[m
+[32m +                    <div class="spacex5"></div>[m
+[32m +                    <p class="explanation left">Create a culture of connection from [m
+[32m +                            day one with Donut.</p>  [m
+[32m +                </div>[m
+[32m +            </div>[m
+[32m +            <div class="row people-first-main-text">[m
+[32m +                [m
+[32m +                <div class="col-sm-6">[m
+[32m +                    <blockquote>[m
+[32m +                        The latest research suggests that onboarding may be the most [m
+[32m +                        critical time in an employee’s experience at a company — [m
+[32m +                        one that has a long-lasting impact on engagement, [m
+[32m +                        performance, and retention.[m
+[32m +                        <span> -Harvard Business review.</span>[m
+[32m +                    </blockquote>[m
+[32m +                </div>[m
+[32m +            </div>[m
+[32m +            <div class="row">[m
+[32m +                <div class="col-sm-1"></div>[m
+[32m +                <div class="col-xs-10 col-sm-6 col-centered">[m
+[32m +                    <h2 class="join-text">Join our mailing list.</h2>[m
+[32m +                </div>[m
+[32m +            </div>       [m
+[32m +        </div>  [m
+[32m +    </section>[m
+[32m++=======[m
+[32m+ [m
+[32m+     </section>[m
+[32m+ [m
+[32m+     <section class="plans">[m
+[32m+         <div class="container">[m
+[32m+             <div class="row">[m
+[32m+                 <div class="col-sm-12 plans-box">[m
+[32m+                     <h1 class="text-center">Plans</h1>[m
+[32m+                     <div class="row">[m
+[32m+ [m
+[32m+                         <div class="col-sm-4">[m
+[32m+                             <div class="card">[m
+[32m+                                 <div class="card-block">[m
+[32m+                                     <div class="card-heading">[m
+[32m+                                         <p><strong>Pair</strong></p>[m
+[32m+                                         <p>Free</p>[m
+[32m+                                     </div>[m
+[32m+                                     <div class="card-body">[m
+[32m+                                         <p>Pair employees to meet</p>[m
+[32m+                                         <p>Pair every 1-4 weeks</p>[m
+[32m+                                         <a href="" class="btn btn-outline-secondary btn-slack"><span></span>Add to Slack</a>[m
+[32m+                                     </div>[m
+[32m+                                 </div>[m
+[32m+                             </div>[m
+[32m+                         </div>[m
+[32m+ [m
+[32m+                         <div class="col-sm-4 plans-middle-box">[m
+[32m+                             <div class="card">[m
+[32m+                                 <div class="card-block">[m
+[32m+                                     <div class="card-heading">[m
+[32m+                                         <p><strong>Connect</strong></p>[m
+[32m+                                         <p>Let's Chat</p>[m
+[32m+                                     </div>[m
+[32m+                                     <div class="card-body connect-list">[m
+[32m+                                         <p>Connect groups of 2-6</p>[m
+[32m+                                         <p>Connect at any frequency</p>[m
+[32m+                                         <p>Customize intro message</p>[m
+[32m+                                         <a href="" class="btn btn-secondary btn-plans">Learn More</a>[m
+[32m+                                     </div>[m
+[32m+                                 </div>[m
+[32m+                             </div>[m
+[32m+                         </div>[m
+[32m+ [m
+[32m+                         <div class="col-sm-4 onboard-box">[m
+[32m+                             <div class="card">[m
+[32m+                                 <div class="card-block">[m
+[32m+                                     <div class="card-heading">[m
+[32m+                                         <p><strong>Onboard</strong></p>[m
+[32m+                                         <p>Waitlist</p>[m
+[32m+                                     </div>[m
+[32m+                                     <div class="card-body onboard-content">[m
+[32m+                                         <p>Stay up to date with Chingu Platypus Open Team 3 as[m
+[32m+                                             they go around conquering the programming world.[m
+[32m+                                         </p>[m
+[32m+                                         <a href="" class="btn btn-secondary btn-onboard">Join our waitlist</a>[m
+[32m+                                     </div>[m
+[32m+                                 </div>[m
+[32m+                             </div>[m
+[32m+                         </div>[m
+[32m+ [m
+[32m+                     </div>  <!-- end of row-->[m
+[32m+                 </div>  <!-- end of col-sm-12 -->[m
+[32m+             </div>[m
+[32m+         </div>  <!-- end of container section -->[m
+[32m+     </section>  <!-- end of plans section -->[m
+[32m+ [m
+[32m++>>>>>>> e202a9c2e546fb587ddfc16974075430713dd0c0[m
+      <!-- add jquery and bootstrap.js to project-->[m
+      <script[m
+      src="https://code.jquery.com/jquery-2.2.4.min.js"[m
