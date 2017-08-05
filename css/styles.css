@@ -444,7 +444,7 @@ p.sun > i:last-of-type
     align-items: center;
 }
 
-.content-section > div > blockquote, .culture
+.culture
 {
     margin-bottom:2rem;
 }
@@ -454,7 +454,7 @@ p.sun > i:last-of-type
 {
     line-height: 1.2;
     font-size: 20px;
-
+    margin-bottom:0.4rem;
 }
 
 
@@ -476,7 +476,16 @@ p.sun > i:last-of-type
     font-size: 4rem;
 }
 
+.content-section > div cite
+{
+    font-size:0.9rem;
+    padding-left:1.2rem;
+}
 
+.waitlist
+{
+    margin-top:2rem;
+}
 
 /*************************
 *****  Plans Section *****
