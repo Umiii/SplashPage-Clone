@@ -18,6 +18,11 @@
       max-width:48%;
    }
 
+   .content-section > div
+   {
+      align-self:center;
+      width:43%;
+   }
 }
 
 @media only screen and  (min-width: 1024px) {

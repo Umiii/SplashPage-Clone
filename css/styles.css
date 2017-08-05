@@ -402,29 +402,16 @@ p.sun > i:last-of-type
   width:70%;
   font-weight:bold;
 }
-/*-----------------------------------------  */
-/*People first section  */
-/*------------------------------------------  */
-/* #people-first h1 h2  p{
-  color: white;
-} */
+
+/*************************
+** People First Section **
+**************************/
+
 #people-first{
   background-color: #855BDA;
-}
+  padding:6.5rem 1rem 3rem;
+  color:white;
 
-#people-first .section-header{
-  padding-top: 20px;
-  font-size: 36px;
-  letter-spacing: 2px;
-  line-height: 1.4;
-  color: white; 
-}
-#people-first .section-subheader{
-  font-size: 24px;
-  text-align: center;
-  line-height: 1.4;
-  /* letter-spacing: 1.4; */
-  color: white; 
 }
 
 /* form{
@@ -432,24 +419,65 @@ p.sun > i:last-of-type
   top: 44px;
   left: 380px;
 } */
-#people-first h1,h2{
-  text-transform: capitalize;
-}
-blockquote{
-  text-align: left;
+
+#people-first h1
+{
+    font-size:3rem;
+    letter-spacing:0.2rem;
+    margin-bottom:0;
 }
 
-.spacex5{
-  height: 10px;
-  width: 100%;
+#people-first h2
+{
+    text-align: center;
+    margin-bottom:2rem;
 }
-.explanation{
-  text-align: center;
-  font-size: 24px;
-  color: white; 
+
+#people-first h1,h2{
+  text-transform:none;
 }
- .people-first-main-text, .join-text {
- }
+
+.content-section
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-section > div > blockquote, .culture
+{
+    margin-bottom:2rem;
+}
+
+
+.content-section > div > blockquote
+{
+    line-height: 1.2;
+    font-size: 20px;
+
+}
+
+
+.content-section > div > blockquote:before {
+    content:open-quote;
+    position:absolute;
+    top:53%;
+    left:24%;
+    color:white;
+    font-size:4rem;
+}
+
+.content-section > div > blockquote:after {
+    content: close-quote;
+    position:absolute;
+    top:53%;
+    right:25.5%;
+    color:white;
+    font-size: 4rem;
+}
+
+
+
 /*************************
 *****  Plans Section *****
 **************************/
@@ -681,7 +709,6 @@ blockquote{
 {
   max-width:53%;
   text-transform: uppercase;
-=======
   display:flex;
   flex-direction: column;
   align-items: center;
@@ -689,34 +716,5 @@ blockquote{
 } 
 
 
-.people-first-main-text blockquote{
-  line-height: 1.2;
-  text-align: justify;
-  color: white;
-  font-size: 20px; 
-  font-weight: bolder;
-}
-.people-first-main-text blockquote:before {
-  content:open-quote;
-  position:absolute;
-  top:8%;
-  left:-4%;
-  color:white;
-  font-size:4rem;
-}
 
-.people-first-main-text blockquote:after {
-  content: close-quote;
-  position:absolute;
-  top:8%;
-  right:-4%;
-  color:white;
-  font-size: 4rem;
-}
-
-
-blockquote > span{
-  display: block;
-  margin-top:0.5rem;
-}
 
