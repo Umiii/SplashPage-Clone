@@ -408,7 +408,11 @@ p.sun > i:last-of-type
 **************************/
 
 #people-first{
-  background-color: #855BDA;
+    background: linear-gradient(to bottom, rgba(135,90,217,1) 0%,
+                rgba(145,89,213,1) 37%,
+                rgba(149,89,210,1) 55%,
+                rgba(152,88,209,1) 75%,
+                rgba(165,86,204,1) 100%);
   padding:6.5rem 1rem 3rem;
   color:white;
 
@@ -599,12 +603,6 @@ p.sun > i:last-of-type
   background: none;
 }
 
-
-
-/*************************
-*****  Plans Section *****
-**************************/
-
 .plans {
   background-color:#eeeeee;
 }
@@ -690,8 +688,6 @@ p.sun > i:last-of-type
 }
 
 
-
-
 .btn-plans
 {
   max-width: 41%;
@@ -724,27 +720,31 @@ p.sun > i:last-of-type
   /* padding-top:2rem; */
 }
 
+/*************************
+** Twitter Cards Section **
+**************************/
+
 #twitter-cards{
     padding: 4rem;
 }
 #twitter-cards img{
     max-width: 100%;
 }
-.card p {
+#twitter-cards .card p {
     font-size: .9rem;
     padding-left: 1rem;
     padding-right: 1rem;
 }
-.card-block > h4{
+#twitter-cards .card-block > h4{
     font-weight: bold;
     font-size: 1rem;
     text-transform: lowercase;
 }
-.card-block > p{
+#twitter-cards .card-block > p{
     font-size: .7rem;
 
 }
-.card-block a{
+#twitter-cards .card-block a{
     padding-left: 2rem;
 }
 .avatar{
