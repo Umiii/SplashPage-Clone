@@ -92,6 +92,9 @@ a {
 {
     margin-top:4rem;
     position:relative;
+    width:80%;
+    left:50%;
+    transform: translate(-50%, 0);
 
 }
 
@@ -122,7 +125,7 @@ a {
 
 .btn-content
 {
-    max-width:18%;
+    max-width:21%;
     margin:2.5rem 0 4rem 0;
     border-radius:12px;
     font-weight: normal;
@@ -141,12 +144,11 @@ a {
 {
     background-color:white;
     width:80%;
-    height:400px;
     border-radius:8px;
     position:absolute;
     left: 50%;                       /* centers hanging content */
     transform: translate(-50%, 0);  /* centers hanging content */
-    top:120%;
+    top:97%;
     z-index:999;
 
 
@@ -165,7 +167,6 @@ a {
 .hanging-sidebar
 {
     width:28%;
-    height:100%;
     background-color:#f4f6f8;
     color:#1d1e1f;
     border-radius: 8px 0 0 8px;
@@ -242,6 +243,12 @@ a {
 {
     color:black;
     width:72%;
+    padding:1.4rem 1.4rem 0;
+}
+
+.hanging-main h3:first-of-type
+{
+    margin:0;
 }
 
 .hanging-main h3
@@ -257,9 +264,62 @@ a {
     padding-left:1rem;
 }
 
+.hanging-main ul li:first-of-type
+{
+    margin-top:1.2rem;
+}
+
 .hanging-main ul li
 {
-    margin-bottom:0.6rem;
+    margin-bottom:1.3rem;
+}
+
+
+li.donut:before,.purple-bg:before, li.teal-bg:before
+{
+    content:"";
+    display:inline-block;
+    width:64px;
+    height:64px;
+    position: absolute;
+}
+
+
+li.donut:before
+{
+    background: url("../images/donut_face_64.v0.png") center center no-repeat;
+}
+
+.purple-bg:before
+{
+    background: linear-gradient(135deg,
+                rgba(138,90,215,1) 0%,
+                rgba(151,89,210,1) 37%,
+                rgba(162,87,205,1) 55%,
+                rgba(169,86,202,1) 66%,
+                rgba(177,84,198,1) 100%);
+    border-radius:7px;
+}
+
+li.teal-bg:before
+{
+    background: linear-gradient(135deg,
+                rgba(86,184,181,1) 0%,
+                rgba(82,179,181,1) 37%,
+                rgba(76,170,181,1) 55%,
+                rgba(73,167,182,1) 66%,
+                rgba(68,161,182,1) 100%);
+    border-radius:7px;
+}
+
+.hanging-main ul li > h4, .hanging-main ul li > p
+{
+    padding-left:5.5rem;
+}
+
+li.donut > p > i
+{
+    font-size:0.8rem;
 }
 
 .hanging-main ul li p
@@ -267,10 +327,11 @@ a {
     margin-bottom:0;
 }
 
-.hanging-main ul li h5
+.hanging-main ul li h4
 {
     text-transform: lowercase;
 }
+
 
 p.sun > i:first-of-type
 {
@@ -290,6 +351,27 @@ p.sun > i:last-of-type
 {
     color:#4aa9b6;
 }
+
+.chat-box
+{
+    height:45px;
+    border-radius: 6px;
+    border:1px solid #dddddd;
+    padding-left:1rem;
+    position:relative;
+}
+
+.chat-box > i
+{
+    height:100%;
+    border-right:1px solid #dddddd;
+    padding-top:15px;
+    padding-right:1rem;
+    color:#a9a9a9;
+    position:absolute;
+}
+
+
 
 /*************************
 ***** Teams Section ******
