@@ -68,13 +68,6 @@ a {
   display:flex;
 }
 
-.main-nav
-{
-  display:flex;
-  margin-left:auto;
-
-}
-
 .main-nav li
 {
   font-size:1rem;
@@ -92,16 +85,11 @@ a {
 {
     margin-top:4rem;
     position:relative;
-    width:80%;
-    left:50%;
-    transform: translate(-50%, 0);
-
 }
 
 .header-content > p
 {
     font-size:1.6rem;
-    max-width:55%;
 }
 
 .header-content > p:first-of-type
@@ -123,9 +111,14 @@ a {
     background-color: white;
 }
 
+.btn-nav:hover
+{
+    background-color: white;
+}
+
 .btn-content
 {
-    max-width:21%;
+    max-width:70%;
     margin:2.5rem 0 4rem 0;
     border-radius:12px;
     font-weight: normal;
@@ -136,6 +129,7 @@ a {
     padding-top:0.3rem;
 }
 
+
 /*************************
 * Hanging Content Section *
 **************************/
@@ -143,12 +137,12 @@ a {
 .hanging-box
 {
     background-color:white;
-    width:80%;
+    width:93%;
     border-radius:8px;
     position:absolute;
     left: 50%;                       /* centers hanging content */
     transform: translate(-50%, 0);  /* centers hanging content */
-    top:97%;
+    top:98%;
     z-index:999;
 
 
@@ -166,34 +160,9 @@ a {
 
 .hanging-sidebar
 {
-    width:28%;
-    background-color:#f4f6f8;
-    color:#1d1e1f;
-    border-radius: 8px 0 0 8px;
+    display:none;
 }
 
-.hanging-sidebar h4
-{
-    margin:1.5rem 0 0 1.5rem;
-}
-
-.hanging-sidebar ul
-{
-    padding:0.8rem 0 0 1.5rem;
-    margin:0;
-
-}
-
-.hanging-sidebar ul li
-{
-    margin-bottom:0.4rem;
-}
-
-
-.hanging-sidebar ul li.coffee
-{
-    margin-bottom: 1.2rem;
-}
 
 .list-circle:before
 {
@@ -242,8 +211,7 @@ a {
 .hanging-main
 {
     color:black;
-    width:72%;
-    padding:1.4rem 1.4rem 0;
+    padding:0.5rem 0;
 }
 
 .hanging-main h3:first-of-type
@@ -380,21 +348,56 @@ p.sun > i:last-of-type
 .teams
 {
     background-color:#f4f6f8;
-    height: 500px;
     padding-top:12rem;
-
 }
 
 
+.teams-content > h1
+{
+    text-transform:none;
+    padding-top:5rem;
+    text-align:center;
+    font-size:3.2rem;
+}
+
+.teams-content ul:first-of-type
+{
+    margin-top:5rem;
+    margin-bottom:4.5rem;
+}
+
+.teams-content ul:first-of-type li
+{
+    margin-right:0.5rem;
+}
+
+.teams-content ul li
+{
+    display:inline-block;
+}
+
+.teams-list
+{
+    margin-bottom:4rem;
+}
 
 
+.teams-list li > img
+{
+    max-width:75%;
+}
+
+.teams-list .invision-logo
+{
+    max-width:100%;
+}
 
 /*************************
 ***** Invision Section ***
 **************************/
 
 .invision {
-  margin-top:2rem;
+  padding:2rem 0 3rem;
   background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,
   rgba(248,249,250,1) 55%, rgba(247,249,250,1) 71%,
   rgba(247,249,250,1) 78%, rgba(245,247,249,1) 81%,
@@ -428,7 +431,7 @@ p.sun > i:last-of-type
 }
 
 .screenshot-box {
-  padding-top:3.2rem;
+  padding-top:4.5rem;
 }
 
 /*************************
@@ -440,7 +443,7 @@ p.sun > i:last-of-type
   display:flex;
   flex-direction: column;
   align-items: center;
-  padding-top:2rem;
+  padding:2rem 0 1rem;
 }
 
 .testimonial-box blockquote {
