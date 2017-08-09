@@ -39,6 +39,7 @@ a {
   -moz-transition: 300ms;
   -o-transition: 300ms;
   transition: 300ms;
+  text-decoration: none;
 }
 
 
@@ -363,7 +364,7 @@ p.sun > i:last-of-type
 .teams-content ul:first-of-type
 {
     margin-top:5rem;
-    margin-bottom:4.5rem;
+    margin-bottom:2.2rem;
 }
 
 .teams-content ul:first-of-type li
@@ -390,6 +391,65 @@ p.sun > i:last-of-type
 .teams-list .invision-logo
 {
     max-width:100%;
+}
+
+/*************************
+***** IBM Section ***
+**************************/
+.ibm
+{
+    padding:5rem 0;
+}
+
+.ibm-logo
+{
+    margin-bottom:1.2rem;
+}
+
+.amp-text> a, .ibm-text > a
+{
+    position:relative;
+    color:black;
+    font-size:1.4rem;
+    line-height:0;
+    font-weight: bold;
+    border-bottom: 1px solid #ddd;
+}
+
+.amp-text> a:hover, .ibm-text > a:hover
+{
+    text-decoration:none;
+    border-bottom-color: #b8b8b8;
+}
+
+.amp-text > blockquote, .ibm-text > blockquote
+{
+    margin:0.4rem 0;
+    color:#666;
+}
+
+.img-culture, .ibm-coffee
+{
+    border-radius:5px;
+}
+
+.amp-text > p, .ibm-text > p
+{
+    color:#999;
+}
+
+/*************************
+*** Culture Amp Section ***
+**************************/
+
+.culture-amp
+{
+    padding:5rem 0;
+}
+
+.amp-logo
+{
+    margin-bottom:0.6rem;
 }
 
 /*************************
