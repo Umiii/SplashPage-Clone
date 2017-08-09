@@ -2,13 +2,128 @@
    Using Mobile First Media Queries
 
    All styles for Tablet & Desktop Devices go inside the first media query (@min-width: 768px)
-   All styles strictly for large devices go inside the seconde media query (@min-width:1024px)
+   All styles strictly for large devices go inside the second media query (@min-width:1024px)
 
 */
 
 
 @media only screen and  (min-width: 768px) {
 
+   /*************************
+   ***** Top Section    *****
+   **************************/
+
+   .main-nav
+   {
+      display:flex;
+      margin-left:auto;
+
+   }
+
+   .header-content
+   {
+      width:80%;
+      left:50%;
+      transform: translate(-50%, 0);
+   }
+
+   .header-content > p
+   {
+      max-width:55%;
+   }
+
+   li.list-culture-amp
+   {
+      max-width:34%;
+   }
+   .btn-content
+   {
+      max-width:21%;
+   }
+
+   /*************************
+   * Hanging Content Section *
+   **************************/
+   .hanging-box
+   {
+      width:80%;
+   }
+
+   .hanging-sidebar
+   {
+      display:block;
+      width:28%;
+      background-color:#f4f6f8;
+      color:#1d1e1f;
+      border-radius: 8px 0 0 8px;
+   }
+
+   .hanging-sidebar h4
+   {
+      margin:1.5rem 0 0 1.5rem;
+   }
+
+   .hanging-sidebar ul
+   {
+      padding:0.8rem 0 0 1.5rem;
+      margin:0;
+
+   }
+
+   .hanging-sidebar ul li
+   {
+      margin-bottom:0.4rem;
+   }
+
+
+   .hanging-sidebar ul li.coffee
+   {
+      margin-bottom: 1.2rem;
+   }
+
+   .hanging-main
+   {
+      max-width:72%;
+      padding:1.4rem 1.4rem 0;
+   }
+
+   /*************************
+   ***** Teams Section ******
+   **************************/
+
+   .teams-content
+   {
+      width:80%;
+      position: relative;
+      left: 50%;
+      transform: translate(-50%, 0);
+
+   }
+
+   .teams-content ul:first-of-type li
+   {
+      margin-right:5.5rem;
+   }
+
+
+   /*************************
+   ***** Plans Section    *****
+   **************************/
+
+   .btn-plans {
+      max-width: 36%;
+   }
+
+   .btn-onboard
+   {
+      max-width:48%;
+   }
+
+   .content-section > div
+   {
+      align-self:center;
+      width:43%;
+   }
 
 
 }

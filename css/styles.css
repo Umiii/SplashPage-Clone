@@ -1,7 +1,6 @@
 /* Stylesheet for Splash Page Clone
 created by Chingu Cohorts - Open-Team-3
 Contributors - @curiouscc - @shyakaster - @Umii - @wozzeck
-tak
 All Styles that apply to Mobile Devices go here
 All Styles that would be shared by Mobile and Other Devices go here
 
@@ -40,59 +39,425 @@ a {
   -moz-transition: 300ms;
   -o-transition: 300ms;
   transition: 300ms;
+  text-decoration: none;
 }
 
 
-/************************************
-********CuriousCC Mess-about*********
-*************************************/
+/*************************
+***** Top Section    *****
+**************************/
 
-/**{
-	box-sizing: border-box;
-	font-family: sans-serif, "HKGroteskRegular";
-}*/
-
-div{
-	display: block;
-}
-section.curious-cc{
-	padding-top: 120px;
-	padding-bottom: 120px;
-	background: linear-gradient(to bottom, #fff, #f4f6f8);
-}
-.container{
-	margin: auto;
-	padding-left: 15px;
-	padding-right: 15px;
-}
-.row{
-	margin: 0px;
-	padding: 0px;
+.top
+{
+  background: -webkit-linear-gradient(-45deg, rgba(88,184,181,1) 0%,
+  rgba(99,164,189,1) 37%, rgba(105,149,194,1) 48%, rgba(112,136,200,1) 62%,
+  rgba(115,129,203,1) 68%, rgba(125,106,212,1) 100%);
+  color:white;
+  padding-top:1.3rem;
+  height:753px;
 }
 
-a.title-link{
-	font-weight: bold;
-	font-size: 24px;
-	color: black;
-	border-bottom: 1px solid #e5e5e5;
+.logo
+{
+  letter-spacing: 1px;
+    margin-top:0.2rem;
+    text-transform: lowercase;
 }
-blockquote{
-	padding-top: 10px;
-	font-size: 18px;
-	color: #666666;
+
+.header
+{
+  display:flex;
 }
-.source{
-	font-size: 14px;
-	color: #999999;
-	padding-top: 10px;
-	line-height: 1.2;
+
+.main-nav li
+{
+  font-size:1rem;
+  margin-right:0.8rem;
+  align-self: center;
+  text-align: center;
+}
+
+.main-nav li:last-of-type
+{
+    margin-left:1rem;
+}
+
+.header-content
+{
+    margin-top:4rem;
+    position:relative;
+}
+
+.header-content > p
+{
+    font-size:1.6rem;
+}
+
+.header-content > p:first-of-type
+{
+    font-size:2.5rem;
+}
+
+.header-content .btn-lg
+{
+    padding:0.8rem 0 0.5rem 0;
+    font-size:1.4rem;
+}
+
+.btn-nav
+{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    background-color: white;
+}
+
+.btn-nav:hover
+{
+    background-color: white;
+}
+
+.btn-content
+{
+    max-width:70%;
+    margin:2.5rem 0 4rem 0;
+    border-radius:12px;
+    font-weight: normal;
+}
+
+.btn-nav > span
+{
+    padding-top:0.3rem;
+}
+
+
+/*************************
+* Hanging Content Section *
+**************************/
+
+.hanging-box
+{
+    background-color:white;
+    width:93%;
+    border-radius:8px;
+    position:absolute;
+    left: 50%;                       /* centers hanging content */
+    transform: translate(-50%, 0);  /* centers hanging content */
+    top:98%;
+    z-index:999;
+
+
+}
+
+.hanging-content
+{
+    display:flex;
+    height:100%;
+    border-radius:8px;
+    -webkit-box-shadow: 1px 0 12px 0 rgba(150,150,150,1);
+    -moz-box-shadow: 1px 0 12px 0 rgba(150,150,150,1);
+    box-shadow: 1px 0 12px 0 rgba(150,150,150,1);
+}
+
+.hanging-sidebar
+{
+    display:none;
+}
+
+
+.list-circle:before
+{
+    width:10px;
+    height:10px;
+    content: '';
+    display:inline-block;
+    background-color:#4aa9b6;
+    border-radius:50%;
+    margin-right:0.5rem;
+}
+
+.hanging-sidebar > div
+{
+    display:inline-flex;
+    background-color:#4aa9b6;
+    padding-left:1.6rem;
+    padding-right:1rem;
+    color:white;
+    border-radius: 0 3px 3px 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.hanging-sidebar div > span
+{
+    font-size:0.8rem;
+    color:#4aa9b6;
+    background-color:white;
+    border-radius:5px;
+    display:inline-block;
+    margin-right:0.2rem;
+}
+
+.hanging-sidebar div > span
+{
+    font-size:0.7rem;
+    color:#4aa9b6;
+    background-color:white;
+    border-radius:2px;
+    display:inline-block;
+    margin-right:0.6rem;
+    padding:0 0.18rem;
+}
+
+.hanging-main
+{
+    color:black;
+    padding:0.5rem 0;
+}
+
+.hanging-main h3:first-of-type
+{
+    margin:0;
+}
+
+.hanging-main h3
+{
+    text-transform: lowercase;
+    padding:0 0 0.8rem 1rem;
+    border-bottom:1px solid #ddd;
+    margin:1.3rem 0;
+}
+
+.hanging-main ul
+{
+    padding-left:1rem;
+}
+
+.hanging-main ul li:first-of-type
+{
+    margin-top:1.2rem;
+}
+
+.hanging-main ul li
+{
+    margin-bottom:1.3rem;
+}
+
+
+li.donut:before,.purple-bg:before, li.teal-bg:before
+{
+    content:"";
+    display:inline-block;
+    width:64px;
+    height:64px;
+    position: absolute;
+}
+
+
+li.donut:before
+{
+    background: url("../images/donut_face_64.v0.png") center center no-repeat;
+}
+
+.purple-bg:before
+{
+    background: linear-gradient(135deg,
+                rgba(138,90,215,1) 0%,
+                rgba(151,89,210,1) 37%,
+                rgba(162,87,205,1) 55%,
+                rgba(169,86,202,1) 66%,
+                rgba(177,84,198,1) 100%);
+    border-radius:7px;
+}
+
+li.teal-bg:before
+{
+    background: linear-gradient(135deg,
+                rgba(86,184,181,1) 0%,
+                rgba(82,179,181,1) 37%,
+                rgba(76,170,181,1) 55%,
+                rgba(73,167,182,1) 66%,
+                rgba(68,161,182,1) 100%);
+    border-radius:7px;
+}
+
+.hanging-main ul li > h4, .hanging-main ul li > p
+{
+    padding-left:5.5rem;
+}
+
+li.donut > p > i
+{
+    font-size:0.8rem;
+}
+
+.hanging-main ul li p
+{
+    margin-bottom:0;
+}
+
+.hanging-main ul li h4
+{
+    text-transform: lowercase;
+}
+
+
+p.sun > i:first-of-type
+{
+    margin-right:0.3rem;
+    font-size:0.8rem;
+    font-weight: bold;
+}
+
+p.sun > i:last-of-type
+{
+    margin-left:0.3rem;
+    font-size:0.8rem;
+    font-weight:bold;
+}
+
+.green-link
+{
+    color:#4aa9b6;
+}
+
+.chat-box
+{
+    height:45px;
+    border-radius: 6px;
+    border:1px solid #dddddd;
+    padding-left:1rem;
+    position:relative;
+}
+
+.chat-box > i
+{
+    height:100%;
+    border-right:1px solid #dddddd;
+    padding-top:15px;
+    padding-right:1rem;
+    color:#a9a9a9;
+    position:absolute;
+}
+
+
+
+/*************************
+***** Teams Section ******
+**************************/
+
+.teams
+{
+    background-color:#f4f6f8;
+    padding-top:12rem;
+}
+
+
+.teams-content > h1
+{
+    text-transform:none;
+    padding-top:5rem;
+    text-align:center;
+    font-size:3.2rem;
+}
+
+.teams-content ul:first-of-type
+{
+    margin-top:5rem;
+    margin-bottom:2.2rem;
+}
+
+.teams-content ul:first-of-type li
+{
+    margin-right:0.5rem;
+}
+
+.teams-content ul li
+{
+    display:inline-block;
+}
+
+.teams-list
+{
+    margin-bottom:4rem;
+}
+
+
+.teams-list li > img
+{
+    max-width:75%;
+}
+
+.teams-list .invision-logo
+{
+    max-width:100%;
+}
+
+/*************************
+***** IBM Section ***
+**************************/
+.ibm
+{
+    padding:5rem 0;
+}
+
+.ibm-logo
+{
+    margin-bottom:1.2rem;
+}
+
+.amp-text> a, .ibm-text > a
+{
+    position:relative;
+    color:black;
+    font-size:1.4rem;
+    line-height:0;
+    font-weight: bold;
+    border-bottom: 1px solid #ddd;
+}
+
+.amp-text> a:hover, .ibm-text > a:hover
+{
+    text-decoration:none;
+    border-bottom-color: #b8b8b8;
+}
+
+.amp-text > blockquote, .ibm-text > blockquote
+{
+    margin:0.4rem 0;
+    color:#666;
+}
+
+.img-culture, .ibm-coffee
+{
+    border-radius:5px;
+}
+
+.amp-text > p, .ibm-text > p
+{
+    color:#999;
+}
+
+/*************************
+*** Culture Amp Section ***
+**************************/
+
+.culture-amp
+{
+    padding:5rem 0;
+}
+
+.amp-logo
+{
+    margin-bottom:0.6rem;
+}
 
 /*************************
 ***** Invision Section ***
 **************************/
 
 .invision {
-  margin-top:2rem;
+  padding:2rem 0 3rem;
   background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,
   rgba(248,249,250,1) 55%, rgba(247,249,250,1) 71%,
   rgba(247,249,250,1) 78%, rgba(245,247,249,1) 81%,
@@ -126,7 +491,7 @@ blockquote{
 }
 
 .screenshot-box {
-  padding-top:3.2rem;
+  padding-top:4.5rem;
 }
 
 /*************************
@@ -138,7 +503,7 @@ blockquote{
   display:flex;
   flex-direction: column;
   align-items: center;
-  padding-top:2rem;
+  padding:2rem 0 1rem;
 }
 
 .testimonial-box blockquote {
@@ -182,75 +547,363 @@ blockquote{
   width:70%;
   font-weight:bold;
 }
-/*-----------------------------------------  */
-/*People first section  */
-/*------------------------------------------  */
-/* #people-first h1 h2  p{
-  color: white;
-} */
+
+/*************************
+** People First Section **
+**************************/
+
 #people-first{
-  background-color: #855BDA;
+    background: linear-gradient(to bottom, rgba(135,90,217,1) 0%,
+                rgba(145,89,213,1) 37%,
+                rgba(149,89,210,1) 55%,
+                rgba(152,88,209,1) 75%,
+                rgba(165,86,204,1) 100%);
+  padding:6.5rem 1rem 3rem;
+  color:white;
+
 }
-#people-first .section-header{
-  padding-top: 20px;
-  font-size: 36px;
-  letter-spacing: 2;
-  line-height: 1.4;
-  color: white; 
+
+/* form{
+  position: absolute;
+  top: 44px;
+  left: 380px;
+} */
+
+#people-first h1
+{
+    font-size:3rem;
+    letter-spacing:0.2rem;
+    margin-bottom:0;
 }
-#people-first .section-subheader{
-  font-size: 24px;
-  text-align: center;
-  font-size: 24px;
-  line-height: 1.4;
-  /* letter-spacing: 1.4; */
-  color: white; 
+
+#people-first h2
+{
+    text-align: center;
+    margin-bottom:2rem;
 }
-.spacex5{
-  height: 10px;
-  width: 100%;
+
+#people-first h1,h2{
+  text-transform:none;
 }
-.explanation{
-  text-align: center;
-  font-size: 24px;
-  color: white; 
+
+.content-section
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
- .people-first-main-text, .join-text {
+
+.culture
+{
+    margin-bottom:2rem;
+}
+
+
+.content-section > div > blockquote
+{
+    line-height: 1.2;
+    font-size: 20px;
+    margin-bottom:0.4rem;
+}
+
+
+.content-section > div > blockquote:before {
+    content:open-quote;
+    position:absolute;
+    top:53%;
+    left:24%;
+    color:white;
+    font-size:4rem;
+}
+
+.content-section > div > blockquote:after {
+    content: close-quote;
+    position:absolute;
+    top:53%;
+    right:25.5%;
+    color:white;
+    font-size: 4rem;
+}
+
+.content-section > div cite
+{
+    font-size:0.9rem;
+    padding-left:1.2rem;
+}
+
+.waitlist
+{
+    margin-top:2rem;
+}
+
+/*************************
+*****  Plans Section *****
+**************************/
+
+.plans {
+  background-color:#eeeeee;
+}
+
+.plans-box {
+  padding:4rem 1rem;
+}
+
+.plans-box > h1 {
+  margin-bottom: 2.5rem;
+}
+
+.plans-box .col-sm-4
+{
+  margin-bottom:2rem;
+}
+
+.card-heading
+{
+
+  display:flex;
+  justify-content: space-between;
+  font-size:1.3rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid #eee;
+}
+
+.card-heading p {
+  margin-bottom:0;
+}
+
+.card-body {
+  display:flex;
+  margin-top:0.6rem;
+  flex-direction: column;
+}
+
+.card-body > p {
+  margin-bottom:0.4rem;
+}
+
+.card-body > a
+{
+
+  margin-top:0.7rem;
+  display:flex;
+  justify-content: flex-start;
+}
+
+.btn-slack {
+  max-width:46%;
+  color:black;
+  font-weight: bold;
+  -webkit-box-shadow: 2px 2px 5px 0 rgba(202,202,202,1);
+  -moz-box-shadow: 2px 2px 5px 0 rgba(202,202,202,1);
+  box-shadow: 1px 1px 5px 0 rgba(202,202,202,1);
+}
+
+.btn-slack:hover
+{
+
+  background: none;
+  color:black;
+  -webkit-box-shadow: 2px 2px 5px 0 rgba(179,179,179,1);
+  -moz-box-shadow: 2px 2px 5px 0 rgba(179,179,179,1);
+  box-shadow: 1px 1px 5px 0 rgba(179,179,179,1);
+}
+
+
+
+.card-body > a > span {
+  background: url("../images/slack-1.svg") no-repeat;
+  background-size: contain;
+  width: 30px;
+  height: 20px;
+  display: inline-block;
+
+}
+
+.header-content .btn-content > span
+{
+    width: 32px;
+    height: 32px;
+    margin-right:0.6rem;
+}
+
+.plans-middle-box > .card
+{
+  background: linear-gradient(135deg, rgba(87,185,180,1) 0%,
+  rgba(79,175,182,1) 46%, rgba(78,172,181,1) 55%,
+  rgba(73,167,182,1) 78%, rgba(69,162,183,1) 81%,
+  rgba(66,160,183,1) 100%);
+  color:white;
+}
+
+
+
+.btn-plans
+{
+  max-width: 41%;
+  text-transform: uppercase;
+}
+
+.btn-plans:hover
+{
+  background: none;
+}
+
+.plans {
+  background-color:#eeeeee;
+}
+
+.plans-box {
+  padding:4rem 1rem;
+}
+
+.plans-box > h1 {
+  margin-bottom: 2.5rem;
+}
+
+.plans-box .col-sm-4
+{
+  margin-bottom:2rem;
+}
+
+.card-heading
+{
+  display:flex;
+  justify-content: space-between;
+  font-size:1.3rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid #eee;
+}
+
+.card-heading p {
+  margin-bottom:0;
+}
+
+.card-body {
+  display:flex;
+  margin-top:0.6rem;
+  flex-direction: column;
+}
+
+.card-body > p {
+  margin-bottom:0.4rem;
+}
+
+.card-body > a
+{
+
+  margin-top:0.7rem;
+  display:flex;
+  justify-content: flex-start;
+}
+
+.btn-slack {
+  max-width:46%;
+  color:black;
+  font-weight: bold;
+  -webkit-box-shadow: 2px 2px 5px 0 rgba(202,202,202,1);
+  -moz-box-shadow: 2px 2px 5px 0 rgba(202,202,202,1);
+  box-shadow: 1px 1px 5px 0 rgba(202,202,202,1);
+}
+
+.btn-slack:hover
+{
+
+  background: none;
+  color:black;
+  -webkit-box-shadow: 2px 2px 5px 0 rgba(179,179,179,1);
+  -moz-box-shadow: 2px 2px 5px 0 rgba(179,179,179,1);
+  box-shadow: 1px 1px 5px 0 rgba(179,179,179,1);
+}
+
+.btn-nav > span, .card-body > a > span {
+  background: url("../images/slack-1.svg") no-repeat;
+  background-size: contain;
+  width: 30px;
+  height: 20px;
+  display: inline-block;
+}
+
+.plans-middle-box > .card
+{
+  background: linear-gradient(135deg, rgba(87,185,180,1) 0%,
+  rgba(79,175,182,1) 46%, rgba(78,172,181,1) 55%,
+  rgba(73,167,182,1) 78%, rgba(69,162,183,1) 81%,
+  rgba(66,160,183,1) 100%);
+  color:white;
+}
+
+
+.btn-plans
+{
+  max-width: 41%;
+  text-transform: uppercase;
+}
+
+.btn-plans:hover
+{
+  background: none;
+}
+
+.connect-list > p:last-of-type
+{
+  margin-bottom:2rem;
+}
+
+.onboard-box > .card
+{
+  background: -webkit-linear-gradient(-45deg, rgba(135,91,217,1) 0%, rgba(151,88,210,1) 46%, rgba(162,87,205,1) 55%, rgba(171,85,200,1) 78%, rgba(175,84,198,1) 81%, rgba(181,84,196,1) 100%);
+  color:white;
+}
+
+.btn-onboard
+{
+  max-width:53%;
+  text-transform: uppercase;
   display:flex;
   flex-direction: column;
   align-items: center;
   /* padding-top:2rem; */
-} 
-
-
-.people-first-main-text blockquote{
-  line-height: 1.2;
-  text-align: justify;
-  color: white;
-  font-size: 20px; 
-  font-weight: bolder;
-}
-.people-first-main-text blockquote:before {
-  content:open-quote;
-  position:absolute;
-  top:8%;
-  left:-4%;
-  color:white;
-  font-size:4rem;
 }
 
-.people-first-main-text blockquote:after {
-  content: close-quote;
-  position:absolute;
-  top:8%;
-  right:-4%;
-  color:white;
-  font-size: 4rem;
+/*************************
+** Twitter Cards Section **
+**************************/
+
+#twitter-cards{
+    padding: 4rem;
+}
+#twitter-cards img{
+    max-width: 100%;
+}
+#twitter-cards .card p {
+    font-size: .9rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+#twitter-cards .card-block > h4{
+    font-weight: bold;
+    font-size: 1rem;
+    text-transform: lowercase;
+}
+#twitter-cards .card-block > p{
+    font-size: .7rem;
+
+}
+#twitter-cards .card-block a{
+    padding-left: 2rem;
+}
+.avatar{
+    margin: .8rem;
+    width: 36px;
+    height: 36px;
+}
+.handle{
+    position: relative;
+    top: -24px;
+    left: 50px;
 }
 
-blockquote > span{
-  display: block;
-  margin-top:0.5rem;
-}
+
+
 
 
