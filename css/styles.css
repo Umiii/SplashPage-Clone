@@ -908,12 +908,54 @@ p.sun > i:last-of-type
 /*************************Footer*****************************
 ************************************************************/
 .footer{
-   
     margin-top: 64px;
     margin-bottom: 64px;
     font-size: 14px;
+    color:#A6A6A6;
+    line-height: 100%;
 }
-    
 
+.company>a{
+    text-decoration: none;
+    color: #676870;
+    line-height: 250%
+}
+.resources>a{
+    text-decoration: none;
+    color: #676870;
+    line-height: 250%;
+}
+.social>a{
+    text-decoration: none;
+    line-height: 400%;
+    color: #676870;
+}
+.company>a:hover{
+    color:#5AF46B;
+}
+.resources>a:hover{
+    color: #F55D5F;
+}
+.social>a:hover{
+    color: #5135E1;
+}
 
+.social>a>.fa{
+    width: 40px;
+    font-size: 20px;
+   
+}
+.bold{
+    font-weight: bold;
+    margin-bottom: 10px;
 
+}
+.company{
+    color: #676870;
+}
+.resources{
+    color: #676870;
+}
+.social{
+    color: #676870;
+}
