@@ -14,6 +14,7 @@ All Styles that would be shared by Mobile and Other Devices go here
 body {
     font-family: 'Abel', sans-serif;
     font-size:18px;
+    background-color: #eeeeee;
 
 }
 
@@ -904,6 +905,15 @@ p.sun > i:last-of-type
 }
 
 
+/*************************Footer*****************************
+************************************************************/
+.footer{
+   
+    margin-top: 64px;
+    margin-bottom: 64px;
+    font-size: 14px;
+}
+    
 
 
 
