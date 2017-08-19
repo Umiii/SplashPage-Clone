@@ -14,7 +14,7 @@ All Styles that would be shared by Mobile and Other Devices go here
 body {
     font-family: 'Abel', sans-serif;
     font-size:18px;
-    background-color: #eeeeee;
+    background-color: #f4f6f8;
 
 }
 
@@ -349,7 +349,6 @@ p.sun > i:last-of-type
 
 .teams
 {
-    background-color:#f4f6f8;
     padding-top:12rem;
 }
 
@@ -443,7 +442,7 @@ p.sun > i:last-of-type
 *** Culture Amp Section ***
 **************************/
 
-.culture-amp
+.cultureamp
 {
     padding:5rem 0;
 }
@@ -641,10 +640,6 @@ p.sun > i:last-of-type
 *****  Plans Section *****
 **************************/
 
-.plans {
-  background-color:#eeeeee;
-}
-
 .plans-box {
   padding:4rem 1rem;
 }
@@ -742,60 +737,14 @@ p.sun > i:last-of-type
 {
   max-width: 41%;
   text-transform: uppercase;
+  font-size:0.9rem;
 }
 
-.btn-plans:hover
+.btn-onboard:hover, .btn-plans:hover
 {
-  background: none;
+  background-color: white;
 }
 
-.plans {
-  background-color:#eeeeee;
-}
-
-.plans-box {
-  padding:4rem 1rem;
-}
-
-.plans-box > h1 {
-  margin-bottom: 2.5rem;
-}
-
-.plans-box .col-sm-4
-{
-  margin-bottom:2rem;
-}
-
-.card-heading
-{
-  display:flex;
-  justify-content: space-between;
-  font-size:1.3rem;
-  padding-bottom: 0.6rem;
-  border-bottom: 1px solid #eee;
-}
-
-.card-heading p {
-  margin-bottom:0;
-}
-
-.card-body {
-  display:flex;
-  margin-top:0.6rem;
-  flex-direction: column;
-}
-
-.card-body > p {
-  margin-bottom:0.4rem;
-}
-
-.card-body > a
-{
-
-  margin-top:0.7rem;
-  display:flex;
-  justify-content: flex-start;
-}
 
 .btn-slack {
   max-width:46%;
@@ -834,17 +783,6 @@ p.sun > i:last-of-type
 }
 
 
-.btn-plans
-{
-  max-width: 41%;
-  text-transform: uppercase;
-}
-
-.btn-plans:hover
-{
-  background: none;
-}
-
 .connect-list > p:last-of-type
 {
   margin-bottom:2rem;
@@ -863,6 +801,7 @@ p.sun > i:last-of-type
   display:flex;
   flex-direction: column;
   align-items: center;
+  font-size:0.9rem;
   /* padding-top:2rem; */
 }
 
@@ -904,58 +843,58 @@ p.sun > i:last-of-type
     left: 50px;
 }
 
+/*************************
+**** Footer   Section ****
+**************************/
 
-/*************************Footer*****************************
-************************************************************/
-.footer{
-    margin-top: 64px;
-    margin-bottom: 64px;
+.footer
+{
+    border-top:1px solid #eaebeb;
+    padding:3rem 0;
     font-size: 14px;
-    color:#A6A6A6;
     line-height: 100%;
+    color: #676870;
 }
 
-.company>a{
+.footer a:hover
+{
+    color: #cfd0d0;
+}
+
+.rights
+{
+    color:#A6A6A6;
+    font-size:1.2rem;
+}
+
+.rights > p
+{
+    font-size:0.9rem;
+    margin-bottom:0.4rem;
+}
+
+.company > a
+{
     text-decoration: none;
     color: #676870;
     line-height: 250%
 }
-.resources>a{
+.resources > a
+{
     text-decoration: none;
     color: #676870;
     line-height: 250%;
 }
-.social>a{
+
+.social > a
+{
     text-decoration: none;
     line-height: 400%;
     color: #676870;
 }
-.company>a:hover{
-    color:#5AF46B;
-}
-.resources>a:hover{
-    color: #F55D5F;
-}
-.social>a:hover{
-    color: #5135E1;
-}
 
-.social>a>.fa{
+.social > a > .fa
+{
     width: 40px;
     font-size: 20px;
-   
-}
-.bold{
-    font-weight: bold;
-    margin-bottom: 10px;
-
-}
-.company{
-    color: #676870;
-}
-.resources{
-    color: #676870;
-}
-.social{
-    color: #676870;
 }
