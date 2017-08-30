@@ -161,6 +161,11 @@
       padding:5rem 0;
    }
 
+   .amp-text
+   {
+      margin-top: 0;
+   }
+
    /*************************
    ** Testimonials Section ***
    **************************/
