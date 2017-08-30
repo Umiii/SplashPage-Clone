@@ -6,6 +6,20 @@
 
 */
 
+@media only screen and  (min-width: 480px) {
+
+
+   .header-content .btn-content > span {
+      margin-right:1rem;
+   }
+
+   .hanging-main
+   {
+      max-width:80%;
+   }
+
+}
+
 
 @media only screen and  (min-width: 768px) {
 
@@ -13,41 +27,18 @@
    ***** Top Section    *****
    **************************/
 
-   .main-nav
-   {
-      display:flex;
-      margin-left:auto;
 
-   }
 
-   .header-content
-   {
-      width:80%;
-      left:50%;
-      transform: translate(-50%, 0);
-   }
 
    .header-content > p
    {
       max-width:55%;
    }
 
-   li.list-culture-amp
-   {
-      max-width:34%;
-   }
-   .btn-content
-   {
-      max-width:21%;
-   }
 
    /*************************
    * Hanging Content Section *
    **************************/
-   .hanging-box
-   {
-      width:80%;
-   }
 
    .hanging-sidebar
    {
@@ -81,11 +72,7 @@
       margin-bottom: 1.2rem;
    }
 
-   .hanging-main
-   {
-      max-width:72%;
-      padding:1.4rem 1.4rem 0;
-   }
+
 
    /*************************
    ***** Teams Section ******
@@ -100,9 +87,87 @@
 
    }
 
-   .teams-content ul:first-of-type li
+   .teams-content > h1
+   {
+      padding-top:5rem;
+   }
+
+   .teams-logos li
+   {
+      max-width:35%;
+
+   }
+
+   /*.teams-logos li:first-of-type
    {
       margin-right:5.5rem;
+   }*/
+
+   .teams-content ul li
+   {
+      margin-right:5rem;
+   }
+
+   .teams-content > .teams-list li
+   {
+      margin-right:5.5rem;
+   }
+
+   .teams-content > .teams-list li:first-of-type
+   {
+      margin-right:1rem;
+      margin-left:2.2rem;
+   }
+
+   .teams-content > .teams-list li:last-of-type
+   {
+      margin-right:0;
+   }
+
+   .teams-content .teams-list li.list-culture-amp
+   {
+      max-width:32%;
+      margin-right:0;
+   }
+
+   .teams-list
+   {
+      text-align:left;
+   }
+
+   .teams-list li > img
+   {
+      max-width:75%;
+   }
+
+   .teams-list .invision-logo
+   {
+      max-width:100%;
+   }
+
+
+
+  /* .teams-content ul li
+   {
+      max-width:100%;
+   }*/
+
+   /*************************
+   *** Culture AMP Section **
+   **************************/
+
+   .cultureamp
+   {
+      padding:5rem 0;
+   }
+
+   /*************************
+   ** Testimonials Section ***
+   **************************/
+
+   .testimonial-box blockquote:before
+   {
+      left:8%;
    }
 
 
@@ -125,9 +190,46 @@
       width:43%;
    }
 
+   /*************************
+   **** Footer   Section ****
+   **************************/
+
+   .resources, .social
+   {
+      margin-top:0;
+   }
+
 
 }
 
 @media only screen and  (min-width: 1024px) {
+
+   /*.btn-content
+   {
+      max-width:21%;
+   }*/
+
+   .nav-visibility
+   {
+      display:block;
+   }
+
+   .header-content
+   {
+      width:80%;
+      left:50%;
+      transform: translate(-50%, 0);
+   }
+
+   .hanging-box
+   {
+      width:80%;
+   }
+
+   .hanging-main
+   {
+      max-width:72%;
+      padding:1.4rem 1.4rem 0;
+   }
 
 }

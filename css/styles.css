@@ -70,6 +70,13 @@ a {
   display:flex;
 }
 
+.main-nav
+{
+    display:flex;
+    margin-left:auto;
+
+}
+
 .main-nav li
 {
   font-size:1rem;
@@ -83,10 +90,23 @@ a {
     margin-left:1rem;
 }
 
+.main-nav li > a
+{
+    color:white;
+}
+
+.nav-visibility
+{
+    display:none;
+}
+
 .header-content
 {
     margin-top:4rem;
     position:relative;
+    left:50%;
+    width:100%;
+    transform: translate(-50%, 0);
 }
 
 .header-content > p
@@ -99,31 +119,30 @@ a {
     font-size:2.5rem;
 }
 
-.header-content .btn-lg
-{
-    padding:0.8rem 0 0.5rem 0;
-    font-size:1.4rem;
-}
 
-.btn-nav
+
+.main-nav .btn-nav
 {
     display: flex;
     justify-content: center;
     font-weight: bold;
     background-color: white;
+    color:black;
 }
 
-.btn-nav:hover
+.main-nav .btn-nav:hover
 {
     background-color: white;
 }
 
 .btn-content
 {
-    max-width:70%;
     margin:2.5rem 0 4rem 0;
     border-radius:12px;
     font-weight: normal;
+    padding:0.8rem 1rem 0.8rem 3.3rem;
+    font-size:1.4rem;
+    position:relative;
 }
 
 .btn-nav > span
@@ -213,7 +232,7 @@ a {
 .hanging-main
 {
     color:black;
-    padding:0.5rem 0;
+    padding:0.5rem 0.5rem;
 }
 
 .hanging-main h3:first-of-type
@@ -352,45 +371,74 @@ p.sun > i:last-of-type
     padding-top:12rem;
 }
 
+.teams-content
+{
+    text-align: center;
+}
+
 
 .teams-content > h1
 {
     text-transform:none;
-    padding-top:5rem;
-    text-align:center;
+    padding-top:20rem;
     font-size:3.2rem;
 }
 
-.teams-content ul:first-of-type
+.teams-logos
 {
     margin-top:5rem;
     margin-bottom:2.2rem;
+    padding:0;
 }
 
-.teams-content ul:first-of-type li
-{
-    margin-right:0.5rem;
-}
 
 .teams-content ul li
 {
     display:inline-block;
 }
 
-.teams-list
+/*.teams-logos li:first-of-type
 {
-    margin-bottom:4rem;
+    margin-right:0.5rem;
+}*/
+
+.teams-logos li
+{
+    max-width:26%;
+    margin-right:1rem;
 }
 
+.teams-logos li > img
+{
+    max-width: 100%;
+}
+
+.teams-list
+{
+    margin-top:3rem;
+    margin-bottom:4rem;
+    padding:0;
+}
+
+.teams-content > .teams-list li
+{
+    max-width:30%;
+    margin-right:0.6rem;
+}
+
+.teams-content > .teams-list li:last-of-type
+{
+    margin-right: 0;
+}
 
 .teams-list li > img
 {
-    max-width:75%;
+    max-width:100%;
 }
 
 .teams-list .invision-logo
 {
-    max-width:100%;
+    max-width:70%;
 }
 
 /*************************
@@ -444,7 +492,7 @@ p.sun > i:last-of-type
 
 .cultureamp
 {
-    padding:5rem 0;
+    padding:3rem 0 5rem;
 }
 
 .amp-logo
@@ -515,7 +563,7 @@ p.sun > i:last-of-type
   content:open-quote;
   position:absolute;
   top:35%;
-  left:8%;
+  left:3%;
   color:#4cacb5;
   font-size:4rem;
 }
@@ -650,7 +698,7 @@ p.sun > i:last-of-type
 
 .plans-box .col-sm-4
 {
-  margin-bottom:2rem;
+  margin-bottom:5rem;
 }
 
 .card-heading
@@ -685,8 +733,8 @@ p.sun > i:last-of-type
   justify-content: flex-start;
 }
 
-.btn-slack {
-  max-width:46%;
+.plans .btn-slack {
+  max-width:50%;
   color:black;
   font-weight: bold;
   -webkit-box-shadow: 2px 2px 5px 0 rgba(202,202,202,1);
@@ -717,9 +765,10 @@ p.sun > i:last-of-type
 
 .header-content .btn-content > span
 {
-    width: 32px;
-    height: 32px;
+    height: 30px;
     margin-right:0.6rem;
+    position: absolute;
+    left:10px;
 }
 
 .plans-middle-box > .card
@@ -743,26 +792,6 @@ p.sun > i:last-of-type
 .btn-onboard:hover, .btn-plans:hover
 {
   background-color: white;
-}
-
-
-.btn-slack {
-  max-width:46%;
-  color:black;
-  font-weight: bold;
-  -webkit-box-shadow: 2px 2px 5px 0 rgba(202,202,202,1);
-  -moz-box-shadow: 2px 2px 5px 0 rgba(202,202,202,1);
-  box-shadow: 1px 1px 5px 0 rgba(202,202,202,1);
-}
-
-.btn-slack:hover
-{
-
-  background: none;
-  color:black;
-  -webkit-box-shadow: 2px 2px 5px 0 rgba(179,179,179,1);
-  -moz-box-shadow: 2px 2px 5px 0 rgba(179,179,179,1);
-  box-shadow: 1px 1px 5px 0 rgba(179,179,179,1);
 }
 
 .btn-nav > span, .card-body > a > span {
@@ -897,4 +926,9 @@ p.sun > i:last-of-type
 {
     width: 40px;
     font-size: 20px;
+}
+
+.resources, .social
+{
+    margin-top:2rem;
 }
