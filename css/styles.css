@@ -763,12 +763,16 @@ p.sun > i:last-of-type
 
 }
 
-.header-content .btn-content > span
-{
+.header-content .btn-content > span {
     height: 30px;
-    margin-right:0.6rem;
+    margin-right: 0.6rem;
     position: absolute;
-    left:10px;
+    left: 10px;
+}
+
+.header-content .btn-content:hover
+{
+    background-color:white
 }
 
 .plans-middle-box > .card
