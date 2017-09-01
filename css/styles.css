@@ -668,6 +668,7 @@ p.sun > i:last-of-type
     left:24%;
     color:white;
     font-size:4rem;
+    display:none;
 }
 
 .content-section > div > blockquote:after {
@@ -849,42 +850,126 @@ p.sun > i:last-of-type
 **************************/
 
 #twitter-cards{
-    padding: 4rem;
+    padding: 1rem;
 }
 #twitter-cards img{
     max-width: 100%;
 }
-#twitter-cards .card p {
-    font-size: .9rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
+
+#twitter-cards .card-block
+{
+    border:1px solid #eee;
+    border-radius:5px;
 }
+
 #twitter-cards .card-block > h4{
-    font-weight: bold;
-    font-size: 1rem;
-    text-transform: lowercase;
+    text-transform: none;
 }
+
 #twitter-cards .card-block > p{
-    font-size: .7rem;
+    font-size: 0.9rem;
 
 }
+
+
 #twitter-cards .card-block a{
     padding-left: 2rem;
 }
+
+#twitter-cards .card
+{
+    padding: 1.2rem 1rem 1rem;
+    margin:4rem 0;
+}
+
 .avatar{
-    margin: .8rem;
+    margin-right:0.4rem;
     width: 36px;
     height: 36px;
 }
-.handle{
-    position: relative;
-    top: -24px;
-    left: 50px;
+
+.avatar-handle
+{
+    position:relative;
 }
 
-/*************************
-**** Footer   Section ****
-**************************/
+.avatar-handle h5 {
+    display: inline;
+    text-transform: none;
+    position: absolute;
+}
+
+.avatar-handle > p
+{
+    position:absolute;
+    left: 2.6rem;
+    font-size: 0.8rem;
+    top: 1.1rem;
+}
+
+
+.avatar-handle > i
+{
+    position:absolute;
+    right:0;
+    color:#1da1f2;
+}
+
+
+#twitter-cards .card > p
+{
+    margin-top:1rem;
+    font-size: 0.8rem;
+}
+
+#twitter-cards .card > p > span
+{
+    display:block;
+    color:#666;
+    font-size:0.8rem;
+}
+
+.card-bottom
+{
+    padding-top:1rem;
+    position:relative;
+}
+
+.card-bottom > a
+{
+    margin-right:0.7rem;
+    color:#9e9e9e;
+    font-size:0.8rem;
+}
+
+.card-bottom > a:hover
+{
+    text-decoration:none;
+}
+
+.card-bottom > a img
+{
+    max-height:15px;
+    margin-right:0.3rem;
+}
+
+.card-bottom > img
+{
+    max-height: 15px;
+    position: absolute;
+    right: 0;
+    margin-top: 0.6rem;
+}
+
+.card-bottom > a i
+{
+    margin-right:0.3rem;
+    color:#9e9e9e;
+}
+
+    /*************************
+    **** Footer   Section ****
+    **************************/
 
 .footer
 {

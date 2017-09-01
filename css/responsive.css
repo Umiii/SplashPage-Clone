@@ -153,6 +153,20 @@
    }*/
 
    /*************************
+   ** Twitter CardsSection **
+   **************************/
+
+   #twitter-cards{
+      padding: 4rem 0;
+   }
+
+   #twitter-cards .card
+   {
+      padding: 1.2rem 1rem 1rem;
+      margin: 0 2rem 0 0;
+   }
+
+   /*************************
    *** Culture AMP Section **
    **************************/
 
@@ -173,6 +187,12 @@
    .testimonial-box blockquote:before
    {
       left:8%;
+   }
+
+   .content-section > div > blockquote:after,
+   .content-section > div > blockquote:before
+   {
+      display:block;
    }
 
 
