@@ -691,6 +691,14 @@ p.sun > i:last-of-type
     margin-top:2rem;
 }
 
+button.submit
+{
+    background-color:#91cbd3;
+    border-color:#68b0bd;
+}
+
+
+
 /*************************
 *****  Plans Section *****
 **************************/
