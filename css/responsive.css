@@ -23,6 +23,11 @@
         max-width: 48%
     }
 
+    .teams-content > h1
+    {
+        padding-top:10rem;
+    }
+
 }
 
 
