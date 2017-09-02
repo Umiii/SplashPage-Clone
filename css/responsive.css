@@ -19,6 +19,10 @@
         max-width:75%;
     }
 
+    .plans-box .btn-slack {
+        max-width: 48%
+    }
+
 }
 
 
@@ -35,6 +39,11 @@
    {
       max-width:55%;
    }
+
+    .main-nav li:last-of-type
+    {
+        margin-left:1rem;
+    }
 
 
    /*************************
