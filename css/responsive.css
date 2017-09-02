@@ -13,10 +13,11 @@
       margin-right:1rem;
    }
 
-   .hanging-main
-   {
-      max-width:80%;
-   }
+
+    .flex-twitter-cards > .card-deck
+    {
+        max-width:75%;
+    }
 
 }
 
@@ -39,6 +40,10 @@
    /*************************
    * Hanging Content Section *
    **************************/
+    .hanging-box
+    {
+        width:100%;
+    }
 
    .hanging-sidebar
    {
@@ -80,7 +85,7 @@
 
    .teams-content
    {
-      width:80%;
+      width:90%;
       position: relative;
       left: 50%;
       transform: translate(-50%, 0);
@@ -92,11 +97,6 @@
       padding-top:5rem;
    }
 
-   .teams-logos li
-   {
-      max-width:35%;
-
-   }
 
    /*.teams-logos li:first-of-type
    {
@@ -105,7 +105,7 @@
 
    .teams-content ul li
    {
-      margin-right:5rem;
+      margin-right:2rem;
    }
 
    .teams-content > .teams-list li
@@ -116,7 +116,7 @@
    .teams-content > .teams-list li:first-of-type
    {
       margin-right:1rem;
-      margin-left:2.2rem;
+      margin-left:1rem;
    }
 
    .teams-content > .teams-list li:last-of-type
@@ -163,8 +163,13 @@
    #twitter-cards .card
    {
       padding: 1.2rem 1rem 1rem;
-      margin: 0 2rem 0 0;
+      margin: 4rem 1rem 0 0;
    }
+
+    .flex-twitter-cards > .card-deck
+    {
+        max-width:50%;
+    }
 
    /*************************
    *** Culture AMP Section **
@@ -195,29 +200,49 @@
       display:block;
    }
 
+    .content-section > div > blockquote:after
+    {
+        right:4%;
+    }
+
+    .content-section > div > blockquote:before
+    {
+        left:2%;
+    }
 
    /*************************
    ***** Plans Section    *****
    **************************/
 
-   .btn-plans {
-      max-width: 36%;
+   .plans-box .card-body > .btn-plans {
+       max-width: 50%;
+       justify-content: center;
    }
+
+    .plans-box .btn-slack {
+        max-width: 55%;
+    }
 
    .btn-onboard
    {
-      max-width:48%;
+      max-width:60%;
    }
 
    .content-section > div
    {
       align-self:center;
-      width:43%;
+      width:85%;
    }
 
-   /*************************
-   **** Footer   Section ****
-   **************************/
+    .plans-middle-box,
+    .onboard-box
+    {
+        margin-top:0;
+    }
+
+    /*************************
+    **** Footer   Section ****
+    **************************/
 
    .resources, .social
    {
@@ -257,4 +282,72 @@
       padding:1.4rem 1.4rem 0;
    }
 
+    /*************************
+    ***** Teams Section ******
+    **************************/
+
+   .teams-content
+   {
+       width:80%;
+   }
+
+    .teams-content ul li
+    {
+        margin-right:5rem;
+    }
+
+    .teams-content > .teams-list li:first-of-type
+    {
+        margin-left:2.2rem;
+    }
+
+    .teams-logos,
+    .teams-list
+    {
+        padding: 0 0 0 3rem;
+    }
+
+
+
+
+    /*************************
+    ** Twitter CardsSection **
+    **************************/
+
+    #twitter-cards .card {
+        padding: 1.2rem 1rem 1rem;
+    }
+
+
+
+    .flex-twitter-cards > .card-deck
+    {
+        flex-direction: row;
+        max-width:100%;
+    }
+
+
+    /*************************
+    * People First Section  **
+    **************************/
+    .content-section > div
+    {
+        width:43%;
+    }
+
+    .content-section > div > blockquote:after
+    {
+        right:25.5%;
+    }
+    .content-section > div > blockquote:before
+    {
+        left:24%;
+    }
+
+    /*************************
+    ***** Plans Section    *****
+    **************************/
+    .plans-box .btn-slack {
+        max-width: 50%;
+    }
 }

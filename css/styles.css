@@ -380,7 +380,7 @@ p.sun > i:last-of-type
 .teams-content > h1
 {
     text-transform:none;
-    padding-top:20rem;
+    padding-top:10rem;
     font-size:3.2rem;
 }
 
@@ -545,7 +545,9 @@ p.sun > i:last-of-type
 }
 
 .screenshot-box {
-  padding-top:4.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*************************
@@ -653,6 +655,8 @@ p.sun > i:last-of-type
 }
 
 
+
+
 .content-section > div > blockquote
 {
     line-height: 1.2;
@@ -740,16 +744,17 @@ button.submit
   margin-bottom:0.4rem;
 }
 
-.card-body > a
+.plans-box .card-body > a
 {
 
   margin-top:0.7rem;
   display:flex;
-  justify-content: flex-start;
+  justify-content: center;
+  color: black;
 }
 
-.plans .btn-slack {
-  max-width:50%;
+.plans-box .btn-slack {
+  max-width:40%;
   color:black;
   font-weight: bold;
   -webkit-box-shadow: 2px 2px 5px 0 rgba(202,202,202,1);
@@ -830,6 +835,12 @@ button.submit
   color:white;
 }
 
+.plans-middle-box,
+.onboard-box
+{
+    margin-top:4rem;
+}
+
 
 .connect-list > p:last-of-type
 {
@@ -860,6 +871,19 @@ button.submit
 #twitter-cards{
     padding: 1rem;
 }
+
+.flex-twitter-cards
+{
+    display:flex;
+    justify-content: center;
+}
+
+.flex-twitter-cards > .card-deck
+{
+    display:flex;
+    flex-direction: column;
+}
+
 #twitter-cards img{
     max-width: 100%;
 }
@@ -887,7 +911,7 @@ button.submit
 #twitter-cards .card
 {
     padding: 1.2rem 1rem 1rem;
-    margin:4rem 0;
+    margin:1.5rem 0;
 }
 
 .avatar{
