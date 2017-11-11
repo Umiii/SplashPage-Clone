@@ -1,0 +1,116 @@
+
+.main-nav .btn-nav
+{
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  background-color: white;
+  color:black;
+}
+
+.main-nav .btn-nav:hover
+{
+  background-color: white;
+}
+
+.btn-content
+{
+  margin:2.5rem 0 4rem 0;
+  border-radius:12px;
+  font-weight: normal;
+  padding:0.8rem 1rem 0.8rem 3.3rem;
+  font-size:1.4rem;
+  position:relative;
+}
+
+
+.header-content .btn-content:hover
+{
+  background-color:white
+}
+
+.amp-text> a, .ibm-text > a
+{
+  position:relative;
+  color:black;
+  font-size:1.4rem;
+  line-height:0;
+  font-weight: bold;
+  border-bottom: 1px solid #ddd;
+}
+
+.amp-text> a:hover, .ibm-text > a:hover
+{
+  text-decoration:none;
+  border-bottom-color: #b8b8b8;
+}
+
+.invision-box h3 > a {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 0.1rem;
+  color:#000;
+
+}
+
+.invision-box h3 > a:hover {
+  text-decoration: none;
+  color:#000;
+  border-bottom-color:#b8b8b8;
+}
+
+
+#people-first button.submit
+{
+  background-color:#91cbd3;
+  border-color:#68b0bd;
+}
+
+.plans-box .btn-slack {
+  max-width:60%;
+  color:black;
+  font-weight: bold;
+  -webkit-box-shadow: 2px 2px 5px 0 rgba(202,202,202,1);
+  -moz-box-shadow: 2px 2px 5px 0 rgba(202,202,202,1);
+  box-shadow: 1px 1px 5px 0 rgba(202,202,202,1);
+}
+
+.btn-slack:hover
+{
+
+  background: none;
+  color:black;
+  -webkit-box-shadow: 2px 2px 5px 0 rgba(179,179,179,1);
+  -moz-box-shadow: 2px 2px 5px 0 rgba(179,179,179,1);
+  box-shadow: 1px 1px 5px 0 rgba(179,179,179,1);
+}
+
+.btn-plans
+{
+  max-width: 41%;
+  text-transform: uppercase;
+  font-size:0.9rem;
+}
+
+.btn-onboard:hover, .btn-plans:hover
+{
+  background-color: white;
+}
+
+.btn-nav > span, .card-body > a > span {
+  background: url("../images/slack-1.svg") no-repeat;
+  background-size: contain;
+  width: 30px;
+  height: 20px;
+  display: inline-block;
+}
+
+.btn-onboard
+{
+  max-width:53%;
+  text-transform: uppercase;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  font-size:0.9rem;
+  /* padding-top:2rem; */
+}

@@ -1,0 +1,60 @@
+/*************************
+**** Footer   Section ****
+**************************/
+
+.footer
+{
+  border-top:1px solid #eaebeb;
+  padding:3rem 0;
+  font-size: 14px;
+  line-height: 100%;
+  color: #676870;
+}
+
+.footer a:hover
+{
+  color: #cfd0d0;
+}
+
+.rights
+{
+  color:#A6A6A6;
+  font-size:1.2rem;
+}
+
+.rights > p
+{
+  font-size:0.9rem;
+  margin-bottom:0.4rem;
+}
+
+.company > a
+{
+  text-decoration: none;
+  color: #676870;
+  line-height: 250%
+}
+.resources > a
+{
+  text-decoration: none;
+  color: #676870;
+  line-height: 250%;
+}
+
+.social > a
+{
+  text-decoration: none;
+  line-height: 400%;
+  color: #676870;
+}
+
+.social > a > .fa
+{
+  width: 40px;
+  font-size: 20px;
+}
+
+.resources, .social
+{
+  margin-top:2rem;
+}

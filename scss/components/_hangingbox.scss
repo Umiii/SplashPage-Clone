@@ -1,0 +1,150 @@
+
+
+.hanging-sidebar .list-circle:before
+{
+  width:10px;
+  height:10px;
+  content: '';
+  display:inline-block;
+  background-color:#4aa9b6;
+  border-radius:50%;
+  margin-right:0.5rem;
+}
+
+.hanging-sidebar > div
+{
+  display:inline-flex;
+  background-color:#4aa9b6;
+  padding-left:1.6rem;
+  padding-right:1rem;
+  color:white;
+  border-radius: 0 3px 3px 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.hanging-sidebar div > span
+{
+  font-size:0.8rem;
+  color:#4aa9b6;
+  background-color:white;
+  border-radius:5px;
+  display:inline-block;
+  margin-right:0.2rem;
+}
+
+.hanging-sidebar div > span
+{
+  font-size:0.7rem;
+  color:#4aa9b6;
+  background-color:white;
+  border-radius:2px;
+  display:inline-block;
+  margin-right:0.6rem;
+  padding:0 0.18rem;
+}
+
+.hanging-main
+{
+  color:black;
+  padding:0.5rem 0.5rem;
+}
+
+.hanging-main .chat-box
+{
+  height:45px;
+  border-radius: 6px;
+  border:1px solid #dddddd;
+  padding-left:1rem;
+  position:relative;
+}
+
+
+.hanging-main h3
+{
+  text-transform: lowercase;
+  padding:0 0 0.8rem 1rem;
+  border-bottom:1px solid #ddd;
+  margin:1.3rem 0;
+}
+
+.hanging-main ul
+{
+  padding-left:1rem;
+}
+
+.hanging-main ul li:first-of-type
+{
+  margin-top:1.2rem;
+}
+
+.hanging-main ul li
+{
+  margin-bottom:1.3rem;
+}
+
+
+li.donut:before,.purple-bg:before, li.teal-bg:before
+{
+  content:"";
+  display:inline-block;
+  width:64px;
+  height:64px;
+  position: absolute;
+}
+
+
+li.donut:before
+{
+  background: url("../images/donut_face_64.v0.png") center center no-repeat;
+}
+
+.purple-bg:before
+{
+  background: linear-gradient(135deg,
+          rgba(138,90,215,1) 0%,
+          rgba(151,89,210,1) 37%,
+          rgba(162,87,205,1) 55%,
+          rgba(169,86,202,1) 66%,
+          rgba(177,84,198,1) 100%);
+  border-radius:7px;
+}
+
+.hanging-main .green-link
+{
+  color:#4aa9b6;
+}
+
+li.teal-bg:before
+{
+  background: linear-gradient(135deg,
+          rgba(86,184,181,1) 0%,
+          rgba(82,179,181,1) 37%,
+          rgba(76,170,181,1) 55%,
+          rgba(73,167,182,1) 66%,
+          rgba(68,161,182,1) 100%);
+  border-radius:7px;
+}
+
+.hanging-main ul li > h4, .hanging-main ul li > p
+{
+  padding-left:5.5rem;
+}
+
+
+
+.hanging-main ul li p
+{
+  margin-bottom:0;
+}
+
+.hanging-main ul li h4
+{
+  text-transform: lowercase;
+}
+
+
+.hanging-main h3:first-of-type
+{
+  margin:0;
+}

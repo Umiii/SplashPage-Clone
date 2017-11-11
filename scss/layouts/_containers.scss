@@ -1,0 +1,212 @@
+/*************************
+***** Top Section    *****
+**************************/
+
+.top
+{
+  background: -webkit-linear-gradient(-45deg, rgba(88,184,181,1) 0%,
+          rgba(99,164,189,1) 37%, rgba(105,149,194,1) 48%, rgba(112,136,200,1) 62%,
+          rgba(115,129,203,1) 68%, rgba(125,106,212,1) 100%);
+  color:white;
+  padding-top:1.3rem;
+  height:753px;
+}
+
+/*************************
+* Hanging Content Section *
+**************************/
+
+.hanging-box
+{
+  background-color:white;
+  width:93%;
+  border-radius:8px;
+  position:absolute;
+  left: 50%;                       /* centers hanging content */
+  transform: translate(-50%, 0);  /* centers hanging content */
+  top:98%;
+  z-index:999;
+
+
+}
+
+.hanging-content
+{
+  display:flex;
+  height:100%;
+  border-radius:8px;
+  -webkit-box-shadow: 1px 0 12px 0 rgba(150,150,150,1);
+  -moz-box-shadow: 1px 0 12px 0 rgba(150,150,150,1);
+  box-shadow: 1px 0 12px 0 rgba(150,150,150,1);
+}
+
+.hanging-sidebar
+{
+  display:none;
+}
+
+
+
+/*************************
+***** Teams Section ******
+**************************/
+
+#teams
+{
+  padding-top:12rem;
+}
+
+.teams-content
+{
+  text-align: center;
+}
+
+.teams-logos
+{
+  margin-top:5rem;
+  margin-bottom:2.2rem;
+  padding:0;
+}
+
+.teams-content ul li
+{
+  display:inline-block;
+}
+
+
+.teams-logos li
+{
+  max-width:26%;
+  margin-right:1rem;
+}
+
+.teams-logos li > img
+{
+  max-width: 100%;
+}
+
+.teams-list
+{
+  margin-top:3rem;
+  margin-bottom:4rem;
+  padding:0;
+}
+
+.teams-content > .teams-list li
+{
+  max-width:30%;
+  margin-right:0.6rem;
+}
+
+.teams-content > .teams-list li:last-of-type
+{
+  margin-right: 0;
+}
+
+.teams-list li > img
+{
+  max-width:100%;
+}
+
+.teams-list .invision-logo
+{
+  max-width:70%;
+}
+
+/*************************
+***** IBM Section ***
+**************************/
+.ibm
+{
+  padding:5rem 0;
+}
+
+.ibm-logo
+{
+  margin-bottom:1.2rem;
+}
+
+
+/*************************
+*** Culture Amp Section ***
+**************************/
+
+.cultureamp
+{
+  padding:3rem 0 5rem;
+}
+
+/*************************
+***** Invision Section ***
+**************************/
+
+.invision {
+  padding:2rem 0 3rem;
+  background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,
+          rgba(248,249,250,1) 55%, rgba(247,249,250,1) 71%,
+          rgba(247,249,250,1) 78%, rgba(245,247,249,1) 81%,
+          rgba(244,246,248,1) 100%);
+}
+
+
+.invision .screenshot-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.invision .screenshot-twitter {
+  border-radius: 10px;
+  border:1px solid rgba(4,153,245,0.6);
+}
+
+/*************************
+** Testimonials Section ***
+**************************/
+
+
+.quote-box,
+.testimonial-box {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  padding:2rem 0 1rem;
+}
+
+.quote-box {
+  background:-webkit-linear-gradient(-45deg, rgba(86,184,181,1) 0%,
+          rgba(84,181,179,1) 27%, rgba(81,178,181,1) 40%, rgba(76,171,182,1) 51%,
+          rgba(69,163,182,1) 74%, rgba(66,160,183,1) 100%);
+  color:white;
+}
+
+
+/*************************
+** People First Section **
+**************************/
+
+#people-first{
+  background: linear-gradient(to bottom, rgba(135,90,217,1) 0%,
+          rgba(145,89,213,1) 37%,
+          rgba(149,89,210,1) 55%,
+          rgba(152,88,209,1) 75%,
+          rgba(165,86,204,1) 100%);
+  padding:6.5rem 1rem 3rem;
+  color:white;
+
+}
+
+.content-section
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*************************
+*****  Plans Section *****
+**************************/
+
+.plans-box {
+  padding:4rem 1rem;
+}
