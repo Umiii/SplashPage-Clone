@@ -15,16 +15,12 @@
 
 .hanging-main p.sun > i:first-of-type
 {
-  margin-right:0.3rem;
-  font-size:0.8rem;
-  font-weight: bold;
+  @extend  %hanging-icons;
 }
 
 .hanging-main p.sun > i:last-of-type
 {
-  margin-left:0.3rem;
-  font-size:0.8rem;
-  font-weight:bold;
+  @extend %hanging-icons;
 }
 
 .img-culture,
@@ -52,12 +48,9 @@
 }
 
 .testimonial-box blockquote:before {
+  @extend  %testimonial-quote;
   content:open-quote;
-  position:absolute;
-  top:35%;
   left:3%;
-  color:#4cacb5;
-  font-size:4rem;
 }
 
 
@@ -69,12 +62,9 @@
 
 
 .testimonial-box blockquote:after {
+  @extend  %testimonial-quote;
   content: close-quote;
-  position:absolute;
-  top:35%;
   right:8%;
-  color:#4cacb5;
-  font-size: 4rem;
 }
 
 .quote-box blockquote {
@@ -91,20 +81,14 @@
 
 
 #people-first .content-section > div > blockquote:before {
+  @extend %people-first-quote;
   content:open-quote;
-  position:absolute;
-  top:53%;
   left:24%;
-  color:white;
-  font-size:4rem;
   display:none;
 }
 
 #people-first .content-section > div > blockquote:after {
+  @extend %people-first-quote;
   content: close-quote;
-  position:absolute;
-  top:53%;
   right:25.5%;
-  color:white;
-  font-size: 4rem;
 }

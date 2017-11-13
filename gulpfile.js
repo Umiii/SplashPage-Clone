@@ -6,7 +6,8 @@ var gulp = require('gulp'),
     rename = require('gulp-rename'),
     sass = require('gulp-sass'),
     maps = require('gulp-sourcemaps'),
-    del = require('del');
+    del = require('del'),
+    browsersync = require('browser-sync').create();
 
 
 gulp.task('concat',function () {
@@ -31,16 +32,24 @@ gulp.task("compileSass", function(){
         .pipe(maps.init())
         .pipe(sass())
         .pipe(maps.write('./'))
-        .pipe(gulp.dest('css'));
+        .pipe(gulp.dest('css'))
+        .pipe(browsersync.stream());
 });
 
 gulp.task("watch", function () {
-   gulp.watch('scss/**/*.scss',['compileSass']);
+
+    browsersync.init({
+        server: "./"
+    });
+
+   gulp.watch('scss/**/*.scss',['compileSass']).on('change', browsersync.reload);
 });
 
 gulp.task("clean", function () {
     del('dist', 'css/app.css*', 'js/app*.js*');
 })
+
+gulp.task("serve", ["watch"]);
 
 gulp.task("build", ["minify","compileSass"], function(){
     return gulp.src(["css/app.css, js/app.min.js,index.html","images/**"], { base: "./"})

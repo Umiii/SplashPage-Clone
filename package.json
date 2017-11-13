@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/Umiii/SplashPage-Clone#readme",
   "devDependencies": {
+    "browser-sync": "^2.18.13",
     "del": "^3.0.0",
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.1",
