@@ -1,0 +1,88 @@
+// Descriptive color variables
+$white            : #fff;
+$black            : #000;
+$athens-grey      : #f4f6f8;
+$fountain-blue    : #4aa9b6;
+$alto             : #ddd;
+$dove-grey        : #666;
+$silver           : #b8b8b8;
+$half-baked       : #91cbd3;
+$hippie-blue      : #68b0bd;
+$gray-nickel      : #cacaca;
+$nobel            : #b3b3b3;
+$gallery          : #eeeeee;
+$dodger-blue      : #1da1f2;
+$silver-chalice   : #9e9e9e;
+$azure-radiance   : #0499F5;
+$trade-wind       : #4cacb5;
+$dusty-grey       : #999999;
+$quill-grey       : #cdcdcd;
+$mid-grey         : #676870;
+$black-haze       : #eaebeb;
+$iron             : #cfd0d0;
+$delta            : #a6a6a6;
+
+
+
+// Functional color variables
+
+$top--color:$white;
+
+$navButton--background:$white;
+$buttonContent--hover--color:$white;
+
+$hanging-box--background:$white;
+$hanging-content--shadow:$dusty-grey;
+$hanging-sidebar__listcircle--background:$fountain-blue;
+$hanging-sidebar__listcircle--color:$white;
+$hanging-main__chatbox--border:$alto;
+$chatbox__icon--color:$silver-chalice;
+
+
+
+
+
+$amptext__link--color:$alto;
+$amptext__link--hover--color:$silver;
+$amptext__quote--color:$dove-grey;
+$amptext__paragraph--color:$dusty-grey;
+
+$invisionBox__link--color:$alto;
+$invisionBox__border--color:$black;
+
+$invisionBox__link--hover--color:$black;
+$invisionBox__link--border--color:$silver;
+$twitter-screenshot--border:$azure-radiance;
+$source-link--color:$quill-grey;
+
+$people-first--color:$white;
+$people-first__button--background:$half-baked;
+$people-first__button--border:$hippie-blue;
+$people-first__quote--color:$white;
+
+$buttonslack--color:$black;
+$buttonslack--shadow:$gray-nickel;
+$buttonslack--hover--color:$nobel;
+
+$buttononboard--hover--color:$white;
+
+$plans__cardheading--border:$gallery;
+$card-body__links--color:$black;
+$plans-middlebox__card--color:$white;
+
+$onboardbox__card--color:$white;
+
+$twitter-cards__cardblock--border:$gallery;
+$twitter-icon--color:#1da1f2;
+$twitter-cards__span--color:$dove-grey;
+$card-bottom__links--color:$silver-chalice;
+
+$testimonial__quote--color:$trade-wind;
+$quote-box--color:$white;
+
+$footer--border:$black-haze;
+$footer--color:$mid-grey;
+$footer-links--color:$mid-grey;
+$footer-links--hover--color:$iron;
+$footer__rights--color:$delta;
+

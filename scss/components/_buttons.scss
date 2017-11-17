@@ -4,13 +4,13 @@
   display: flex;
   justify-content: center;
   font-weight: bold;
-  background-color: white;
+  background-color: $navButton--background;
   color:black;
 }
 
 .main-nav .btn-nav:hover
 {
-  background-color: white;
+  background-color: $navButton--background;
 }
 
 .btn-content
@@ -26,7 +26,7 @@
 
 .header-content .btn-content:hover
 {
-  background-color:white
+  background-color:$buttonContent--hover--color;
 }
 
 .amp-text> a, .ibm-text > a
@@ -36,42 +36,42 @@
   font-size:1.4rem;
   line-height:0;
   font-weight: bold;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid $amptext__link--color;
 }
 
 .amp-text> a:hover, .ibm-text > a:hover
 {
   text-decoration:none;
-  border-bottom-color: #b8b8b8;
+  border-bottom-color: $amptext__link--hover--color;
 }
 
 .invision-box h3 > a {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid $invisionBox__link--color;
   padding-bottom: 0.1rem;
-  color:#000;
+  color:$invisionBox__border--color;
 
 }
 
 .invision-box h3 > a:hover {
   text-decoration: none;
-  color:#000;
-  border-bottom-color:#b8b8b8;
+  color:$invisionBox__link--hover--color;
+  border-bottom-color:$invisionBox__link--border--color;
 }
 
 
 #people-first button.submit
 {
-  background-color:#91cbd3;
-  border-color:#68b0bd;
+  background-color:$people-first__button--background;
+  border-color:$people-first__button--border;
 }
 
 .plans-box .btn-slack {
   max-width:60%;
-  color:black;
+  color:$buttonslack--color;
   font-weight: bold;
-  -webkit-box-shadow: 2px 2px 5px 0 rgba(202,202,202,1);
-  -moz-box-shadow: 2px 2px 5px 0 rgba(202,202,202,1);
-  box-shadow: 1px 1px 5px 0 rgba(202,202,202,1);
+  -webkit-box-shadow: 2px 2px 5px 0 rgba($buttonslack--shadow,1);
+  -moz-box-shadow: 2px 2px 5px 0 rgba($buttonslack--shadow,1);   //gray-nickel
+  box-shadow: 1px 1px 5px 0 rgba($buttonslack--shadow,1);
 }
 
 .btn-slack:hover
@@ -79,9 +79,9 @@
 
   background: none;
   color:black;
-  -webkit-box-shadow: 2px 2px 5px 0 rgba(179,179,179,1);
-  -moz-box-shadow: 2px 2px 5px 0 rgba(179,179,179,1);
-  box-shadow: 1px 1px 5px 0 rgba(179,179,179,1);
+  -webkit-box-shadow: 2px 2px 5px 0 rgba($buttonslack--hover--color,1);    // nobel
+  -moz-box-shadow: 2px 2px 5px 0 rgba($buttonslack--hover--color,1);
+  box-shadow: 1px 1px 5px 0 rgba($buttonslack--hover--color,1);
 }
 
 .btn-plans
@@ -93,7 +93,7 @@
 
 .btn-onboard:hover, .btn-plans:hover
 {
-  background-color: white;
+  background-color: $buttononboard--hover--color;
 }
 
 .btn-nav > span, .card-body > a > span {

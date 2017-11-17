@@ -1,90 +1,130 @@
 
 
-.hanging-sidebar .list-circle:before
+.hanging
 {
-  width:10px;
-  height:10px;
-  content: '';
-  display:inline-block;
-  background-color:#4aa9b6;
-  border-radius:50%;
-  margin-right:0.5rem;
-}
+    &-sidebar
+    {
+      .list-circle:before
+      {
+        width:10px;
+        height:10px;
+        content: '';
+        display:inline-block;
+        background-color:$hanging-sidebar__listcircle--background;
+        border-radius:50%;
+        margin-right:0.5rem;
+      }
 
-.hanging-sidebar > div
-{
-  display:inline-flex;
-  background-color:#4aa9b6;
-  padding-left:1.6rem;
-  padding-right:1rem;
-  color:white;
-  border-radius: 0 3px 3px 0;
-  justify-content: center;
-  align-items: center;
-}
+      > div
+      {
+        display:inline-flex;
+        background-color:$hangingsidebar__listcircle--background;
+        padding-left:1.6rem;
+        padding-right:1rem;
+        color:$hanging-sidebar__listcircle--color;
+        border-radius: 0 3px 3px 0;
+        justify-content: center;
+        align-items: center;
+      }
 
-.hanging-sidebar div > span
-{
-  font-size:0.8rem;
-  color:#4aa9b6;
-  background-color:white;
-  border-radius:5px;
-  display:inline-block;
-  margin-right:0.2rem;
-}
+      div > span
+      {
+        font-size:0.8rem;
+        color:$hanging-sidebar__listcircle--background;
+        background-color:$hanging-sidebar__listcircle--color;
+        border-radius:5px;
+        display:inline-block;
+        margin-right:0.2rem;
+      }
 
-.hanging-sidebar div > span
-{
-  font-size:0.7rem;
-  color:#4aa9b6;
-  background-color:white;
-  border-radius:2px;
-  display:inline-block;
-  margin-right:0.6rem;
-  padding:0 0.18rem;
-}
+      div > span
+      {
+        font-size:0.7rem;
+        color:$hanging-sidebar__listcircle--background;
+        background-color:$hanging-sidebar__listcircle--color;
+        border-radius:2px;
+        display:inline-block;
+        margin-right:0.6rem;
+        padding:0 0.18rem;
+      }
+    }
 
-.hanging-main
-{
-  color:black;
-  padding:0.5rem 0.5rem;
-}
-
-.hanging-main .chat-box
-{
-  height:45px;
-  border-radius: 6px;
-  border:1px solid #dddddd;
-  padding-left:1rem;
-  position:relative;
 }
 
 
-.hanging-main h3
+.hanging
 {
-  text-transform: lowercase;
-  padding:0 0 0.8rem 1rem;
-  border-bottom:1px solid #ddd;
-  margin:1.3rem 0;
+    &-main
+    {
+      color:black;
+      padding:0.5rem 0.5rem;
+    }
+
+
+    &-main .chat-box
+    {
+      height:45px;
+      border-radius: 6px;
+      border:1px solid $hanging-main__chatbox--border;
+      padding-left:1rem;
+      position:relative;
+    }
+
+
+    &-main h3
+    {
+      text-transform: lowercase;
+      padding:0 0 0.8rem 1rem;
+      border-bottom:1px solid $hanging-main__chatbox--border;
+      margin:1.3rem 0;
+    }
+
+    &-main ul
+    {
+      padding-left:1rem;
+    }
+
+    &-main ul li:first-of-type
+    {
+      margin-top:1.2rem;
+    }
+
+    &-main ul li
+    {
+      margin-bottom:1.3rem;
+    }
+
+    &-main .green-link
+    {
+      color:$hanging-sidebar__listcircle--background;
+    }
+
+    &-main ul li > h4,
+    &-main ul li > p
+    {
+      padding-left:5.5rem;
+    }
+
+    &-main ul li p
+    {
+      margin-bottom:0;
+    }
+
+    &-main ul li h4
+    {
+      text-transform: lowercase;
+    }
+
+    &-main h3:first-of-type
+    {
+      margin:0;
+    }
 }
 
-.hanging-main ul
-{
-  padding-left:1rem;
-}
 
-.hanging-main ul li:first-of-type
-{
-  margin-top:1.2rem;
-}
-
-.hanging-main ul li
-{
-  margin-bottom:1.3rem;
-}
-
-
-li.donut:before,.purple-bg:before, li.teal-bg:before
+li.donut:before,
+.purple-bg:before,
+li.teal-bg:before
 {
   content:"";
   display:inline-block;
@@ -110,10 +150,6 @@ li.donut:before
   border-radius:7px;
 }
 
-.hanging-main .green-link
-{
-  color:#4aa9b6;
-}
 
 li.teal-bg:before
 {
@@ -126,25 +162,3 @@ li.teal-bg:before
   border-radius:7px;
 }
 
-.hanging-main ul li > h4, .hanging-main ul li > p
-{
-  padding-left:5.5rem;
-}
-
-
-
-.hanging-main ul li p
-{
-  margin-bottom:0;
-}
-
-.hanging-main ul li h4
-{
-  text-transform: lowercase;
-}
-
-
-.hanging-main h3:first-of-type
-{
-  margin:0;
-}

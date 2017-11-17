@@ -7,7 +7,7 @@
 
 .amp-text > p, .ibm-text > p
 {
-  color:#999;
+  color:$amptext__paragraph--color;
 }
 
 .amp-text
@@ -16,7 +16,7 @@
 }
 
 .invision .source-link {
-  color: #cdcdcd;
+  color: $source-link--color;
 }
 
 .invision-box h3 {

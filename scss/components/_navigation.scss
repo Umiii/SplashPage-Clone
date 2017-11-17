@@ -1,26 +1,27 @@
-.main-nav
+.main
 {
-  display:flex;
-  margin-left:auto;
-  padding:0 0 0 0.8rem;
-}
+    &-nav{
+      display:flex;
+      margin-left:auto;
+      padding:0 0 0 0.8rem;
+    }
+    &-nav li
+    {
+      font-size:1rem;
+      margin-right:0.8rem;
+      align-self: center;
+      text-align: center;
+    }
 
-.main-nav li
-{
-  font-size:1rem;
-  margin-right:0.8rem;
-  align-self: center;
-  text-align: center;
-}
+    &-nav li:last-of-type
+    {
+      margin-left:0;
+    }
 
-.main-nav li:last-of-type
-{
-  margin-left:0;
-}
-
-.main-nav li > a
-{
-  color:white;
+    &-nav li > a
+    {
+      color:$navButton--background;
+    }
 }
 
 .nav-visibility

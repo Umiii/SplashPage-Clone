@@ -10,6 +10,7 @@ var gulp = require('gulp'),
     browsersync = require('browser-sync').create();
 
 
+/* concatenate Javascript */
 gulp.task('concat',function () {
     return gulp.src([
         'node_modules/jquery/dist/jquery.js',
@@ -20,6 +21,7 @@ gulp.task('concat',function () {
         .pipe(gulp.dest("js"));
 });
 
+/* minify concatenated JS */
 gulp.task('minify', ['concat'], function(){
     return gulp.src("js/app.js")
         .pipe(uglify())
@@ -27,6 +29,7 @@ gulp.task('minify', ['concat'], function(){
         .pipe(gulp.dest('js'));
 });
 
+/* Compile Sass Task */
 gulp.task("compileSass", function(){
     return gulp.src("scss/app.scss")
         .pipe(maps.init())
@@ -36,6 +39,9 @@ gulp.task("compileSass", function(){
         .pipe(browsersync.stream());
 });
 
+/* Watch task using browser sync
+* for hot reload
+* */
 gulp.task("watch", function () {
 
     browsersync.init({
@@ -47,7 +53,7 @@ gulp.task("watch", function () {
 
 gulp.task("clean", function () {
     del('dist', 'css/app.css*', 'js/app*.js*');
-})
+});
 
 gulp.task("serve", ["watch"]);
 

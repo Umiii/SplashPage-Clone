@@ -1,10 +1,10 @@
 .hanging-main .chat-box > i
 {
   height:100%;
-  border-right:1px solid #dddddd;
+  border-right:1px solid $hanging-main__chatbox--border;
   padding-top:15px;
   padding-right:1rem;
-  color:#a9a9a9;
+  color:$chatbox__icon--color;
   position:absolute;
 }
 
@@ -32,7 +32,7 @@
 .amp-text > blockquote, .ibm-text > blockquote
 {
   margin:0.4rem 0;
-  color:#666;
+  color:$amptext__quote--color;
 }
 
 .amp-logo

@@ -4,21 +4,21 @@
 
 .footer
 {
-  border-top:1px solid #eaebeb;
+  border-top:1px solid $footer--color;
   padding:3rem 0 1rem;
   font-size: 14px;
   line-height: 100%;
-  color: #676870;
+  color: $footer--color;
 }
 
 .footer a:hover
 {
-  color: #cfd0d0;
+  color: $footer-links--hover--color;
 }
 
 .footer .rights
 {
-  color:#A6A6A6;
+  color:$footer__rights--color;
   font-size:1.2rem;
 }
 
