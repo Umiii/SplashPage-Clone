@@ -17,14 +17,12 @@
 
       > div
       {
-        display:inline-flex;
-        background-color:$hangingsidebar__listcircle--background;
+        @include flex-utility(inline-flex,center,$justify:center);
+        background-color:$hanging-sidebar__listcircle--background;
         padding-left:1.6rem;
         padding-right:1rem;
         color:$hanging-sidebar__listcircle--color;
         border-radius: 0 3px 3px 0;
-        justify-content: center;
-        align-items: center;
       }
 
       div > span

@@ -4,48 +4,64 @@
 
 .footer
 {
-  border-top:1px solid $footer--color;
+  border-top:1px solid $footer--border;
   padding:3rem 0 1rem;
   font-size: 14px;
   line-height: 100%;
   color: $footer--color;
+
+  a:hover
+  {
+    color: $footer-links--hover--color;
+  }
+
+  .rights
+  {
+    color:$footer__rights--color;
+    font-size:1.2rem;
+  }
+
+  .rights > p
+  {
+    font-size:0.9rem;
+    margin-bottom:0.4rem;
+  }
+
 }
 
-.footer a:hover
-{
-  color: $footer-links--hover--color;
-}
-
-.footer .rights
-{
-  color:$footer__rights--color;
-  font-size:1.2rem;
-}
-
-.footer .rights > p
-{
-  font-size:0.9rem;
-  margin-bottom:0.4rem;
-}
 
 .company > a,
 .resources > a
 {
-  @extend  %footer-links;
+  display:inline-block;
+  text-decoration: none;
+  color: $footer-links--color;
+  font-size:1rem;
+  margin-bottom:1.2rem;
 
 }
 
-.social > a
+.social
 {
-  @extend  %footer-links;
-  margin-right:0.4rem;
+  ul:last-of-type
+  {
+    margin-top:1.2rem;
+  }
+
+  ul li
+  {
+    display:inline;
+
+  }
+
+  a
+  {
+    margin-right:0.9rem;
+    color:$footer-links--color;
+    font-size:1.5rem;
+  }
 }
 
-.social > a > i
-{
-  font-size: 1.5rem;
-  margin-right:0.5rem;
-}
 
 .resources,
 .social

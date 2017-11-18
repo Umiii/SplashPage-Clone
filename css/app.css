@@ -9,12 +9,12 @@
 ***** Base Styles   ******
 **************************/
 body {
-  font-family: 'Abel', sans-serif;
+  font-family: "Abel", sans-serif;
   font-size: 18px;
   background-color: #f4f6f8; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Medula One', cursive;
+  font-family: "Medula One", cursive;
   text-transform: uppercase; }
 
 blockquote {
@@ -68,29 +68,38 @@ a {
 **** Footer   Section ****
 **************************/
 .footer {
-  border-top: 1px solid #676870;
+  border-top: 1px solid #ddd;
   padding: 3rem 0 1rem;
   font-size: 14px;
   line-height: 100%;
   color: #676870; }
+  .footer a:hover {
+    color: #cfd0d0; }
+  .footer .rights {
+    color: #a6a6a6;
+    font-size: 1.2rem; }
+  .footer .rights > p {
+    font-size: 0.9rem;
+    margin-bottom: 0.4rem; }
 
-.footer a:hover {
-  color: #cfd0d0; }
+.company > a,
+.resources > a {
+  display: inline-block;
+  text-decoration: none;
+  color: #676870;
+  font-size: 1rem;
+  margin-bottom: 1.2rem; }
 
-.footer .rights {
-  color: #a6a6a6;
-  font-size: 1.2rem; }
+.social ul:last-of-type {
+  margin-top: 1.2rem; }
 
-.footer .rights > p {
-  font-size: 0.9rem;
-  margin-bottom: 0.4rem; }
+.social ul li {
+  display: inline; }
 
-.social > a {
-  margin-right: 0.4rem; }
-
-.social > a > i {
-  font-size: 1.5rem;
-  margin-right: 0.5rem; }
+.social a {
+  margin-right: 0.9rem;
+  color: #676870;
+  font-size: 1.5rem; }
 
 .resources,
 .social {
@@ -189,6 +198,8 @@ a {
   padding: 2rem 0 3rem;
   background: linear-gradient(to bottom, white 0%, #f8f9fa 55%, #f7f9fa 71%, #f7f9fa 78%, #f5f7f9 81%, #f4f6f8 100%); }
   .invision .screenshot-box {
+    display: flex;
+    align-items: center;
     justify-content: center; }
   .invision .screenshot-twitter {
     border-radius: 10px;
@@ -215,6 +226,8 @@ a {
   color: #fff; }
 
 .content-section {
+  display: flex;
+  align-items: center;
   flex-direction: column; }
 
 /*************************
@@ -223,19 +236,8 @@ a {
 .plans-box {
   padding: 4rem 1rem; }
 
-.plans-box .col-sm-4 {
-  margin-bottom: 5rem; }
-
-.company > a,
-.resources > a, .social > a {
-  display: inline-block;
-  text-decoration: none;
-  color: #676870;
-  font-size: 1rem;
-  margin-bottom: 1.2rem; }
-
-.invision .screenshot-box, .quote-box,
-.testimonial-box, .content-section, .plans-box .card-body > a, .flex-twitter-cards {
+.quote-box,
+.testimonial-box {
   display: flex;
   align-items: center; }
 
@@ -407,7 +409,7 @@ p.culture {
   justify-content: center;
   font-weight: bold;
   background-color: #fff;
-  color: black; }
+  color: #000; }
 
 .main-nav .btn-nav:hover {
   background-color: #fff; }
@@ -425,7 +427,7 @@ p.culture {
 
 .amp-text > a, .ibm-text > a {
   position: relative;
-  color: black;
+  color: #000;
   font-size: 1.4rem;
   line-height: 0;
   font-weight: bold;
@@ -483,10 +485,9 @@ p.culture {
   max-width: 53%;
   text-transform: uppercase;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  font-size: 0.9rem;
-  /* padding-top:2rem; */ }
+  flex-direction: column;
+  font-size: 0.9rem; }
 
 .hanging-main .chat-box > i {
   height: 100%;
@@ -555,6 +556,8 @@ p.culture {
   margin-bottom: 0; }
 
 #plans .card-body {
+  display: flex;
+  align-items: center;
   margin-top: 0.6rem; }
 
 #plans .card-body > p {
@@ -568,6 +571,8 @@ p.culture {
   display: inline-block; }
 
 .plans-box .card-body > a {
+  display: flex;
+  align-items: center;
   margin-top: 0.7rem;
   color: #000; }
 
@@ -602,6 +607,13 @@ p.culture {
   #twitter-cards .card {
     padding: 1.2rem 1rem 1rem;
     margin: 1.5rem 0; }
+
+.flex-twitter-cards {
+  display: flex;
+  align-items: center; }
+  .flex-twitter-cards > .card-deck {
+    display: flex;
+    flex-direction: columns; }
 
 .avatar {
   margin-right: 0.4rem;
@@ -667,12 +679,8 @@ p.culture {
   font-size: 4rem;
   color: #fff; }
 
-#plans .card-body, .flex-twitter-cards > .card-deck {
-  display: flex;
-  flex-direction: column; }
-
-.invision .screenshot-box, .quote-box,
-.testimonial-box, .content-section, .plans-box .card-body > a, .flex-twitter-cards {
+.quote-box,
+.testimonial-box {
   display: flex;
   justify-content: center; }
 

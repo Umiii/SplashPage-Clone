@@ -26,9 +26,12 @@ $delta            : #a6a6a6;
 
 // Functional color variables
 
+$body--background--color:$athens-grey;
+
 $top--color:$white;
 
 $navButton--background:$white;
+$navButton--color:$black;
 $buttonContent--hover--color:$white;
 
 $hanging-box--background:$white;
@@ -42,7 +45,8 @@ $chatbox__icon--color:$silver-chalice;
 
 
 
-$amptext__link--color:$alto;
+$amptext__link--color:$black;
+$amptext__link--border:$alto;
 $amptext__link--hover--color:$silver;
 $amptext__quote--color:$dove-grey;
 $amptext__paragraph--color:$dusty-grey;
@@ -73,16 +77,28 @@ $plans-middlebox__card--color:$white;
 $onboardbox__card--color:$white;
 
 $twitter-cards__cardblock--border:$gallery;
-$twitter-icon--color:#1da1f2;
+$twitter-icon--color:$dodger-blue;
 $twitter-cards__span--color:$dove-grey;
 $card-bottom__links--color:$silver-chalice;
 
 $testimonial__quote--color:$trade-wind;
 $quote-box--color:$white;
 
-$footer--border:$black-haze;
+$footer--border:$alto;
 $footer--color:$mid-grey;
 $footer-links--color:$mid-grey;
 $footer-links--hover--color:$iron;
 $footer__rights--color:$delta;
 
+
+// Font Stacks
+
+$stack-sans-serif : sans-serif;
+$stack-abel       : 'Abel', $stack-sans-serif;
+$stack-medula     : 'Medula One', cursive;
+
+// Button Font Size
+$plans-btn-font-size:0.9rem;
+
+// Team Image Widths
+$team-img-width:100%;

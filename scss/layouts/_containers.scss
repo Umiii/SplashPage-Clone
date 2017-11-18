@@ -78,7 +78,7 @@
   }
 
   li > img{
-    max-width: 100%;
+    max-width: $team-img-width;
   }
 }
 
@@ -90,7 +90,7 @@
 
    li > img
   {
-    max-width:100%;
+    max-width:$team-img-width;
   }
 
   .invision-logo
@@ -150,8 +150,7 @@
   rgba(244,246,248,1) 100%);
 
   .screenshot-box {
-    @extend %flex-center;
-    justify-content: center;
+    @include flex-utility(flex,center,center);
   }
 
   .screenshot-twitter {
@@ -200,9 +199,7 @@
 
 .content-section
 {
-  @extend %flex-center;
-  flex-direction: column;
-
+  @include flex-utility(flex,center,$direction:column);
 }
 
 /*************************

@@ -1,14 +1,5 @@
 
-//Style Links on Footer
-%footer-links
-{
-  display:inline-block;
-  text-decoration: none;
-  color: $footer-links--color;
-  font-size:1rem;
-  margin-bottom:1.2rem;
-}
-
+// Center align items using flexbox
 %flex-center
 {
   display: flex;

@@ -2,8 +2,7 @@
 {
     .card-heading{
 
-        display:flex;
-        justify-content: space-between;
+        @include flex-utility(flex,$justify:space-between);
         font-size:1.3rem;
         padding-bottom: 0.6rem;
         border-bottom: 1px solid $plans__cardheading--border;
@@ -15,7 +14,7 @@
 
     .card-body {
 
-        @extend %flex-columns;
+        @include flex-utility(flex,center);
         margin-top:0.6rem;
     }
 
@@ -40,7 +39,7 @@
 
 .plans-box .card-body > a
 {
-  @extend %flex-center;
+  @include flex-utility(flex,center);
   margin-top:0.7rem;
   color: $card-body__links--color;
 }
@@ -123,11 +122,11 @@
 
 .flex-twitter-cards
 {
-  @extend %flex-center;
+  @include flex-utility(flex,center);
 
   > .card-deck
   {
-    @extend %flex-columns;
+    @include flex-utility(flex,$direction:columns);
   }
 }
 

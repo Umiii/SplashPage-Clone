@@ -4,14 +4,14 @@
 **************************/
 
 body {
-    font-family: 'Abel', sans-serif;
+    font-family: $stack-abel;
     font-size:18px;
-    background-color: #f4f6f8;
+    background-color: $body--background--color;
 
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family:'Medula One', cursive;
+    font-family:$stack-medula;
     text-transform: uppercase;
 }
 

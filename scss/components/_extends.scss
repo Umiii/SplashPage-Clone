@@ -24,13 +24,6 @@
   color:$people-first__quote--color;
 }
 
-//styles elements with flex-direction:column
-%flex-columns
-{
-  display:flex;
-  flex-direction: column;
-}
-
 //styles flex centered elements
 %flex-center
 {

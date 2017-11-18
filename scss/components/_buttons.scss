@@ -1,11 +1,10 @@
 
 .main-nav .btn-nav
 {
-  display: flex;
-  justify-content: center;
+  @include flex-utility(flex,$justify:center);
   font-weight: bold;
   background-color: $navButton--background;
-  color:black;
+  color:$navButton--color;
 }
 
 .main-nav .btn-nav:hover
@@ -32,11 +31,11 @@
 .amp-text> a, .ibm-text > a
 {
   position:relative;
-  color:black;
+  color:$amptext__link--color;
   font-size:1.4rem;
   line-height:0;
   font-weight: bold;
-  border-bottom: 1px solid $amptext__link--color;
+  border-bottom: 1px solid $amptext__link--border;
 }
 
 .amp-text> a:hover, .ibm-text > a:hover
@@ -88,7 +87,7 @@
 {
   max-width: 41%;
   text-transform: uppercase;
-  font-size:0.9rem;
+  font-size:$plans-btn-font-size;
 }
 
 .btn-onboard:hover, .btn-plans:hover
@@ -106,11 +105,8 @@
 
 .btn-onboard
 {
+  @include flex-utility(flex,center,$direction:column);
   max-width:53%;
   text-transform: uppercase;
-  display:flex;
-  flex-direction: column;
-  align-items: center;
-  font-size:0.9rem;
-  /* padding-top:2rem; */
+  font-size:$plans-btn-font-size;
 }

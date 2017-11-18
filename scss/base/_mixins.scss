@@ -1,0 +1,18 @@
+// Center align elements using flexbox
+
+@mixin flex-utility($display, $alignment : null, $justify : null,  $direction : null)
+{
+    display: $display;
+    align-items: $alignment;
+    justify-content:$justify;
+    flex-direction: $direction;
+}
+
+@mixin bg-gradients($direction, $color-stop-1,$color-stop-2,$color-stop-3,$color-stop-4,$color-stop-5,$color-stop-6)
+{
+    background:
+            linear-gradient($direction, rgba($color-stop-1,1) 0%,
+            rgba($color-stop-2,1) 46%, rgba(7$color-stop-3,1) 55%,
+            rgba($color-stop-4,1) 78%, rgba($color-stop-5,1) 81%,
+            rgba($color-stop-6,1) 100%);
+}
