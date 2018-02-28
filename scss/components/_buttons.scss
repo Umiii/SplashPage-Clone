@@ -1,0 +1,139 @@
+
+.main-nav .btn-nav
+{
+  @include flex-utility(flex,$justify:center);
+  font-weight: bold;
+  background-color: $navButton--background;
+  color:$navButton--color;
+}
+
+.main-nav .btn-nav:hover
+{
+  background-color: $navButton--background;
+}
+
+.btn-content
+{
+  margin:2.5rem 0 4rem 0;
+  border-radius:12px;
+  font-weight: normal;
+  padding:0.8rem 1rem 0.8rem 3.3rem;
+  font-size:1.4rem;
+  position:relative;
+}
+
+
+.header-content .btn-content:hover
+{
+  background-color:$buttonContent--hover--color;
+}
+
+.amp-text> a, .ibm-text > a
+{
+  position:relative;
+  color:$amptext__link--color;
+  font-size:1.4rem;
+  line-height:0;
+  font-weight: bold;
+  border-bottom: 1px solid $amptext__link--border;
+}
+
+.amp-text> a:hover, .ibm-text > a:hover
+{
+  text-decoration:none;
+  border-bottom-color: $amptext__link--hover--color;
+}
+
+.invision-box h3 > a {
+  border-bottom: 1px solid $invisionBox__link--color;
+  padding-bottom: 0.1rem;
+  color:$invisionBox__border--color;
+
+}
+
+.invision-box h3 > a:hover {
+  text-decoration: none;
+  color:$invisionBox__link--hover--color;
+  border-bottom-color:$invisionBox__link--border--color;
+}
+
+
+#people-first button.submit
+{
+  background-color:$people-first__button--background;
+  border-color:$people-first__button--border;
+}
+
+.plans-box .btn-slack {
+  max-width:60%;
+  color:$buttonslack--color;
+  font-weight: bold;
+  -webkit-box-shadow: 2px 2px 5px 0 rgba($buttonslack--shadow,1);
+  -moz-box-shadow: 2px 2px 5px 0 rgba($buttonslack--shadow,1);   //gray-nickel
+  box-shadow: 1px 1px 5px 0 rgba($buttonslack--shadow,1);
+
+  @media #{$brk-mobile}
+  {
+    max-width: 48%;
+  }
+
+  @media #{$brk-tablet}
+  {
+    max-width: 90%;
+  }
+
+  @media #{$brk-desktop}
+  {
+    max-width: 50%;
+  }
+
+}
+
+.btn-slack:hover
+{
+
+  background: none;
+  color:black;
+  -webkit-box-shadow: 2px 2px 5px 0 rgba($buttonslack--hover--color,1);    // nobel
+  -moz-box-shadow: 2px 2px 5px 0 rgba($buttonslack--hover--color,1);
+  box-shadow: 1px 1px 5px 0 rgba($buttonslack--hover--color,1);
+}
+
+.btn-plans
+{
+  max-width: 41%;
+  text-transform: uppercase;
+  font-size:$plans-btn-font-size;
+
+  @media #{$brk-tablet}
+  {
+    max-width: 78%;
+    justify-content: center;
+  }
+}
+
+.btn-onboard:hover, .btn-plans:hover
+{
+  background-color: $buttononboard--hover--color;
+}
+
+.btn-nav > span, .card-body > a > span {
+  background: url("../images/slack-1.svg") no-repeat;
+  background-size: contain;
+  width: 30px;
+  height: 20px;
+  display: inline-block;
+}
+
+.btn-onboard
+{
+  @include flex-utility(flex,center,$direction:column);
+  max-width:53%;
+  text-transform: uppercase;
+  font-size:$plans-btn-font-size;
+
+  @media #{$brk-tablet}
+  {
+    max-width:78%;
+  }
+}

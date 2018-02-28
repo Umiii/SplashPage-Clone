@@ -1,0 +1,259 @@
+#plans
+{
+    .card-heading{
+
+        @include flex-utility(flex,$justify:space-between);
+        font-size:1.3rem;
+        padding-bottom: 0.6rem;
+        border-bottom: 1px solid $plans__cardheading--border;
+    }
+
+    .card-heading p {
+        margin-bottom:0;
+    }
+
+    .card-body {
+
+        @include flex-utility(flex,$direction:column);
+        margin-top:0.6rem;
+    }
+
+    .card-body  {
+
+        > p{
+          margin-bottom:0.4rem;
+        }
+
+        a > span {
+          background: url("../images/slack-1.svg") no-repeat;
+          background-size: contain;
+          width: 30px;
+          height: 20px;
+          display: inline-block;
+        }
+
+    }
+
+}
+
+
+.plans-box .card-body > a
+{
+  @include flex-utility(flex,center);
+  margin-top:0.7rem;
+  color: $card-body__links--color;
+}
+
+
+
+.plans-middle-box > .card
+{
+  background: linear-gradient(135deg, rgba(87,185,180,1) 0%,
+          rgba(79,175,182,1) 46%, rgba(78,172,181,1) 55%,
+          rgba(73,167,182,1) 78%, rgba(69,162,183,1) 81%,
+          rgba(66,160,183,1) 100%);
+  color:$plans-middlebox__card--color;
+}
+
+
+
+
+.connect-list > p:last-of-type
+{
+  margin-bottom:2rem;
+}
+
+.onboard-box > .card
+{
+  background: -webkit-linear-gradient(-45deg,
+          rgba(135,91,217,1) 0%,
+          rgba(151,88,210,1) 46%,
+          rgba(162,87,205,1) 55%,
+          rgba(171,85,200,1) 78%,
+          rgba(175,84,198,1) 81%,
+          rgba(181,84,196,1) 100%);
+          color:$onboardbox__card--color;
+}
+
+#twitter{
+
+    &-cards{
+
+        padding: 1rem;
+
+        img{
+          max-width: 100%;
+        }
+
+        .card
+        {
+          &-block {
+            border:1px solid $twitter-cards__cardblock--border;
+            border-radius:5px;
+          }
+
+          &-block > h4{
+            text-transform: none;
+          }
+
+          &-block > p{
+            font-size: 0.9rem;
+          }
+
+          &-block a{
+            padding-left: 2rem;
+          }
+
+        }
+
+        .card
+        {
+          padding: 1.2rem 1rem 1rem;
+          margin:1.5rem 0;
+        }
+
+    }
+
+}
+
+.flex-twitter-cards
+{
+  @include flex-utility(flex,center,$justify:center);
+
+  > .card-deck
+  {
+    @include flex-utility(flex,$direction:column);
+
+    @media #{$brk-mobile} {
+
+        max-width:75%;
+    }
+
+    @media #{$brk-tablet} {
+      max-width:50%;
+    }
+
+    @media #{$brk-desktop}
+    {
+      flex-direction: row;
+      max-width:100%;
+    }
+
+  }
+}
+
+
+
+
+.avatar{
+    margin-right:0.4rem;
+    width: 36px;
+    height: 36px;
+}
+
+.avatar
+{
+    &-handle{
+        position:relative;
+
+        h5 {
+          display: inline;
+          text-transform: none;
+          position: absolute;
+        }
+
+        > p
+        {
+          position:absolute;
+          left: 2.6rem;
+          font-size: 0.8rem;
+          top: 1.1rem;
+        }
+
+
+        > i
+        {
+          @extend %absolute-right;
+          color:$twitter-icon--color;
+        }
+    }
+}
+
+
+#twitter-cards
+{
+    .card {
+
+        > p {
+          margin-top:1rem;
+          font-size: 0.8rem;
+        }
+
+        > p > span
+        {
+          display:block;
+          color:$twitter-cards__span--color;
+          font-size:0.8rem;
+        }
+
+      @media #{$brk-tablet}
+      {
+        padding: 1.2rem 1rem 1rem;
+        margin: 4rem 1rem 0 0;
+      }
+
+      @media #{$brk-desktop}
+      {
+        padding: 1.2rem 1rem 1rem;
+      }
+
+    }
+
+    @media #{$brk-tablet}
+    {
+      padding: 4rem 0;
+    }
+
+
+}
+
+
+
+.card-bottom
+{
+    padding-top:1rem;
+    position:relative;
+
+    > a
+    {
+      margin-right:0.7rem;
+      color:$card-bottom__links--color;
+      font-size:0.8rem;
+    }
+
+    > a:hover
+    {
+      text-decoration:none;
+    }
+
+    > a img
+    {
+      max-height:15px;
+      margin-right:0.3rem;
+    }
+
+    > img
+    {
+      @extend %absolute-right;
+      max-height: 15px;
+      margin-top: 0.6rem;
+    }
+
+    > a i
+    {
+      margin-right:0.3rem;
+      color:$card-bottom__links--color;
+    }
+
+}
+

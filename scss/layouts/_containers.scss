@@ -1,0 +1,387 @@
+/*************************
+***** Top Section    *****
+**************************/
+
+.top
+{
+  background: -webkit-linear-gradient(-45deg, rgba(88,184,181,1) 0%,
+          rgba(99,164,189,1) 37%, rgba(105,149,194,1) 48%, rgba(112,136,200,1) 62%,
+          rgba(115,129,203,1) 68%, rgba(125,106,212,1) 100%);
+  color:$top--color;
+  padding-top:1.3rem;
+  height:753px;
+}
+
+/*************************
+* Hanging Content Section *
+**************************/
+
+.hanging-box
+{
+  background-color:$hanging-box--background;
+  width:93%;
+  border-radius:8px;
+  position:absolute;
+  left: 50%;                       /* centers hanging content */
+  transform: translate(-50%, 0);  /* centers hanging content */
+  top:98%;
+  z-index:999;
+
+  @media #{$brk-tablet}
+  {
+    width:100%;
+  }
+
+}
+
+.hanging-content
+{
+  display:flex;
+  height:100%;
+  border-radius:8px;
+  -webkit-box-shadow: 1px 0 12px 0 rgba($hanging-content--shadow,1);
+  -moz-box-shadow: 1px 0 12px 0 rgba($hanging-content--shadow,1);
+  box-shadow: 1px 0 12px 0 rgba($hanging-content--shadow,1);
+}
+
+.hanging-sidebar
+{
+  display:none;
+}
+
+
+
+/*************************
+***** Teams Section ******
+**************************/
+
+#teams
+{
+  padding-top:12rem;
+}
+
+
+.teams-logos
+{
+  margin-top:5rem;
+  margin-bottom:2.2rem;
+  padding:0;
+}
+
+.teams-content ul li
+{
+  display:inline-block;
+  
+  @media #{$brk-tablet}
+  {
+    margin-right:2rem;
+  }
+
+  @media #{$brk-desktop}
+  {
+    margin-right:5rem;
+  }
+
+  
+}
+
+
+.teams-logos
+{
+  li{
+    max-width:26%;
+    margin-right:1rem;
+  }
+
+  li > img{
+    max-width: $team-img-width;
+  }
+}
+
+.teams-list
+{
+   li > img
+  {
+
+  }
+
+
+}
+
+.teams-content
+{
+  .teams-list
+  {
+    margin-top:3rem;
+    margin-bottom:4rem;
+    padding:0;
+
+    > li
+    {
+      max-width:30%;
+      margin-right:0.6rem;
+
+      > img
+      {
+        max-width:$team-img-width;
+
+        @media #{$brk-tablet}
+        {
+          max-width:75%;
+        }
+
+      }
+
+      @media #{$brk-tablet}
+      {
+        margin-right:5.5rem;
+      }
+
+    }
+
+    li.list-culture-amp
+    {
+      @media #{$brk-tablet}
+      {
+        max-width:32%;
+        margin-right:0;
+      }
+    }
+
+    .invision-logo
+    {
+      max-width:70%;
+
+      @media #{$brk-tablet}
+      {
+        max-width:100%;
+      }
+    }
+
+    @media #{$brk-tablet}
+    {
+      text-align:left;
+    }
+
+  }
+
+  > .teams-list li:first-of-type
+  {
+    @media #{$brk-tablet}
+    {
+      margin-right:1rem;
+      margin-left:1rem;
+    }
+
+    @media #{$brk-desktop}
+    {
+      margin-left:2.2rem;
+    }
+  }
+
+  > .teams-list li:last-of-type
+  {
+    margin-right: 0;
+
+    @media #{$brk-tablet}
+    {
+      margin-right:0;
+    }
+  }
+
+  @media #{$brk-tablet} {
+    width:90%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+
+  @media #{$brk-desktop}
+  {
+    width:80%;
+  }
+
+}
+
+
+
+.teams-logos,
+.teams-list
+{
+  @media #{$brk-desktop}
+  {
+    padding: 0 0 0 3rem;
+  }
+}
+
+
+/*************************
+***** IBM Section ***
+**************************/
+.ibm
+{
+  padding:5rem 0;
+
+  &-logo
+  {
+    margin-bottom:1.2rem;
+  }
+}
+
+
+/*************************
+*** Culture Amp Section ***
+**************************/
+
+.cultureamp
+{
+  padding:3rem 0 5rem;
+
+  @media #{$brk-tablet}
+  {
+    padding:5rem 0;
+  }
+}
+
+/*************************
+***** Invision Section ***
+**************************/
+
+.invision {
+
+  padding:2rem 0 3rem;
+  background:
+  linear-gradient(to bottom, rgba(255,255,255,1) 0%,
+  rgba(248,249,250,1) 55%, rgba(247,249,250,1) 71%,
+  rgba(247,249,250,1) 78%, rgba(245,247,249,1) 81%,
+  rgba(244,246,248,1) 100%);
+
+  .screenshot-box {
+    @include flex-utility(flex,center,center);
+  }
+
+  .screenshot-twitter {
+    border-radius: 10px;
+    border:1px solid rgba($twitter-screenshot--border,0.6); // azure radiance
+  }
+}
+
+
+
+
+/*************************
+** Testimonials Section ***
+**************************/
+
+
+.quote-box,
+.testimonial-box {
+  @extend  %flex-center;
+  flex-direction: column;
+  padding:2rem 0 1rem;
+}
+
+.testimonial-box blockquote:before
+{
+    @media #{$brk-tablet}
+    {
+      left:8%;
+    }
+}
+
+.quote-box {
+  background:-webkit-linear-gradient(-45deg, rgba(86,184,181,1) 0%,
+          rgba(84,181,179,1) 27%, rgba(81,178,181,1) 40%, rgba(76,171,182,1) 51%,
+          rgba(69,163,182,1) 74%, rgba(66,160,183,1) 100%);
+  color:$quote-box--color;
+}
+
+
+/*************************
+** People First Section **
+**************************/
+
+#people-first{
+  background: linear-gradient(to bottom, rgba(135,90,217,1) 0%,
+          rgba(145,89,213,1) 37%,
+          rgba(149,89,210,1) 55%,
+          rgba(152,88,209,1) 75%,
+          rgba(165,86,204,1) 100%);
+  padding:6.5rem 1rem 3rem;
+  color:$people-first--color;
+
+}
+
+.content-section
+{
+  @include flex-utility(flex,center,$direction:column);
+
+  > div
+  {
+      @media #{$brk-tablet}
+      {
+        align-self:center;
+        width:85%;
+      }
+
+    @media #{$brk-desktop}
+    {
+        width:43%;
+    }
+  }
+
+  > div > blockquote:after,
+  > div > blockquote:before
+  {
+    @media #{$brk-tablet}
+    {
+      display:block;
+    }
+  }
+
+  > div > blockquote:before
+  {
+    left:2%;
+
+    @media #{$brk-desktop}
+    {
+      left:24%;
+    }
+  }
+
+  > div > blockquote:after
+  {
+    @media #{$brk-tablet}
+    {
+      right:4%;
+    }
+
+    @media #{$brk-desktop}
+    {
+      right:25.5%;
+    }
+  }
+
+}
+
+
+
+/*************************
+*****  Plans Section *****
+**************************/
+
+.plans-box {
+  padding:4rem 1rem;
+}
+
+.plans-middle-box,
+.onboard-box
+{
+  margin-top:4rem;
+
+  @media #{$brk-tablet}
+  {
+    margin-top:0;
+  }
+
+}

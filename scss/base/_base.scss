@@ -1,0 +1,33 @@
+
+/*************************
+***** Base Styles   ******
+**************************/
+
+body {
+    font-family: $stack-abel;
+    font-size:18px;
+    background-color: $body--background--color;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family:$stack-medula;
+    text-transform: uppercase;
+}
+
+blockquote {
+    quotes: "\201C""\201D""\2018""\2019";
+}
+
+
+ul li {
+    list-style: none;
+}
+
+a {
+    -webkit-transition: 300ms;
+    -moz-transition: 300ms;
+    -o-transition: 300ms;
+    transition: 300ms;
+    text-decoration: none;
+}

@@ -1,0 +1,39 @@
+{
+  "name": "splashpage-clone",
+  "version": "0.0.2",
+  "description": "clone of donut.io",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Umiii/SplashPage-Clone.git"
+  },
+  "keywords": [
+    "Bootstrap",
+    "HTML",
+    "CSS",
+    "Responsive"
+  ],
+  "author": "Umi Ikem, Silvana Petkova",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Umiii/SplashPage-Clone/issues"
+  },
+  "homepage": "https://github.com/Umiii/SplashPage-Clone#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.1",
+    "gulp-uglify": "^3.0.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0-alpha.6",
+    "jquery": "^2.2.4"
+  }
+}

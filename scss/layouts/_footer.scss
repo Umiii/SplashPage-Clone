@@ -1,0 +1,82 @@
+/*************************
+**** Footer   Section ****
+**************************/
+
+.footer
+{
+  border-top:1px solid $footer--border;
+  padding:3rem 0 1rem;
+  font-size: 14px;
+  line-height: 100%;
+  color: $footer--color;
+
+  a:hover
+  {
+    color: $footer-links--hover--color;
+  }
+
+  .rights
+  {
+    color:$footer__rights--color;
+    font-size:1.2rem;
+  }
+
+  .rights > p
+  {
+    font-size:0.9rem;
+    margin-bottom:0.4rem;
+  }
+
+}
+
+
+.company > a,
+.resources > a
+{
+  display:inline-block;
+  text-decoration: none;
+  color: $footer-links--color;
+  font-size:1rem;
+  margin-bottom:1.2rem;
+
+}
+
+.social
+{
+
+  ul
+  {
+    padding:0;
+  }
+
+  ul:last-of-type
+  {
+    margin-top:1.2rem;
+  }
+
+  ul li
+  {
+    display:inline;
+
+  }
+
+  a
+  {
+    margin-right:0.9rem;
+    color:$footer-links--color;
+    font-size:1.5rem;
+  }
+}
+
+
+.resources,
+.social
+{
+  margin-top:2rem;
+
+  @media #{$brk-tablet}
+  {
+    margin-top:0;
+  }
+
+}

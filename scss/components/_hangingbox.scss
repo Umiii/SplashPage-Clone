@@ -1,0 +1,224 @@
+
+
+.hanging
+{
+    &-sidebar {
+
+      display: none;
+
+      .list-circle:before {
+        width: 10px;
+        height: 10px;
+        content: '';
+        display: inline-block;
+        background-color: $hanging-sidebar__listcircle--background;
+        border-radius: 50%;
+        margin-right: 0.5rem;
+      }
+
+      &-box
+      {
+          #{$brk-desktop}
+          {
+            width:80%;
+          }
+      }
+
+      > div
+      {
+        @include flex-utility(inline-flex,center,$justify:center);
+        background-color:$hanging-sidebar__listcircle--background;
+        padding-left:1.6rem;
+        padding-right:1rem;
+        color:$hanging-sidebar__listcircle--color;
+        border-radius: 0 3px 3px 0;
+      }
+
+      div > span
+      {
+        font-size:0.8rem;
+        color:$hanging-sidebar__listcircle--background;
+        background-color:$hanging-sidebar__listcircle--color;
+        border-radius:5px;
+        display:inline-block;
+        margin-right:0.2rem;
+      }
+
+      div > span
+      {
+        font-size:0.7rem;
+        color:$hanging-sidebar__listcircle--background;
+        background-color:$hanging-sidebar__listcircle--color;
+        border-radius:2px;
+        display:inline-block;
+        margin-right:0.6rem;
+        padding:0 0.18rem;
+      }
+
+      h4
+      {
+        @media #{$brk-tablet}
+        {
+           margin:1.5rem 0 0 1.5rem;
+        }
+      }
+
+      ul
+      {
+        li
+        {
+          .coffee
+          {
+            @madia #{$brk-tablet}
+            {
+              margin-bottom: 1.2rem;
+            }
+          }
+
+          @madia #{$brk-tablet}
+          {
+            margin-bottom:0.4rem;
+          }
+
+        }
+
+        @media #{$brk-tablet}
+        {
+          padding:0.8rem 0 0 1.5rem;
+          margin:0;
+        }
+
+      }
+
+
+
+      @media #{$brk-tablet}
+      {
+        display:block;
+        width:28%;
+        background-color:#f4f6f8;
+        color:#1d1e1f;
+        border-radius: 8px 0 0 8px;
+      }
+
+    }
+
+}
+
+
+.hanging
+{
+    &-main
+    {
+      color:black;
+      padding:0.5rem 0.5rem;
+
+      @media #{$brk-desktop}
+      {
+        max-width:72%;
+        padding:1.4rem 1.4rem 0;
+      }
+    }
+
+
+    &-main .chat-box
+    {
+      height:45px;
+      border-radius: 6px;
+      border:1px solid $hanging-main__chatbox--border;
+      padding-left:1rem;
+      position:relative;
+    }
+
+
+    &-main h3
+    {
+      text-transform: lowercase;
+      padding:0 0 0.8rem 1rem;
+      border-bottom:1px solid $hanging-main__chatbox--border;
+      margin:1.3rem 0;
+    }
+
+    &-main ul
+    {
+      padding-left:1rem;
+    }
+
+    &-main ul li:first-of-type
+    {
+      margin-top:1.2rem;
+    }
+
+    &-main ul li
+    {
+      margin-bottom:1.3rem;
+    }
+
+    &-main .green-link
+    {
+      color:$hanging-sidebar__listcircle--background;
+    }
+
+    &-main ul li > h4,
+    &-main ul li > p
+    {
+      padding-left:5.5rem;
+    }
+
+    &-main ul li p
+    {
+      margin-bottom:0;
+    }
+
+    &-main ul li h4
+    {
+      text-transform: lowercase;
+    }
+
+    &-main h3:first-of-type
+    {
+      margin:0;
+    }
+}
+
+
+li.donut:before,
+.purple-bg:before,
+li.teal-bg:before
+{
+  content:"";
+  display:inline-block;
+  width:64px;
+  height:64px;
+  position: absolute;
+}
+
+
+li.donut:before
+{
+  background: url("../images/donut_face_64.v0.png") center center no-repeat;
+}
+
+.purple-bg:before
+{
+  background: linear-gradient(135deg,
+          rgba(138,90,215,1) 0%,
+          rgba(151,89,210,1) 37%,
+          rgba(162,87,205,1) 55%,
+          rgba(169,86,202,1) 66%,
+          rgba(177,84,198,1) 100%);
+  border-radius:7px;
+}
+
+
+li.teal-bg:before
+{
+  background: linear-gradient(135deg,
+          rgba(86,184,181,1) 0%,
+          rgba(82,179,181,1) 37%,
+          rgba(76,170,181,1) 55%,
+          rgba(73,167,182,1) 66%,
+          rgba(68,161,182,1) 100%);
+  border-radius:7px;
+}
+

@@ -1,0 +1,39 @@
+//style icons in hanging main box
+%hanging-icons
+{
+  font-size:0.8rem;
+  font-weight: bold;
+  margin-right:0.3rem;
+}
+
+//style blockquote in testimonial box
+%testimonial-quote
+{
+  position:absolute;
+  top:35%;
+  color:$testimonial__quote--color;
+  font-size: 4rem;
+}
+
+//style blockquote in people first section
+%people-first-quote
+{
+  position:absolute;
+  top:53%;
+  font-size:4rem;
+  color:$people-first__quote--color;
+}
+
+//styles flex centered elements
+%flex-center
+{
+  display:flex;
+  justify-content: center;
+}
+
+// right aligned absolutely positioned elements
+%absolute-right
+{
+  position: absolute;
+  right: 0;
+}

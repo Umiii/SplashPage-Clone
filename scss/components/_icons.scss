@@ -1,0 +1,94 @@
+.hanging-main .chat-box > i
+{
+  height:100%;
+  border-right:1px solid $hanging-main__chatbox--border;
+  padding-top:15px;
+  padding-right:1rem;
+  color:$chatbox__icon--color;
+  position:absolute;
+}
+
+.hanging-main li.donut > p > i
+{
+  font-size:0.8rem;
+}
+
+.hanging-main p.sun > i:first-of-type
+{
+  @extend  %hanging-icons;
+}
+
+.hanging-main p.sun > i:last-of-type
+{
+  @extend %hanging-icons;
+}
+
+.img-culture,
+.ibm-coffee
+{
+  border-radius:5px;
+}
+
+.amp-text > blockquote, .ibm-text > blockquote
+{
+  margin:0.4rem 0;
+  color:$amptext__quote--color;
+}
+
+.amp-logo
+{
+  margin-bottom:0.6rem;
+}
+
+
+
+.testimonial-box blockquote {
+  width:70%;
+  font-weight:bold;
+}
+
+.testimonial-box blockquote:before {
+  @extend  %testimonial-quote;
+  content:open-quote;
+  left:3%;
+}
+
+
+.quote-box blockquote > span, .testimonial-box blockquote > span {
+  display: block;
+  margin-top:0.5rem;
+}
+
+
+
+.testimonial-box blockquote:after {
+  @extend  %testimonial-quote;
+  content: close-quote;
+  right:8%;
+}
+
+.quote-box blockquote {
+  width:70%;
+  font-weight:bold;
+}
+
+#people-first .content-section > div > blockquote
+{
+  line-height: 1.2;
+  font-size: 20px;
+  margin-bottom:0.4rem;
+}
+
+
+#people-first .content-section > div > blockquote:before {
+  @extend %people-first-quote;
+  content:open-quote;
+  left:24%;
+  display:none;
+}
+
+#people-first .content-section > div > blockquote:after {
+  @extend %people-first-quote;
+  content: close-quote;
+  right:25.5%;
+}
