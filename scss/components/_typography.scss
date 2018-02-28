@@ -3,6 +3,15 @@
   text-transform:none;
   padding-top:20rem;
   font-size:3.2rem;
+
+  @media #{$brk-mobile} {
+    padding-top:10rem;
+  }
+
+  @media #{$brk-tablet}
+  {
+    padding-top:5rem;
+  }
 }
 
 .amp-text > p, .ibm-text > p
@@ -13,6 +22,12 @@
 .amp-text
 {
   margin-top: 2rem;
+
+  @media #{$brk-tablet}
+  {
+    margin-top: 0;
+  }
+
 }
 
 .invision .source-link {

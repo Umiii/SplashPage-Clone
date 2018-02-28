@@ -2,17 +2,26 @@
 
 .hanging
 {
-    &-sidebar
-    {
-      .list-circle:before
-      {
-        width:10px;
-        height:10px;
+    &-sidebar {
+
+      display: none;
+
+      .list-circle:before {
+        width: 10px;
+        height: 10px;
         content: '';
-        display:inline-block;
-        background-color:$hanging-sidebar__listcircle--background;
-        border-radius:50%;
-        margin-right:0.5rem;
+        display: inline-block;
+        background-color: $hanging-sidebar__listcircle--background;
+        border-radius: 50%;
+        margin-right: 0.5rem;
+      }
+
+      &-box
+      {
+          #{$brk-desktop}
+          {
+            width:80%;
+          }
       }
 
       > div
@@ -45,6 +54,53 @@
         margin-right:0.6rem;
         padding:0 0.18rem;
       }
+
+      h4
+      {
+        @media #{$brk-tablet}
+        {
+           margin:1.5rem 0 0 1.5rem;
+        }
+      }
+
+      ul
+      {
+        li
+        {
+          .coffee
+          {
+            @madia #{$brk-tablet}
+            {
+              margin-bottom: 1.2rem;
+            }
+          }
+
+          @madia #{$brk-tablet}
+          {
+            margin-bottom:0.4rem;
+          }
+
+        }
+
+        @media #{$brk-tablet}
+        {
+          padding:0.8rem 0 0 1.5rem;
+          margin:0;
+        }
+
+      }
+
+
+
+      @media #{$brk-tablet}
+      {
+        display:block;
+        width:28%;
+        background-color:#f4f6f8;
+        color:#1d1e1f;
+        border-radius: 8px 0 0 8px;
+      }
+
     }
 
 }
@@ -56,6 +112,12 @@
     {
       color:black;
       padding:0.5rem 0.5rem;
+
+      @media #{$brk-desktop}
+      {
+        max-width:72%;
+        padding:1.4rem 1.4rem 0;
+      }
     }
 
 

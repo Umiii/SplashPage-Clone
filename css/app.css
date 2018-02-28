@@ -3,9 +3,6 @@
 ***  Global Imports    ***
 **************************/
 /*************************
-***** Base Imports   *****
-**************************/
-/*************************
 ***** Base Styles   ******
 **************************/
 body {
@@ -31,9 +28,6 @@ a {
   text-decoration: none; }
 
 /*************************
-***  Layout Imports    ***
-**************************/
-/*************************
 ***** Top Section    *****
 **************************/
 .logo {
@@ -53,6 +47,9 @@ a {
   transform: translate(-50%, 0); }
   .header-content > p {
     font-size: 1.6rem; }
+    @media only screen and (min-width: 768px) {
+      .header-content > p {
+        max-width: 55%; } }
   .header-content > p:first-of-type {
     font-size: 2.5rem; }
   .header-content .btn-content > span {
@@ -60,6 +57,14 @@ a {
     margin-right: 0.6rem;
     position: absolute;
     left: 10px; }
+    @media only screen and (min-width: 480px) {
+      .header-content .btn-content > span {
+        margin-right: 1rem; } }
+  @media only screen and (min-width: 1024px) {
+    .header-content {
+      width: 80%;
+      left: 50%;
+      transform: translate(-50%, 0); } }
 
 .btn-nav > span {
   padding-top: 0.3rem; }
@@ -90,6 +95,9 @@ a {
   font-size: 1rem;
   margin-bottom: 1.2rem; }
 
+.social ul {
+  padding: 0; }
+
 .social ul:last-of-type {
   margin-top: 1.2rem; }
 
@@ -104,6 +112,10 @@ a {
 .resources,
 .social {
   margin-top: 2rem; }
+  @media only screen and (min-width: 768px) {
+    .resources,
+    .social {
+      margin-top: 0; } }
 
 /*************************
 ***** Top Section    *****
@@ -128,6 +140,9 @@ a {
   /* centers hanging content */
   top: 98%;
   z-index: 999; }
+  @media only screen and (min-width: 768px) {
+    .hanging-box {
+      width: 100%; } }
 
 .hanging-content {
   display: flex;
@@ -153,6 +168,12 @@ a {
 
 .teams-content ul li {
   display: inline-block; }
+  @media only screen and (min-width: 768px) {
+    .teams-content ul li {
+      margin-right: 2rem; } }
+  @media only screen and (min-width: 1024px) {
+    .teams-content ul li {
+      margin-right: 5rem; } }
 
 .teams-logos li {
   max-width: 26%;
@@ -161,21 +182,64 @@ a {
 .teams-logos li > img {
   max-width: 100%; }
 
-.teams-list {
+.teams-content .teams-list {
   margin-top: 3rem;
   margin-bottom: 4rem;
   padding: 0; }
-  .teams-list li > img {
-    max-width: 100%; }
-  .teams-list .invision-logo {
+  .teams-content .teams-list > li {
+    max-width: 30%;
+    margin-right: 0.6rem; }
+    .teams-content .teams-list > li > img {
+      max-width: 100%; }
+      @media only screen and (min-width: 768px) {
+        .teams-content .teams-list > li > img {
+          max-width: 75%; } }
+    @media only screen and (min-width: 768px) {
+      .teams-content .teams-list > li {
+        margin-right: 5.5rem; } }
+  @media only screen and (min-width: 768px) {
+    .teams-content .teams-list li.list-culture-amp {
+      max-width: 32%;
+      margin-right: 0; } }
+  .teams-content .teams-list .invision-logo {
     max-width: 70%; }
+    @media only screen and (min-width: 768px) {
+      .teams-content .teams-list .invision-logo {
+        max-width: 100%; } }
+  @media only screen and (min-width: 768px) {
+    .teams-content .teams-list {
+      text-align: left; } }
 
-.teams-content > .teams-list li {
-  max-width: 30%;
-  margin-right: 0.6rem; }
+@media only screen and (min-width: 768px) {
+  .teams-content > .teams-list li:first-of-type {
+    margin-right: 1rem;
+    margin-left: 1rem; } }
+
+@media only screen and (min-width: 1024px) {
+  .teams-content > .teams-list li:first-of-type {
+    margin-left: 2.2rem; } }
 
 .teams-content > .teams-list li:last-of-type {
   margin-right: 0; }
+  @media only screen and (min-width: 768px) {
+    .teams-content > .teams-list li:last-of-type {
+      margin-right: 0; } }
+
+@media only screen and (min-width: 768px) {
+  .teams-content {
+    width: 90%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0); } }
+
+@media only screen and (min-width: 1024px) {
+  .teams-content {
+    width: 80%; } }
+
+@media only screen and (min-width: 1024px) {
+  .teams-logos,
+  .teams-list {
+    padding: 0 0 0 3rem; } }
 
 /*************************
 ***** IBM Section ***
@@ -190,6 +254,9 @@ a {
 **************************/
 .cultureamp {
   padding: 3rem 0 5rem; }
+  @media only screen and (min-width: 768px) {
+    .cultureamp {
+      padding: 5rem 0; } }
 
 /*************************
 ***** Invision Section ***
@@ -213,6 +280,10 @@ a {
   flex-direction: column;
   padding: 2rem 0 1rem; }
 
+@media only screen and (min-width: 768px) {
+  .testimonial-box blockquote:before {
+    left: 8%; } }
+
 .quote-box {
   background: -webkit-linear-gradient(-45deg, #56b8b5 0%, #54b5b3 27%, #51b2b5 40%, #4cabb6 51%, #45a3b6 74%, #42a0b7 100%);
   color: #fff; }
@@ -229,6 +300,28 @@ a {
   display: flex;
   align-items: center;
   flex-direction: column; }
+  @media only screen and (min-width: 768px) {
+    .content-section > div {
+      align-self: center;
+      width: 85%; } }
+  @media only screen and (min-width: 1024px) {
+    .content-section > div {
+      width: 43%; } }
+  @media only screen and (min-width: 768px) {
+    .content-section > div > blockquote:after,
+    .content-section > div > blockquote:before {
+      display: block; } }
+  .content-section > div > blockquote:before {
+    left: 2%; }
+    @media only screen and (min-width: 1024px) {
+      .content-section > div > blockquote:before {
+        left: 24%; } }
+  @media only screen and (min-width: 768px) {
+    .content-section > div > blockquote:after {
+      right: 4%; } }
+  @media only screen and (min-width: 1024px) {
+    .content-section > div > blockquote:after {
+      right: 25.5%; } }
 
 /*************************
 *****  Plans Section *****
@@ -236,14 +329,19 @@ a {
 .plans-box {
   padding: 4rem 1rem; }
 
+.plans-middle-box,
+.onboard-box {
+  margin-top: 4rem; }
+  @media only screen and (min-width: 768px) {
+    .plans-middle-box,
+    .onboard-box {
+      margin-top: 0; } }
+
 .quote-box,
 .testimonial-box {
   display: flex;
   align-items: center; }
 
-/*************************
-**  Component Imports   **
-**************************/
 .main-nav {
   display: flex;
   margin-left: auto;
@@ -257,52 +355,85 @@ a {
 
 .main-nav li:last-of-type {
   margin-left: 0; }
+  @media only screen and (min-width: 768px) {
+    .main-nav li:last-of-type {
+      margin-left: 1rem; } }
 
 .main-nav li > a {
   color: #fff; }
 
 .nav-visibility {
   display: none; }
+  @media only screen and (min-width: 1024px) {
+    .nav-visibility {
+      display: block; } }
 
-.hanging-sidebar .list-circle:before {
-  width: 10px;
-  height: 10px;
-  content: '';
-  display: inline-block;
-  background-color: #4aa9b6;
-  border-radius: 50%;
-  margin-right: 0.5rem; }
+.hanging-sidebar {
+  display: none; }
+  .hanging-sidebar .list-circle:before {
+    width: 10px;
+    height: 10px;
+    content: '';
+    display: inline-block;
+    background-color: #4aa9b6;
+    border-radius: 50%;
+    margin-right: 0.5rem; }
+  .hanging-sidebar-box only screen and {
+    width: 80%; }
+  .hanging-sidebar > div {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4aa9b6;
+    padding-left: 1.6rem;
+    padding-right: 1rem;
+    color: #fff;
+    border-radius: 0 3px 3px 0; }
+  .hanging-sidebar div > span {
+    font-size: 0.8rem;
+    color: #4aa9b6;
+    background-color: #fff;
+    border-radius: 5px;
+    display: inline-block;
+    margin-right: 0.2rem; }
+  .hanging-sidebar div > span {
+    font-size: 0.7rem;
+    color: #4aa9b6;
+    background-color: #fff;
+    border-radius: 2px;
+    display: inline-block;
+    margin-right: 0.6rem;
+    padding: 0 0.18rem; }
+  @media only screen and (min-width: 768px) {
+    .hanging-sidebar h4 {
+      margin: 1.5rem 0 0 1.5rem; } }
 
-.hanging-sidebar > div {
-  display: inline-flex;
-  background-color: #4aa9b6;
-  padding-left: 1.6rem;
-  padding-right: 1rem;
-  color: #fff;
-  border-radius: 0 3px 3px 0;
-  justify-content: center;
-  align-items: center; }
+@madia  only screen and  (min-width: 768px) {
+  .hanging-sidebar ul li .coffee {
+    margin-bottom: 1.2rem; } }
 
-.hanging-sidebar div > span {
-  font-size: 0.8rem;
-  color: #4aa9b6;
-  background-color: #fff;
-  border-radius: 5px;
-  display: inline-block;
-  margin-right: 0.2rem; }
-
-.hanging-sidebar div > span {
-  font-size: 0.7rem;
-  color: #4aa9b6;
-  background-color: #fff;
-  border-radius: 2px;
-  display: inline-block;
-  margin-right: 0.6rem;
-  padding: 0 0.18rem; }
+@madia  only screen and  (min-width: 768px) {
+  .hanging-sidebar ul li {
+    margin-bottom: 0.4rem; } }
+  @media only screen and (min-width: 768px) {
+    .hanging-sidebar ul {
+      padding: 0.8rem 0 0 1.5rem;
+      margin: 0; } }
+  @media only screen and (min-width: 768px) {
+    .hanging-sidebar {
+      display: block;
+      width: 28%;
+      background-color: #f4f6f8;
+      color: #1d1e1f;
+      border-radius: 8px 0 0 8px; } }
 
 .hanging-main {
   color: black;
   padding: 0.5rem 0.5rem; }
+  @media only screen and (min-width: 1024px) {
+    .hanging-main {
+      max-width: 72%;
+      padding: 1.4rem 1.4rem 0; } }
 
 .hanging-main .chat-box {
   height: 45px;
@@ -366,12 +497,21 @@ li.teal-bg:before {
   text-transform: none;
   padding-top: 20rem;
   font-size: 3.2rem; }
+  @media only screen and (min-width: 480px) {
+    .teams-content > h1 {
+      padding-top: 10rem; } }
+  @media only screen and (min-width: 768px) {
+    .teams-content > h1 {
+      padding-top: 5rem; } }
 
 .amp-text > p, .ibm-text > p {
   color: #999999; }
 
 .amp-text {
   margin-top: 2rem; }
+  @media only screen and (min-width: 768px) {
+    .amp-text {
+      margin-top: 0; } }
 
 .invision .source-link {
   color: #cdcdcd; }
@@ -458,6 +598,15 @@ p.culture {
   -webkit-box-shadow: 2px 2px 5px 0 #cacaca;
   -moz-box-shadow: 2px 2px 5px 0 #cacaca;
   box-shadow: 1px 1px 5px 0 #cacaca; }
+  @media only screen and (min-width: 480px) {
+    .plans-box .btn-slack {
+      max-width: 48%; } }
+  @media only screen and (min-width: 768px) {
+    .plans-box .btn-slack {
+      max-width: 90%; } }
+  @media only screen and (min-width: 1024px) {
+    .plans-box .btn-slack {
+      max-width: 50%; } }
 
 .btn-slack:hover {
   background: none;
@@ -470,6 +619,10 @@ p.culture {
   max-width: 41%;
   text-transform: uppercase;
   font-size: 0.9rem; }
+  @media only screen and (min-width: 768px) {
+    .btn-plans {
+      max-width: 78%;
+      justify-content: center; } }
 
 .btn-onboard:hover, .btn-plans:hover {
   background-color: #fff; }
@@ -482,12 +635,15 @@ p.culture {
   display: inline-block; }
 
 .btn-onboard {
-  max-width: 53%;
-  text-transform: uppercase;
   display: flex;
   align-items: center;
   flex-direction: column;
+  max-width: 53%;
+  text-transform: uppercase;
   font-size: 0.9rem; }
+  @media only screen and (min-width: 768px) {
+    .btn-onboard {
+      max-width: 78%; } }
 
 .hanging-main .chat-box > i {
   height: 100%;
@@ -557,7 +713,7 @@ p.culture {
 
 #plans .card-body {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   margin-top: 0.6rem; }
 
 #plans .card-body > p {
@@ -579,10 +735,6 @@ p.culture {
 .plans-middle-box > .card {
   background: linear-gradient(135deg, #57b9b4 0%, #4fafb6 46%, #4eacb5 55%, #49a7b6 78%, #45a2b7 81%, #42a0b7 100%);
   color: #fff; }
-
-.plans-middle-box,
-.onboard-box {
-  margin-top: 4rem; }
 
 .connect-list > p:last-of-type {
   margin-bottom: 2rem; }
@@ -610,10 +762,21 @@ p.culture {
 
 .flex-twitter-cards {
   display: flex;
-  align-items: center; }
+  align-items: center;
+  justify-content: center; }
   .flex-twitter-cards > .card-deck {
     display: flex;
-    flex-direction: columns; }
+    flex-direction: column; }
+    @media only screen and (min-width: 480px) {
+      .flex-twitter-cards > .card-deck {
+        max-width: 75%; } }
+    @media only screen and (min-width: 768px) {
+      .flex-twitter-cards > .card-deck {
+        max-width: 50%; } }
+    @media only screen and (min-width: 1024px) {
+      .flex-twitter-cards > .card-deck {
+        flex-direction: row;
+        max-width: 100%; } }
 
 .avatar {
   margin-right: 0.4rem;
@@ -642,6 +805,19 @@ p.culture {
   display: block;
   color: #666;
   font-size: 0.8rem; }
+
+@media only screen and (min-width: 768px) {
+  #twitter-cards .card {
+    padding: 1.2rem 1rem 1rem;
+    margin: 4rem 1rem 0 0; } }
+
+@media only screen and (min-width: 1024px) {
+  #twitter-cards .card {
+    padding: 1.2rem 1rem 1rem; } }
+
+@media only screen and (min-width: 768px) {
+  #twitter-cards {
+    padding: 4rem 0; } }
 
 .card-bottom {
   padding-top: 1rem;

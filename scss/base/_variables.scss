@@ -43,8 +43,6 @@ $chatbox__icon--color:$silver-chalice;
 
 
 
-
-
 $amptext__link--color:$black;
 $amptext__link--border:$alto;
 $amptext__link--hover--color:$silver;
@@ -102,3 +100,9 @@ $plans-btn-font-size:0.9rem;
 
 // Team Image Widths
 $team-img-width:100%;
+
+$brk-mobile     :   ' only screen and  (min-width: 480px)';
+$brk-tablet     :   ' only screen and  (min-width: 768px)';
+$brk-desktop    :   ' only screen and  (min-width: 1024px)';
+
+

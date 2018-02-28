@@ -71,6 +71,22 @@
   -webkit-box-shadow: 2px 2px 5px 0 rgba($buttonslack--shadow,1);
   -moz-box-shadow: 2px 2px 5px 0 rgba($buttonslack--shadow,1);   //gray-nickel
   box-shadow: 1px 1px 5px 0 rgba($buttonslack--shadow,1);
+
+  @media #{$brk-mobile}
+  {
+    max-width: 48%;
+  }
+
+  @media #{$brk-tablet}
+  {
+    max-width: 90%;
+  }
+
+  @media #{$brk-desktop}
+  {
+    max-width: 50%;
+  }
+
 }
 
 .btn-slack:hover
@@ -88,6 +104,12 @@
   max-width: 41%;
   text-transform: uppercase;
   font-size:$plans-btn-font-size;
+
+  @media #{$brk-tablet}
+  {
+    max-width: 78%;
+    justify-content: center;
+  }
 }
 
 .btn-onboard:hover, .btn-plans:hover
@@ -109,4 +131,9 @@
   max-width:53%;
   text-transform: uppercase;
   font-size:$plans-btn-font-size;
+
+  @media #{$brk-tablet}
+  {
+    max-width:78%;
+  }
 }

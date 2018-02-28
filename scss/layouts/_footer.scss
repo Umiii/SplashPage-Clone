@@ -43,6 +43,12 @@
 
 .social
 {
+
+  ul
+  {
+    padding:0;
+  }
+
   ul:last-of-type
   {
     margin-top:1.2rem;
@@ -67,4 +73,10 @@
 .social
 {
   margin-top:2rem;
+
+  @media #{$brk-tablet}
+  {
+    margin-top:0;
+  }
+
 }

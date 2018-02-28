@@ -14,7 +14,7 @@
 
     .card-body {
 
-        @include flex-utility(flex,center);
+        @include flex-utility(flex,$direction:column);
         margin-top:0.6rem;
     }
 
@@ -56,11 +56,7 @@
 }
 
 
-.plans-middle-box,
-.onboard-box
-{
-  margin-top:4rem;
-}
+
 
 .connect-list > p:last-of-type
 {
@@ -122,11 +118,27 @@
 
 .flex-twitter-cards
 {
-  @include flex-utility(flex,center);
+  @include flex-utility(flex,center,$justify:center);
 
   > .card-deck
   {
-    @include flex-utility(flex,$direction:columns);
+    @include flex-utility(flex,$direction:column);
+
+    @media #{$brk-mobile} {
+
+        max-width:75%;
+    }
+
+    @media #{$brk-tablet} {
+      max-width:50%;
+    }
+
+    @media #{$brk-desktop}
+    {
+      flex-direction: row;
+      max-width:100%;
+    }
+
   }
 }
 
@@ -183,6 +195,23 @@
           color:$twitter-cards__span--color;
           font-size:0.8rem;
         }
+
+      @media #{$brk-tablet}
+      {
+        padding: 1.2rem 1rem 1rem;
+        margin: 4rem 1rem 0 0;
+      }
+
+      @media #{$brk-desktop}
+      {
+        padding: 1.2rem 1rem 1rem;
+      }
+
+    }
+
+    @media #{$brk-tablet}
+    {
+      padding: 4rem 0;
     }
 
 

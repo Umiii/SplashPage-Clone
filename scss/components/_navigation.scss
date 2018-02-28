@@ -16,6 +16,11 @@
     &-nav li:last-of-type
     {
       margin-left:0;
+
+      @media #{$brk-tablet}
+      {
+         margin-left:1rem;
+      }
     }
 
     &-nav li > a
@@ -27,4 +32,9 @@
 .nav-visibility
 {
   display:none;
+
+  @media #{$brk-desktop}
+  {
+    display:block;
+  }
 }

@@ -27,6 +27,10 @@
   top:98%;
   z-index:999;
 
+  @media #{$brk-tablet}
+  {
+    width:100%;
+  }
 
 }
 
@@ -67,6 +71,18 @@
 .teams-content ul li
 {
   display:inline-block;
+  
+  @media #{$brk-tablet}
+  {
+    margin-right:2rem;
+  }
+
+  @media #{$brk-desktop}
+  {
+    margin-right:5rem;
+  }
+
+  
 }
 
 
@@ -84,30 +100,118 @@
 
 .teams-list
 {
-  margin-top:3rem;
-  margin-bottom:4rem;
-  padding:0;
-
    li > img
   {
-    max-width:$team-img-width;
+
   }
 
-  .invision-logo
+
+}
+
+.teams-content
+{
+  .teams-list
   {
-    max-width:70%;
+    margin-top:3rem;
+    margin-bottom:4rem;
+    padding:0;
+
+    > li
+    {
+      max-width:30%;
+      margin-right:0.6rem;
+
+      > img
+      {
+        max-width:$team-img-width;
+
+        @media #{$brk-tablet}
+        {
+          max-width:75%;
+        }
+
+      }
+
+      @media #{$brk-tablet}
+      {
+        margin-right:5.5rem;
+      }
+
+    }
+
+    li.list-culture-amp
+    {
+      @media #{$brk-tablet}
+      {
+        max-width:32%;
+        margin-right:0;
+      }
+    }
+
+    .invision-logo
+    {
+      max-width:70%;
+
+      @media #{$brk-tablet}
+      {
+        max-width:100%;
+      }
+    }
+
+    @media #{$brk-tablet}
+    {
+      text-align:left;
+    }
+
   }
+
+  > .teams-list li:first-of-type
+  {
+    @media #{$brk-tablet}
+    {
+      margin-right:1rem;
+      margin-left:1rem;
+    }
+
+    @media #{$brk-desktop}
+    {
+      margin-left:2.2rem;
+    }
+  }
+
+  > .teams-list li:last-of-type
+  {
+    margin-right: 0;
+
+    @media #{$brk-tablet}
+    {
+      margin-right:0;
+    }
+  }
+
+  @media #{$brk-tablet} {
+    width:90%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+
+  @media #{$brk-desktop}
+  {
+    width:80%;
+  }
+
 }
 
-.teams-content > .teams-list li
-{
-  max-width:30%;
-  margin-right:0.6rem;
-}
 
-.teams-content > .teams-list li:last-of-type
+
+.teams-logos,
+.teams-list
 {
-  margin-right: 0;
+  @media #{$brk-desktop}
+  {
+    padding: 0 0 0 3rem;
+  }
 }
 
 
@@ -125,8 +229,6 @@
 }
 
 
-
-
 /*************************
 *** Culture Amp Section ***
 **************************/
@@ -134,6 +236,11 @@
 .cultureamp
 {
   padding:3rem 0 5rem;
+
+  @media #{$brk-tablet}
+  {
+    padding:5rem 0;
+  }
 }
 
 /*************************
@@ -174,6 +281,14 @@
   padding:2rem 0 1rem;
 }
 
+.testimonial-box blockquote:before
+{
+    @media #{$brk-tablet}
+    {
+      left:8%;
+    }
+}
+
 .quote-box {
   background:-webkit-linear-gradient(-45deg, rgba(86,184,181,1) 0%,
           rgba(84,181,179,1) 27%, rgba(81,178,181,1) 40%, rgba(76,171,182,1) 51%,
@@ -200,7 +315,56 @@
 .content-section
 {
   @include flex-utility(flex,center,$direction:column);
+
+  > div
+  {
+      @media #{$brk-tablet}
+      {
+        align-self:center;
+        width:85%;
+      }
+
+    @media #{$brk-desktop}
+    {
+        width:43%;
+    }
+  }
+
+  > div > blockquote:after,
+  > div > blockquote:before
+  {
+    @media #{$brk-tablet}
+    {
+      display:block;
+    }
+  }
+
+  > div > blockquote:before
+  {
+    left:2%;
+
+    @media #{$brk-desktop}
+    {
+      left:24%;
+    }
+  }
+
+  > div > blockquote:after
+  {
+    @media #{$brk-tablet}
+    {
+      right:4%;
+    }
+
+    @media #{$brk-desktop}
+    {
+      right:25.5%;
+    }
+  }
+
 }
+
+
 
 /*************************
 *****  Plans Section *****
@@ -208,4 +372,16 @@
 
 .plans-box {
   padding:4rem 1rem;
+}
+
+.plans-middle-box,
+.onboard-box
+{
+  margin-top:4rem;
+
+  @media #{$brk-tablet}
+  {
+    margin-top:0;
+  }
+
 }
