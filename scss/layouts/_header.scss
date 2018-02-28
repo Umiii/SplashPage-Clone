@@ -29,6 +29,11 @@
   > p
   {
     font-size:1.6rem;
+
+    @media #{$brk-tablet}
+    {
+      max-width:55%;
+    }
   }
 
   > p:first-of-type
@@ -41,7 +46,19 @@
     margin-right: 0.6rem;
     position: absolute;
     left: 10px;
+
+    @media #{$brk-mobile} {
+      margin-right: 1rem;
+    }
   }
+
+  @media #{$brk-desktop}
+  {
+    width:80%;
+    left:50%;
+    transform: translate(-50%, 0);
+  }
+
 }
 
 .btn-nav > span
